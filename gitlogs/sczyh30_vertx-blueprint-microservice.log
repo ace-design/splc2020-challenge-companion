@@ -1,0 +1,1164 @@
+5949c6a7 Merge https://github.com/sczyh30/vertx-blueprint-microservice into sczyh30/vertx-blueprint-microservice
+3ef8826f Initial commit
+A	README.md
+9d960641 Fix some bugs and problems
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	docker/config-server/inventory-microservice/docker.json
+M	docker/docker-compose.yml
+M	docs/images/keycloak-client-config.png
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/RawOrderDispatcher.java
+eb9deb37 Downgrade Maven Compile Plugin to 3.1 version
+M	pom.xml
+d0deada9 Merge pull request #27 from sczyh30/design-refactor
+d507aa82 Update documentation and notes
+M	README.md
+M	README.zh-cn.md
+M	TODO.md
+M	docs/en/tutorial-api-gateway.md
+M	docs/en/tutorial-api-gateway.toc.md
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.toc.md
+M	docs/zh-cn/tutorial.zh-cn.md
+05879845 Minor changes
+A	database-middleware/README.md
+A	database-middleware/pom.xml
+M	microservice-blueprint-common/src/main/asciidoc/dataobjects.adoc
+D	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/common/rxjava/discovery/OAuth2Service.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+D	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/discovery/OAuth2Service.java
+D	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/discovery/impl/OAuth2ServiceImpl.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/functional/Functional.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/rx/RestAPIRxVerticle.java
+D	microservice-blueprint-common/src/main/resources/META-INF/services/io.vertx.ext.discovery.spi.ServiceType
+M	microservice-blueprint-common/src/test/java/io/vertx/blueprint/microservice/common/functional/FunctionalTest.java
+M	order-microservice/pom.xml
+M	pom.xml
+M	shopping-cart-microservice/pom.xml
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+1d288a97 Remove health check from API Gateway component
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/api/RestShoppingAPIVerticle.java
+M	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/api/RestStoreAPIVerticle.java
+2eb6727f Fixes #25: HTTP endpoint service should be released
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	docs/en/tutorial-api-gateway.md
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/RawOrderDispatcher.java
+M	pom.xml
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+f02851b8 Merge pull request #24 from sczyh30/3.4.0
+c2f796be Bump version to 3.4.1 and update documents
+M	README.md
+M	README.zh-cn.md
+M	account-microservice/pom.xml
+M	api-gateway/pom.xml
+M	cache-infrastructure/pom.xml
+M	docs/en/tutorial-api-gateway.md
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+M	docs/zh-cn/tutorial.zh-cn.md
+M	inventory-microservice/pom.xml
+M	microservice-blueprint-common/pom.xml
+M	monitor-dashboard/pom.xml
+M	order-microservice/pom.xml
+M	payment-microservice/pom.xml
+M	pom.xml
+M	product-microservice/pom.xml
+M	recommendation-microservice/pom.xml
+M	shopping-cart-microservice/pom.xml
+M	shopping-ui/pom.xml
+M	store-microservice/pom.xml
+ced6f4ac Remove redundant generated code
+D	account-microservice/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+D	account-microservice/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+D	account-microservice/src/main/resources/vertx-blueprint-user-account/account_service.rb
+D	cache-infrastructure/src/main/resources/vertx-blueprint-cache-counter-js/counter_service-proxy.js
+D	cache-infrastructure/src/main/resources/vertx-blueprint-cache-counter-js/counter_service.js
+D	cache-infrastructure/src/main/resources/vertx-blueprint-cache-counter/counter_service.rb
+D	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+D	microservice-blueprint-common/src/main/resources/vertx-blueprint-common/o_auth2_service.rb
+D	order-microservice/src/main/resources/vertx-blueprint-order-js/order_service-proxy.js
+D	order-microservice/src/main/resources/vertx-blueprint-order-js/order_service.js
+D	order-microservice/src/main/resources/vertx-blueprint-order/order_service.rb
+D	payment-microservice/src/main/resources/vertx-blueprint-payment-js/payment_query_service-proxy.js
+D	payment-microservice/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js
+D	payment-microservice/src/main/resources/vertx-blueprint-payment/payment_query_service.rb
+D	product-microservice/src/main/resources/vertx-blueprint-product-js/product_service-proxy.js
+D	product-microservice/src/main/resources/vertx-blueprint-product-js/product_service.js
+D	product-microservice/src/main/resources/vertx-blueprint-product/product_service.rb
+D	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/checkout_service-proxy.js
+D	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/checkout_service.js
+D	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/shopping_cart_service-proxy.js
+D	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/shopping_cart_service.js
+D	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/checkout_service.rb
+D	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/shopping_cart_service.rb
+D	store-microservice/src/main/resources/vertx-blueprint-store-js/store_crud_service-proxy.js
+D	store-microservice/src/main/resources/vertx-blueprint-store-js/store_crud_service.js
+D	store-microservice/src/main/resources/vertx-blueprint-store/store_crud_service.rb
+124b6d84 Update generated code and docs
+M	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/rxjava/AccountService.java
+M	account-microservice/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	account-microservice/src/main/resources/vertx-blueprint-user-account/account_service.rb
+A	cache-infrastructure/src/main/generated/io/vertx/blueprint/microservice/cache/CounterServiceVertxEBProxy.java
+A	cache-infrastructure/src/main/generated/io/vertx/blueprint/microservice/cache/CounterServiceVertxProxyHandler.java
+A	cache-infrastructure/src/main/generated/io/vertx/blueprint/microservice/cache/rxjava/CounterService.java
+A	cache-infrastructure/src/main/resources/vertx-blueprint-cache-counter-js/counter_service-proxy.js
+A	cache-infrastructure/src/main/resources/vertx-blueprint-cache-counter-js/counter_service.js
+A	cache-infrastructure/src/main/resources/vertx-blueprint-cache-counter/counter_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common/o_auth2_service.rb
+A	order-microservice/src/main/asciidoc/enums.adoc
+M	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+M	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/rxjava/OrderService.java
+M	order-microservice/src/main/resources/vertx-blueprint-order-js/order_service.js
+M	order-microservice/src/main/resources/vertx-blueprint-order/order_service.rb
+A	payment-microservice/src/main/asciidoc/dataobjects.adoc
+M	payment-microservice/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js
+M	payment-microservice/src/main/resources/vertx-blueprint-payment/payment_query_service.rb
+M	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+M	product-microservice/src/main/resources/vertx-blueprint-product-js/product_service.js
+M	product-microservice/src/main/resources/vertx-blueprint-product/product_service.rb
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartConverter.java
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/rxjava/CheckoutService.java
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/rxjava/ShoppingCartService.java
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/checkout_service.js
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/shopping_cart_service.js
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/checkout_service.rb
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/shopping_cart_service.rb
+M	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java
+M	store-microservice/src/main/resources/vertx-blueprint-store-js/store_crud_service.js
+M	store-microservice/src/main/resources/vertx-blueprint-store/store_crud_service.rb
+e6d07a3f Some code refactor for API changes in Vert.x 3.4.0
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+R057	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationRetrieverHelper.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigRetrieverHelper.java
+D	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/functional/Tuple2.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/rx/BaseMicroserviceRxVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCart.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/SimpleCrudDataSource.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+4de80032 Bump Vert.x version to 3.4.0-Beta1 and update dependencies
+M	README.md
+M	README.zh-cn.md
+M	TODO.md
+M	account-microservice/pom.xml
+M	microservice-blueprint-common/pom.xml
+M	order-microservice/pom.xml
+M	payment-microservice/pom.xml
+M	pom.xml
+M	product-microservice/pom.xml
+M	shopping-cart-microservice/pom.xml
+4f8f0e30 Fixes #18: Stream should not be reused
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	docs/en/tutorial-api-gateway.md
+8715fae8 Merge pull request #13 from gadieichhorn/patch-1
+2184b708 config server name incorrect
+M	docker/docker-compose.yml
+7744dc4b Update configuration example and documentation
+M	README.md
+M	README.zh-cn.md
+M	docker/docker-compose.yml
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial.zh-cn.md
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+R060	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceHelper.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationRetrieverHelper.java
+cdc7b605 Merge pull request #11 from crazyfrozenpenguin/config-server
+df548d25 Merge pull request #8 from crazyfrozenpenguin/elk
+7192b291 Convert Configuration Service Helper to Rx Observable
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceHelper.java
+D	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceInitHandler.java
+D	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceUpdateHandler.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/Log4jConfigurationServiceHandler.java
+0646cebf Should get current context from vertx
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceHelper.java
+f586e9c7 Introduce snapshot repository
+M	pom.xml
+96a04847 Add dynamic configuration to inventory-microservice
+M	inventory-microservice/Dockerfile
+M	inventory-microservice/pom.xml
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceHelper.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceInitHandler.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceUpdateHandler.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/Log4jConfigurationServiceHandler.java
+b9ac192f Introduce Apache httpd to serve configuration files
+A	docker/config-server/inventory-microservice/docker.json
+A	docker/config-server/inventory-microservice/log4j2-console.xml
+A	docker/config-server/inventory-microservice/log4j2-gelf.xml
+M	docker/docker-compose.yml
+M	docker/run.sh
+1c85ce17 Introduce ConfigurationServiceHelper
+M	microservice-blueprint-common/pom.xml
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceHelper.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceInitHandler.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/ConfigurationServiceUpdateHandler.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/config/Log4jConfigurationServiceHandler.java
+40853f2f Ensure appenders are Async
+M	account-microservice/src/main/resources/log4j2.xml
+M	api-gateway/src/main/resources/log4j2.xml
+M	cache-infrastructure/src/main/resources/log4j2.xml
+M	inventory-microservice/src/main/resources/log4j2.xml
+M	monitor-dashboard/src/main/resources/log4j2.xml
+M	order-microservice/src/main/resources/log4j2.xml
+M	payment-microservice/src/main/resources/log4j2.xml
+M	product-microservice/src/main/resources/log4j2.xml
+M	shopping-cart-microservice/src/main/resources/log4j2.xml
+M	shopping-ui/src/main/resources/log4j2.xml
+M	store-microservice/src/main/resources/log4j2.xml
+37bad78f Docker Machine settings for ELK and memory
+M	README.md
+28e7f94f Introduce ELK based logging
+M	account-microservice/Dockerfile
+A	account-microservice/src/main/resources/log4j2.xml
+M	api-gateway/Dockerfile
+A	api-gateway/src/main/resources/log4j2.xml
+M	cache-infrastructure/Dockerfile
+A	cache-infrastructure/src/main/resources/log4j2.xml
+M	docker/docker-compose.yml
+M	docker/run.sh
+M	inventory-microservice/Dockerfile
+A	inventory-microservice/src/main/resources/log4j2.xml
+M	monitor-dashboard/Dockerfile
+A	monitor-dashboard/src/main/resources/log4j2.xml
+M	order-microservice/Dockerfile
+A	order-microservice/src/main/resources/log4j2.xml
+A	payment-microservice/src/main/resources/log4j2.xml
+M	pom.xml
+M	product-microservice/Dockerfile
+A	product-microservice/src/main/resources/log4j2.xml
+M	shopping-cart-microservice/Dockerfile
+A	shopping-cart-microservice/src/main/resources/log4j2.xml
+M	shopping-ui/Dockerfile
+A	shopping-ui/src/main/resources/log4j2.xml
+M	store-microservice/Dockerfile
+A	store-microservice/src/main/resources/log4j2.xml
+68260c0e Merge pull request #7 from crazyfrozenpenguin/osx
+6a0d7dac Improve docker-machine help
+M	README.md
+M	api-gateway/README.md
+ca83056c Document docker-machine based setup
+M	README.md
+0c0cd1f6 Should validate login on docker-machine env
+M	api-gateway/src/config/docker.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	docker/build.sh
+M	docker/docker-compose.yml
+M	docker/run.sh
+b482bc3f Should run from any directory
+M	docker/run.sh
+8a707748 Should build from any directory
+M	docker/build.sh
+84da2de7 Update documentation for code changes
+M	README.md
+M	README.zh-cn.md
+M	TODO.md
+M	docs/en/tutorial-api-gateway.md
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+M	docs/zh-cn/tutorial.zh-cn.md
+d12141c0 Migrate service interfaces to each corresponding component
+M	account-microservice/pom.xml
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountConverter.java	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/AccountConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxEBProxy.java	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxEBProxy.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxProxyHandler.java	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxProxyHandler.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/rxjava/AccountService.java	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/rxjava/AccountService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/Account.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/Account.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/package-info.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/package-info.java
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js	account-microservice/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js	account-microservice/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb	account-microservice/src/main/resources/vertx-blueprint-user-account/account_service.rb
+M	api-gateway/pom.xml
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	cache-infrastructure/pom.xml
+M	inventory-microservice/pom.xml
+M	microservice-blueprint-common/pom.xml
+D	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/package-info.java
+M	monitor-dashboard/pom.xml
+M	order-microservice/pom.xml
+M	order-microservice/src/main/asciidoc/dataobjects.adoc
+A	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/CheckoutResultConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxEBProxy.java	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxEBProxy.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxProxyHandler.java	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxProxyHandler.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/rxjava/OrderService.java	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/rxjava/OrderService.java
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/CheckoutResult.java
+R089	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/Order.java	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/OrderEventType.java	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/OrderEventType.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/OrderService.java	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/OrderService.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/RawOrderDispatcher.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/package-info.java	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/package-info.java
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service-proxy.js	order-microservice/src/main/resources/vertx-blueprint-order-js/order_service-proxy.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service.js	order-microservice/src/main/resources/vertx-blueprint-order-js/order_service.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-order/order_service.rb	order-microservice/src/main/resources/vertx-blueprint-order/order_service.rb
+M	payment-microservice/pom.xml
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentConverter.java	payment-microservice/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxEBProxy.java	payment-microservice/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxEBProxy.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxProxyHandler.java	payment-microservice/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxProxyHandler.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/rxjava/PaymentQueryService.java	payment-microservice/src/main/generated/io/vertx/blueprint/microservice/payment/rxjava/PaymentQueryService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/payment/Payment.java	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/Payment.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/payment/PaymentQueryService.java	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/PaymentQueryService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/payment/package-info.java	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/package-info.java
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service-proxy.js	payment-microservice/src/main/resources/vertx-blueprint-payment-js/payment_query_service-proxy.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js	payment-microservice/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment/payment_query_service.rb	payment-microservice/src/main/resources/vertx-blueprint-payment/payment_query_service.rb
+M	pom.xml
+M	product-microservice/pom.xml
+M	product-microservice/src/main/asciidoc/dataobjects.adoc
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxEBProxy.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxEBProxy.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxProxyHandler.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxProxyHandler.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductTupleConverter.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/ProductTupleConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/Product.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/ProductTuple.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductTuple.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/package-info.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/package-info.java
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service-proxy.js	product-microservice/src/main/resources/vertx-blueprint-product-js/product_service-proxy.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service.js	product-microservice/src/main/resources/vertx-blueprint-product-js/product_service.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-product/product_service.rb	product-microservice/src/main/resources/vertx-blueprint-product/product_service.rb
+M	recommendation-microservice/pom.xml
+M	shopping-cart-microservice/pom.xml
+M	shopping-cart-microservice/src/main/asciidoc/dataobjects.adoc
+M	shopping-cart-microservice/src/main/asciidoc/enums.adoc
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/CartEventConverter.java	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/CartEventConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutResultConverter.java	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutResultConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartConverter.java	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartConverter.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEventType.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CartEventType.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutResult.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutResult.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCart.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCart.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+M	shopping-ui/pom.xml
+M	store-microservice/pom.xml
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxEBProxy.java	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxEBProxy.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxProxyHandler.java	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxProxyHandler.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreConverter.java	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/StoreConverter.java
+R100	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/Store.java	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/Store.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/StoreCRUDService.java	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreCRUDService.java
+R100	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/package-info.java	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/package-info.java
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service-proxy.js	store-microservice/src/main/resources/vertx-blueprint-store-js/store_crud_service-proxy.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service.js	store-microservice/src/main/resources/vertx-blueprint-store-js/store_crud_service.js
+R100	microservice-blueprint-common/src/main/resources/vertx-blueprint-store/store_crud_service.rb	store-microservice/src/main/resources/vertx-blueprint-store/store_crud_service.rb
+445845ce Fix #4: close JDBC connections on operation complete
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial.zh-cn.md
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+69b7566e Bump Vert.x version to 3.3.3
+M	README.md
+M	README.zh-cn.md
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial.zh-cn.md
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common/o_auth2_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-order/order_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment/payment_query_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-product/product_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-store/store_crud_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb
+M	pom.xml
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutServiceVertxEBProxy.java
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutServiceVertxProxyHandler.java
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartServiceVertxEBProxy.java
+M	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartServiceVertxProxyHandler.java
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/checkout_service.rb
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/shopping_cart_service.rb
+5b5257d5 Update documentations
+M	docs/en/tutorial-api-gateway.md
+M	docs/en/tutorial.md
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+M	docs/zh-cn/tutorial.zh-cn.md
+M	docs/zh-cn/tutorial.zh-cn.toc.md
+8d21f3fe Modify some Observable usage with Single
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+3e011b47 Update CHS documentation
+M	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+A	docs/zh-cn/tutorial-api-gateway.zh-cn.toc.md
+M	docs/zh-cn/tutorial.zh-cn.md
+A	docs/zh-cn/tutorial.zh-cn.toc.md
+b5b6813a Document and code refinement
+M	README.md
+M	README.zh-cn.md
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	docs/en/tutorial-api-gateway.md
+M	docs/en/tutorial-api-gateway.toc.md
+M	docs/en/tutorial.md
+M	docs/en/tutorial.toc.md
+A	docs/zh-cn/tutorial-api-gateway.zh-cn.md
+M	docs/zh-cn/tutorial.zh-cn.md
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+5ce2f6c1 Add support and instructions about Keycloak configuration
+M	README.md
+M	account-microservice/src/config/docker.json
+M	api-gateway/src/config/docker.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	api-gateway/src/main/resources/webroot/index.html
+M	docker/docker-compose.yml
+M	docker/run.sh
+M	docs/en/tutorial.md
+M	docs/en/tutorial.toc.md
+A	docs/images/keycloak-client-config.png
+M	docs/zh-cn/tutorial.zh-cn.md
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/service/ExampleHelper.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductVerticle.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+M	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/impl/StoreCRUDServiceImpl.java
+b3aa4087 Update frontend code and refined implementations
+M	api-gateway/Dockerfile
+M	api-gateway/README.md
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+A	api-gateway/src/main/resources/webroot/.bowerrc
+A	api-gateway/src/main/resources/webroot/app/app.js
+A	api-gateway/src/main/resources/webroot/app/controller.js
+A	api-gateway/src/main/resources/webroot/app/view/404.html
+A	api-gateway/src/main/resources/webroot/app/view/account.html
+A	api-gateway/src/main/resources/webroot/app/view/cart.html
+A	api-gateway/src/main/resources/webroot/app/view/home.html
+A	api-gateway/src/main/resources/webroot/app/view/order-detail.html
+A	api-gateway/src/main/resources/webroot/app/view/orders.html
+A	api-gateway/src/main/resources/webroot/app/view/product-detail.html
+A	api-gateway/src/main/resources/webroot/assets/css/style.css
+A	api-gateway/src/main/resources/webroot/assets/img/posters/A1763817.jpg
+A	api-gateway/src/main/resources/webroot/assets/img/posters/BK-9780134092669.jpg
+A	api-gateway/src/main/resources/webroot/assets/img/posters/BK-9780262033848.jpg
+A	api-gateway/src/main/resources/webroot/bower.json
+A	api-gateway/src/main/resources/webroot/index.html
+M	docs/en/tutorial.md
+M	docs/images/shopping-spa-index.png
+M	docs/images/shopping-spa-product-detail.png
+A	docs/images/spa-cart.png
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/api/RestShoppingAPIVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+9273aba9 Update documentation and code refinement
+cb4c74d8 Update documentation
+A	docs/en/tutorial-api-gateway.md
+A	docs/en/tutorial-api-gateway.toc.md
+M	docs/en/tutorial.md
+M	docs/en/tutorial.toc.md
+A	docs/images/jdbc-repo-wrapper-class-structure.png
+d9632fc4 Some refinement
+M	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/JdbcAccountServiceImpl.java
+M	docker/build.sh
+M	microservice-blueprint-common/pom.xml
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/rx/BaseMicroserviceRxVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/service/JdbcRepositoryWrapper.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/OrderEventType.java
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb
+M	monitor-dashboard/src/main/java/io/vertx/blueprint/microservice/monitor/MonitorDashboardVerticle.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/api/RestOrderAPIVerticle.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/impl/OrderServiceImpl.java
+M	pom.xml
+M	product-microservice/pom.xml
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductVerticle.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/api/RestShoppingAPIVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+7230be94 Integrate UI with api gateway
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+a04e9884 Merge branch 'master' of https://github.com/sczyh30/vertx-blueprint-microservice
+be9a5763 Update tutorial documentation
+M	docs/en/tutorial.md
+A	docs/images/shopping-spa-index.png
+A	docs/images/shopping-spa-product-detail.png
+0e208434 Merge pull request #1 from sczyh30/initial-work
+701ac85d Update EN document
+M	README.md
+M	docs/en/tutorial.md
+M	docs/images/entire-architecture.png
+M	docs/images/rpc-inc-1.png
+a0f64b48 Some updates
+M	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/JdbcAccountServiceImpl.java
+D	build.sh
+A	docker/build.sh
+R093	docker-compose.yml	docker/docker-compose.yml
+A	docker/run.sh
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	microservice-blueprint-common/pom.xml
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/rxjava/AccountService.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/Account.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutResult.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCart.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/service/JdbcRepositoryWrapper.java
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+D	run.sh
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+A	shopping-ui/Dockerfile
+5ca6f6d0 Change auth mechanism in api gateway
+M	account-microservice/Dockerfile
+A	account-microservice/src/config/docker.json
+R100	account-microservice/src/docker/config.json	account-microservice/src/config/local.json
+M	api-gateway/Dockerfile
+A	api-gateway/src/config/docker.json
+A	api-gateway/src/config/local.json
+D	api-gateway/src/docker/config.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	cache-infrastructure/Dockerfile
+R100	cache-infrastructure/src/docker/config.json	cache-infrastructure/src/config/docker.json
+A	cache-infrastructure/src/config/local.json
+M	inventory-microservice/Dockerfile
+R100	inventory-microservice/src/docker/config.json	inventory-microservice/src/config/docker.json
+A	inventory-microservice/src/config/local.json
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	monitor-dashboard/Dockerfile
+R100	monitor-dashboard/src/docker/config.json	monitor-dashboard/src/config/docker.json
+A	monitor-dashboard/src/config/local.json
+M	order-microservice/Dockerfile
+R100	order-microservice/src/docker/config.json	order-microservice/src/config/docker.json
+R100	order-microservice/src/docker/local.json	order-microservice/src/config/local.json
+M	product-microservice/Dockerfile
+R100	product-microservice/src/docker/config.json	product-microservice/src/config/docker.json
+R100	product-microservice/src/docker/local.json	product-microservice/src/config/local.json
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+M	run.sh
+M	shopping-cart-microservice/Dockerfile
+R100	shopping-cart-microservice/src/docker/config.json	shopping-cart-microservice/src/config/docker.json
+R100	shopping-cart-microservice/src/docker/local.json	shopping-cart-microservice/src/config/local.json
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/api/RestShoppingAPIVerticle.java
+A	shopping-ui/src/config/docker.json
+A	shopping-ui/src/config/local.json
+D	shopping-ui/src/docker/config.json
+M	shopping-ui/src/main/java/io/vertx/blueprint/microservice/shopping/ui/ShoppingUIVerticle.java
+M	store-microservice/Dockerfile
+A	store-microservice/src/config/docker.json
+A	store-microservice/src/config/local.json
+D	store-microservice/src/docker/config.json
+D	store-microservice/src/docker/local.json
+bccaff34 Add initial Docker Compose support
+A	account-microservice/Dockerfile
+M	account-microservice/pom.xml
+M	account-microservice/src/docker/config.json
+A	api-gateway/Dockerfile
+M	api-gateway/pom.xml
+A	build.sh
+A	cache-infrastructure/Dockerfile
+M	cache-infrastructure/pom.xml
+A	cache-infrastructure/src/docker/config.json
+M	cache-infrastructure/src/main/java/io/vertx/blueprint/microservice/cache/impl/DefaultCounterServiceImpl.java
+M	docker-compose.yml
+A	inventory-microservice/Dockerfile
+M	inventory-microservice/pom.xml
+M	inventory-microservice/src/docker/config.json
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/impl/InventoryServiceImpl.java
+M	microservice-blueprint-common/src/main/asciidoc/enums.adoc
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb
+A	monitor-dashboard/Dockerfile
+M	monitor-dashboard/pom.xml
+M	monitor-dashboard/src/docker/config.json
+M	monitor-dashboard/src/main/java/io/vertx/blueprint/microservice/monitor/MonitorDashboardVerticle.java
+A	order-microservice/Dockerfile
+M	order-microservice/pom.xml
+M	order-microservice/src/docker/config.json
+A	order-microservice/src/docker/local.json
+M	pom.xml
+A	product-microservice/Dockerfile
+M	product-microservice/pom.xml
+M	product-microservice/src/docker/config.json
+A	product-microservice/src/docker/local.json
+A	shopping-cart-microservice/Dockerfile
+M	shopping-cart-microservice/pom.xml
+M	shopping-cart-microservice/src/docker/config.json
+A	shopping-cart-microservice/src/docker/local.json
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+M	shopping-ui/pom.xml
+A	shopping-ui/src/docker/config.json
+A	store-microservice/Dockerfile
+M	store-microservice/pom.xml
+M	store-microservice/src/docker/config.json
+A	store-microservice/src/docker/local.json
+907aeae5 Fix logical bugs about streaming carts
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/checkout_service.rb
+M	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/shopping_cart_service.rb
+2cbe0e49 Remove deprecated code
+D	payment-microservice/src/main/asciidoc/dataobjects.adoc
+D	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/SimulatePaymentProcessingVerticle.java
+844931bb Make api-gateway an individual service type
+M	api-gateway/src/docker/config.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+6cb91c0c Update frontend monitor dashboard
+A	docs/images/monitor-dashboard.png
+M	monitor-dashboard/README.md
+M	monitor-dashboard/src/docker/config.json
+M	monitor-dashboard/src/main/java/io/vertx/blueprint/microservice/monitor/MonitorDashboardVerticle.java
+A	monitor-dashboard/src/main/resources/webroot/.bowerrc
+A	monitor-dashboard/src/main/resources/webroot/app/app.js
+A	monitor-dashboard/src/main/resources/webroot/app/controller.js
+A	monitor-dashboard/src/main/resources/webroot/app/view/index.html
+A	monitor-dashboard/src/main/resources/webroot/app/view/logs.html
+A	monitor-dashboard/src/main/resources/webroot/app/view/metrics.html
+A	monitor-dashboard/src/main/resources/webroot/app/view/orders.html
+A	monitor-dashboard/src/main/resources/webroot/assets/css/main.css
+A	monitor-dashboard/src/main/resources/webroot/bower.json
+A	monitor-dashboard/src/main/resources/webroot/index.html
+c05bc91e Update api-gateway and doc structure
+M	README.md
+M	api-gateway/src/docker/config.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+A	docs/en/tutorial-deployment.md
+A	docs/en/tutorial-deployment.toc.md
+M	docs/en/tutorial.md
+A	docs/en/tutorial.toc.md
+A	docs/images/entire-architecture.png
+A	docs/images/ind-structure-01.png
+A	docs/images/rpc-inc-1.png
+24753ae5 Update components and fixed some issues
+M	README.md
+M	README.zh-cn.md
+M	TODO.md
+A	account-microservice/src/docker/config.json
+M	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/UserAccountVerticle.java
+M	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/api/RestUserAccountAPIVerticle.java
+M	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/JdbcAccountServiceImpl.java
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	cache-infrastructure/pom.xml
+A	inventory-microservice/src/docker/config.json
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	inventory-microservice/src/test/java/io/vertx/blueprint/microservice/inventory/InventoryApiTest.java
+A	microservice-blueprint-common/src/main/asciidoc/enums.adoc
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxEBProxy.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxProxyHandler.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/rxjava/AccountService.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/Account.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEventType.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/rx/BaseMicroserviceRxVerticle.java
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-common/o_auth2_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-order/order_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment/payment_query_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-product/product_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-store/store_crud_service.rb
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+M	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb
+A	monitor-dashboard/README.md
+M	order-microservice/src/docker/config.json
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/OrderVerticle.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/RawOrderDispatcher.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/api/RestOrderAPIVerticle.java
+M	product-microservice/src/docker/config.json
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductVerticle.java
+M	shopping-cart-microservice/pom.xml
+M	shopping-cart-microservice/src/docker/config.json
+A	shopping-cart-microservice/src/main/asciidoc/enums.adoc
+A	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutServiceVertxEBProxy.java
+A	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutServiceVertxProxyHandler.java
+A	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartServiceVertxEBProxy.java
+A	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartServiceVertxProxyHandler.java
+A	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/rxjava/CheckoutService.java
+A	shopping-cart-microservice/src/main/generated/io/vertx/blueprint/microservice/cart/rxjava/ShoppingCartService.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CartVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCartService.java
+D	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/SimpleCheckoutVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/api/RestShoppingAPIVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/CartEventDataSource.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+A	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/checkout_service-proxy.js
+A	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/checkout_service.js
+A	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/shopping_cart_service-proxy.js
+A	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart-js/shopping_cart_service.js
+A	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/checkout_service.rb
+A	shopping-cart-microservice/src/main/resources/vertx-blueprint-shopping-cart/shopping_cart_service.rb
+A	store-microservice/src/docker/config.json
+M	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreVerticle.java
+M	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/api/RestStoreAPIVerticle.java
+11692e2d Update api gateway with HTTPS, request dispatching and failure handling
+A	api-gateway/README.md
+M	api-gateway/pom.xml
+M	api-gateway/src/docker/config.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+A	api-gateway/src/main/resources/server.jks
+63f8a1d9 Update shopping cart service
+M	shopping-cart-microservice/src/main/asciidoc/dataobjects.adoc
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CartVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutService.java
+D	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/RestShoppingAPIVerticle.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCartService.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/api/RestShoppingAPIVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/ShoppingCartServiceImpl.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/SimpleCrudDataSource.java
+b77cefa3 Components refinement
+M	README.md
+A	README.zh-cn.md
+M	TODO.md
+M	docker-compose.yml
+M	inventory-microservice/pom.xml
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	monitor-dashboard/pom.xml
+A	monitor-dashboard/src/docker/config.json
+M	monitor-dashboard/src/main/java/io/vertx/blueprint/microservice/monitor/MonitorDashboardVerticle.java
+M	product-microservice/pom.xml
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+A	run.sh
+M	shopping-ui/src/main/java/io/vertx/blueprint/microservice/shopping/ui/ShoppingUIVerticle.java
+6c522eba Update api gateway and common component
+A	api-gateway/src/docker/config.json
+M	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	microservice-blueprint-common/pom.xml
+M	microservice-blueprint-common/src/main/asciidoc/dataobjects.adoc
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/common/rxjava/discovery/OAuth2Service.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductTupleConverter.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCart.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/discovery/OAuth2Service.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/discovery/impl/OAuth2ServiceImpl.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/ProductTuple.java
+A	microservice-blueprint-common/src/main/resources/META-INF/services/io.vertx.ext.discovery.spi.ServiceType
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-common-js/o_auth2_service.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-common/o_auth2_service.rb
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service-proxy.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-order-js/order_service.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-order/order_service.rb
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service-proxy.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment-js/payment_query_service.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-payment/payment_query_service.rb
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service-proxy.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-product-js/product_service.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-product/product_service.rb
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service-proxy.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-store-js/store_crud_service.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-store/store_crud_service.rb
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service-proxy.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account-js/account_service.js
+A	microservice-blueprint-common/src/main/resources/vertx-blueprint-user-account/account_service.rb
+fa716394 Modify CI test env
+M	.travis.yml
+A	inventory-microservice/src/test/java/io/vertx/blueprint/microservice/inventory/InventoryApiTest.java
+M	pom.xml
+5ef1a4fb Update multiple services
+A	account-microservice/README.md
+A	cache-infrastructure/README.md
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/CartEventConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/CheckoutResultConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/cart/ShoppingCartConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxEBProxy.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderServiceVertxProxyHandler.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/rxjava/OrderService.java
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/OrderService.java
+M	order-microservice/pom.xml
+M	order-microservice/src/docker/config.json
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/OrderVerticle.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/RawOrderDispatcher.java
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/api/RestOrderAPIVerticle.java
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/impl/OrderServiceImpl.java
+A	payment-microservice/README.md
+M	shopping-cart-microservice/pom.xml
+M	shopping-cart-microservice/src/docker/config.json
+e9b15c54 Update store service and code refined
+A	api-gateway/src/main/java/io/vertx/blueprint/microservice/gateway/APIGatewayVerticle.java
+M	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+M	microservice-blueprint-common/README.md
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/StoreCRUDService.java
+M	monitor-dashboard/pom.xml
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductVerticle.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+M	store-microservice/pom.xml
+D	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreOperationProcessor.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreVerticle.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/api/RestStoreAPIVerticle.java
+M	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/impl/StoreCRUDServiceImpl.java
+57c80380 Update inventory microservice
+M	inventory-microservice/pom.xml
+A	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryRestAPIVerticle.java
+A	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/InventoryService.java
+A	inventory-microservice/src/main/java/io/vertx/blueprint/microservice/inventory/impl/InventoryServiceImpl.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+A	shopping-cart-microservice/src/main/asciidoc/dataobjects.adoc
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CartVerticle.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+d65ff1eb Update shopping cart service
+M	microservice-blueprint-common/src/main/asciidoc/dataobjects.adoc
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEvent.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CartEventType.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutResult.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/ShoppingCart.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/cart/package-info.java
+M	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/SimulatePaymentProcessingVerticle.java
+M	shopping-cart-microservice/pom.xml
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutService.java
+M	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/CartEventDataSource.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/SimpleCrudDataSource.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/repository/impl/CartEventDataSourceImpl.java
+8f349044 Service structure refactored
+M	account-microservice/pom.xml
+R089	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/UserAccountVerticle.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/UserAccountVerticle.java
+R094	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/RestUserAccountAPIVerticle.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/api/RestUserAccountAPIVerticle.java
+D	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/package-info.java
+A	docker-compose.yml
+A	docs/en/tutorial.md
+A	docs/zh-cn/tutorial.zh-cn.md
+A	inventory-microservice/pom.xml
+M	microservice-blueprint-common/src/main/asciidoc/dataobjects.adoc
+R100	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/AccountConverter.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxEBProxy.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/AccountServiceVertxProxyHandler.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/account/rxjava/AccountService.java
+R092	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+R100	payment-microservice/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentConverter.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxEBProxy.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentQueryServiceVertxProxyHandler.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/payment/rxjava/PaymentQueryService.java
+R100	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxEBProxy.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductServiceVertxProxyHandler.java
+R086	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/common/entity/ProductTupleConverter.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/ProductTupleConverter.java
+R094	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxEBProxy.java
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreCRUDServiceVertxProxyHandler.java
+R100	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/StoreConverter.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/StoreConverter.java
+R100	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java
+R100	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/Account.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/Account.java
+R100	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java
+R100	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/package-info.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/account/package-info.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/rx/BaseMicroserviceRxVerticle.java
+R096	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/Order.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+R100	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/package-info.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/order/package-info.java
+R100	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/Payment.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/payment/Payment.java
+R100	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/PaymentQueryService.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/payment/PaymentQueryService.java
+R100	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/package-info.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/payment/package-info.java
+R100	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/Product.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+R095	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+R090	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/entity/ProductTuple.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/ProductTuple.java
+R100	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/package-info.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/product/package-info.java
+R100	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/Store.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/Store.java
+R100	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreCRUDService.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/StoreCRUDService.java
+R100	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/package-info.java	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/store/package-info.java
+M	pom.xml
+M	product-microservice/pom.xml
+R064	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductVerticle.java
+R063	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/RestProductAPIVerticle.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/api/RestProductAPIVerticle.java
+R084	checkout-microservice/pom.xml	shopping-cart-microservice/pom.xml
+R100	checkout-microservice/src/docker/config.json	shopping-cart-microservice/src/docker/config.json
+R083	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/CheckoutService.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/CheckoutService.java
+R076	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/RestShoppingAPIVerticle.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/RestShoppingAPIVerticle.java
+R091	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/SimpleCheckoutVerticle.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/SimpleCheckoutVerticle.java
+R096	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/impl/CheckoutServiceImpl.java	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/impl/CheckoutServiceImpl.java
+A	shopping-cart-microservice/src/main/java/io/vertx/blueprint/microservice/cart/package-info.java
+M	shopping-ui/pom.xml
+45de70d1 Update implementations and change structure
+M	README.md
+M	TODO.md
+R097	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestUserAccountAPIVerticle.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/RestUserAccountAPIVerticle.java
+A	api-gateway/pom.xml
+R084	settlement-microservice/pom.xml	checkout-microservice/pom.xml
+A	checkout-microservice/src/docker/config.json
+R061	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/SettlementService.java	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/CheckoutService.java
+R089	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestShoppingAPIVerticle.java	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/RestShoppingAPIVerticle.java
+A	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/SimpleCheckoutVerticle.java
+R091	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/impl/SettlementServiceImpl.java	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/impl/CheckoutServiceImpl.java
+A	checkout-microservice/src/main/java/io/vertx/blueprint/microservice/checkout/package-info.java
+D	common-rest-api/pom.xml
+D	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/EntireAPIVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/functional/Tuple2.java
+A	monitor-dashboard/src/main/java/io/vertx/blueprint/microservice/monitor/MonitorDashboardVerticle.java
+A	order-microservice/src/docker/config.json
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/RawOrderDispatcher.java
+M	pom.xml
+M	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+M	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java
+R085	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestProductAPIVerticle.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/RestProductAPIVerticle.java
+D	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/SimpleSettlementVerticle.java
+D	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/package-info.java
+M	shopping-ui/src/main/java/io/vertx/blueprint/microservice/shopping/ui/ShoppingUIVerticle.java
+A	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/rxjava/StoreCRUDService.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreCRUDService.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/StoreOperationProcessor.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/impl/StoreCRUDServiceImpl.java
+d5fa8caa Fix dependency issue
+M	common-rest-api/pom.xml
+M	monitor-dashboard/pom.xml
+M	recommendation-microservice/pom.xml
+M	shopping-ui/pom.xml
+M	store-microservice/pom.xml
+d9a877ff Refined implementations and project structure
+M	TODO.md
+R086	user-service/pom.xml	account-microservice/pom.xml
+R084	user-service/src/main/asciidoc/dataobjects.adoc	account-microservice/src/main/asciidoc/dataobjects.adoc
+R082	user-service/src/main/generated/io/vertx/blueprint/microservice/user/UserConverter.java	account-microservice/src/main/generated/io/vertx/blueprint/microservice/account/AccountConverter.java
+R068	user-service/src/main/java/io/vertx/blueprint/microservice/user/User.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/Account.java
+R055	user-service/src/main/java/io/vertx/blueprint/microservice/user/UserService.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/AccountService.java
+R072	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/JdbcUserServiceImpl.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/JdbcAccountServiceImpl.java
+R050	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/UserVerticle.java	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/impl/UserAccountVerticle.java
+A	account-microservice/src/main/java/io/vertx/blueprint/microservice/account/package-info.java
+M	common-rest-api/pom.xml
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestProductAPIVerticle.java
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestShoppingAPIVerticle.java
+R087	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestUserAPIVerticle.java	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestUserAccountAPIVerticle.java
+M	microservice-blueprint-common/src/main/asciidoc/dataobjects.adoc
+M	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/common/entity/ProductTupleConverter.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/entity/ProductTuple.java
+M	monitor-dashboard/pom.xml
+M	order-microservice/src/main/asciidoc/dataobjects.adoc
+M	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+M	payment-microservice/pom.xml
+M	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/SimulatePaymentProcessingVerticle.java
+M	pom.xml
+R096	product-service/pom.xml	product-microservice/pom.xml
+R100	product-service/src/docker/config.json	product-microservice/src/docker/config.json
+R082	product-service/src/main/asciidoc/dataobjects.adoc	product-microservice/src/main/asciidoc/dataobjects.adoc
+R083	product-service/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java
+R100	product-service/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java	product-microservice/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+R078	product-service/src/main/java/io/vertx/blueprint/microservice/product/Product.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+R100	product-service/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+R094	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+R100	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java
+R100	product-service/src/main/java/io/vertx/blueprint/microservice/product/package-info.java	product-microservice/src/main/java/io/vertx/blueprint/microservice/product/package-info.java
+R084	shopping-microservice/pom.xml	settlement-microservice/pom.xml
+R066	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/ShopService.java	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/SettlementService.java
+A	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/SimpleSettlementVerticle.java
+R091	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/impl/ShopServiceImpl.java	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/impl/SettlementServiceImpl.java
+A	settlement-microservice/src/main/java/io/vertx/blueprint/microservice/settlement/package-info.java
+D	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/SimpleShopVerticle.java
+D	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/package-info.java
+A	store-microservice/pom.xml
+A	store-microservice/src/main/asciidoc/dataobjects.adoc
+A	store-microservice/src/main/generated/io/vertx/blueprint/microservice/store/StoreConverter.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/Store.java
+A	store-microservice/src/main/java/io/vertx/blueprint/microservice/store/package-info.java
+D	user-service/src/main/java/io/vertx/blueprint/microservice/user/package-info.java
+501948b1 Update implementations
+M	TODO.md
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestProductAPIVerticle.java
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestShoppingAPIVerticle.java
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestUserAPIVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/functional/Functional.java
+R089	dashboard/pom.xml	monitor-dashboard/pom.xml
+M	order-microservice/pom.xml
+M	order-microservice/src/main/asciidoc/dataobjects.adoc
+M	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+A	payment-microservice/pom.xml
+A	payment-microservice/src/main/asciidoc/dataobjects.adoc
+A	payment-microservice/src/main/generated/io/vertx/blueprint/microservice/payment/PaymentConverter.java
+A	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/Payment.java
+A	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/PaymentQueryService.java
+A	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/SimulatePaymentProcessingVerticle.java
+A	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/impl/PaymentQueryServiceImpl.java
+A	payment-microservice/src/main/java/io/vertx/blueprint/microservice/payment/package-info.java
+M	pom.xml
+M	product-service/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+M	shopping-microservice/pom.xml
+M	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/ShopService.java
+M	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/SimpleShopVerticle.java
+M	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/impl/ShopServiceImpl.java
+M	shopping-ui/pom.xml
+A	shopping-ui/src/main/java/io/vertx/blueprint/microservice/shopping/ui/ShoppingUIVerticle.java
+M	user-service/pom.xml
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/UserService.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/UserVerticle.java
+7be4bdbc Add cache infrastructure component
+A	cache-infrastructure/pom.xml
+A	cache-infrastructure/src/main/java/io/vertx/blueprint/microservice/cache/CacheComponentVerticle.java
+A	cache-infrastructure/src/main/java/io/vertx/blueprint/microservice/cache/CounterService.java
+A	cache-infrastructure/src/main/java/io/vertx/blueprint/microservice/cache/impl/DefaultCounterServiceImpl.java
+A	cache-infrastructure/src/main/java/io/vertx/blueprint/microservice/cache/package-info.java
+699cf93b Update shopping component
+M	TODO.md
+M	shopping-microservice/pom.xml
+M	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/ShopService.java
+A	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/SimpleShopVerticle.java
+M	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/impl/ShopServiceImpl.java
+M	shopping-ui/pom.xml
+M	user-service/src/main/generated/io/vertx/blueprint/microservice/user/UserConverter.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/UserVerticle.java
+5df096bb Update product and REST component
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/EntireAPIVerticle.java
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestProductAPIVerticle.java
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestShoppingAPIVerticle.java
+M	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestUserAPIVerticle.java
+A	product-service/src/main/generated/io/vertx/blueprint/microservice/product/rxjava/ProductService.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java
+b1559ae8 Update microservice-blueprint-common part
+A	microservice-blueprint-common/src/main/asciidoc/dataobjects.adoc
+A	microservice-blueprint-common/src/main/generated/io/vertx/blueprint/microservice/common/entity/ProductTupleConverter.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/entity/ProductTuple.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/functional/Functional.java
+A	microservice-blueprint-common/src/test/java/io/vertx/blueprint/microservice/common/functional/FunctionalTest.java
+d3386b78 Update implementations
+M	TODO.md
+M	common-rest-api/pom.xml
+A	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/EntireAPIVerticle.java
+A	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestProductAPIVerticle.java
+R096	common-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestShoppingAPIVerticle.java	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestShoppingAPIVerticle.java
+R097	common-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestUserAPIVerticle.java	common-rest-api/src/main/java/io/vertx/blueprint/microservice/rest/RestUserAPIVerticle.java
+D	common-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestProductAPIVerticle.java
+M	microservice-blueprint-common/pom.xml
+M	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/package-info.java
+M	pom.xml
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java
+M	user-service/src/main/generated/io/vertx/blueprint/microservice/user/UserConverter.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/User.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/JdbcUserServiceImpl.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/UserVerticle.java
+b12251eb Update product service
+M	product-service/pom.xml
+A	product-service/src/docker/config.json
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+M	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+A	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductVerticle.java
+399834b4 Product and shopping service update
+A	TODO.md
+R092	user-rest-api/pom.xml	common-rest-api/pom.xml
+A	common-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestProductAPIVerticle.java
+A	common-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestShoppingAPIVerticle.java
+R096	user-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestUserAPIVerticle.java	common-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestUserAPIVerticle.java
+M	order-microservice/src/main/asciidoc/dataobjects.adoc
+M	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+M	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+M	pom.xml
+A	product-service/pom.xml
+A	product-service/src/main/asciidoc/dataobjects.adoc
+A	product-service/src/main/generated/io/vertx/blueprint/microservice/product/ProductConverter.java
+A	product-service/src/main/java/io/vertx/blueprint/microservice/product/Product.java
+A	product-service/src/main/java/io/vertx/blueprint/microservice/product/ProductService.java
+A	product-service/src/main/java/io/vertx/blueprint/microservice/product/impl/ProductServiceImpl.java
+A	product-service/src/main/java/io/vertx/blueprint/microservice/product/package-info.java
+A	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/ShopService.java
+A	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/impl/ShopServiceImpl.java
+A	shopping-microservice/src/main/java/io/vertx/blueprint/microservice/shopping/package-info.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/User.java
+M	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/JdbcUserServiceImpl.java
+64485f9b user service and common part implementation
+M	README.md
+M	microservice-blueprint-common/pom.xml
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/BaseMicroserviceVerticle.java
+A	microservice-blueprint-common/src/main/java/io/vertx/blueprint/microservice/common/RestAPIVerticle.java
+A	order-microservice/src/main/asciidoc/dataobjects.adoc
+A	order-microservice/src/main/generated/io/vertx/blueprint/microservice/order/OrderConverter.java
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/Order.java
+A	order-microservice/src/main/java/io/vertx/blueprint/microservice/order/package-info.java
+M	pom.xml
+A	user-rest-api/pom.xml
+A	user-rest-api/src/main/java/io/vertx/blueprint/microservice/user/RestUserAPIVerticle.java
+M	user-service/pom.xml
+M	user-service/src/main/asciidoc/dataobjects.adoc
+R079	user-service/src/main/generated/io/vertx/blueprint/microservice/user/entity/UserConverter.java	user-service/src/main/generated/io/vertx/blueprint/microservice/user/UserConverter.java
+R068	user-service/src/main/java/io/vertx/blueprint/microservice/user/entity/User.java	user-service/src/main/java/io/vertx/blueprint/microservice/user/User.java
+A	user-service/src/main/java/io/vertx/blueprint/microservice/user/UserService.java
+D	user-service/src/main/java/io/vertx/blueprint/microservice/user/entity/package-info.java
+A	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/JdbcUserServiceImpl.java
+A	user-service/src/main/java/io/vertx/blueprint/microservice/user/impl/UserVerticle.java
+A	user-service/src/main/java/io/vertx/blueprint/microservice/user/package-info.java
+955eca3f modify project structure
+M	README.md
+D	api-gateway-microservice/pom.xml
+R090	movies-ui/pom.xml	dashboard/pom.xml
+R089	users-microservice/pom.xml	order-microservice/pom.xml
+M	pom.xml
+A	shopping-microservice/pom.xml
+R089	movie-microservice/pom.xml	shopping-ui/pom.xml
+R088	consul-microservice/pom.xml	user-service/pom.xml
+A	user-service/src/main/asciidoc/dataobjects.adoc
+A	user-service/src/main/generated/io/vertx/blueprint/microservice/user/entity/UserConverter.java
+A	user-service/src/main/java/io/vertx/blueprint/microservice/user/entity/User.java
+A	user-service/src/main/java/io/vertx/blueprint/microservice/user/entity/package-info.java
+46406c5d initial project commit
+A	.gitignore
+A	.travis.yml
+A	LICENSE
+M	README.md
+A	api-gateway-microservice/pom.xml
+A	consul-microservice/pom.xml
+A	microservice-blueprint-common/README.md
+A	microservice-blueprint-common/pom.xml
+A	movie-microservice/pom.xml
+A	movies-ui/pom.xml
+A	pom.xml
+A	recommendation-microservice/pom.xml
+A	users-microservice/pom.xml
+7f7974cd Initial commit
+A	README.md

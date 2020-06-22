@@ -1,0 +1,1271 @@
+2bd55646 Merge https://github.com/instana/robot-shop into instana/robot-shop
+3ef8826f Initial commit
+A	README.md
+c4ce4129 Istio plays nice with MySQL now
+M	K8s/helm/templates/mysql-deployment.yaml
+b804d24e lowercase service name
+M	dispatch/src/main.go
+5cc6b7dc Merge pull request #25 from luebken/payment-svc
+dadce544 lowercase payment service
+M	payment/Dockerfile
+e79f7bfb remove autowrapt
+M	payment/payment.ini
+545dfce0 revert to manual init
+M	payment/payment.py
+M	payment/requirements.txt
+aa43baf9 bump version
+M	.env
+ca9210e1 fixed totally screwed logic
+M	load-gen/Dockerfile
+M	load-gen/entrypoint.sh
+106d8be5 remove debug
+M	web/default.conf.template
+3ea6e884 dont set anonymous user id
+M	web/static/js/controller.js
+9037af5d tidy up Go
+M	dispatch/Dockerfile
+D	dispatch/src/Gopkg.toml
+M	dispatch/src/main.go
+90ded13f updated documentation
+M	K8s/README.md
+M	K8s/helm/README.md
+M	README.md
+55560eff delete old descriptors
+D	K8s/descriptors/cart-deployment.yaml
+D	K8s/descriptors/cart-service.yaml
+D	K8s/descriptors/catalogue-deployment.yaml
+D	K8s/descriptors/catalogue-service.yaml
+D	K8s/descriptors/clusterrole.yaml
+D	K8s/descriptors/clusterrolebinding.yaml
+D	K8s/descriptors/dispatch-deployment.yaml
+D	K8s/descriptors/dispatch-service.yaml
+D	K8s/descriptors/mongodb-deployment.yaml
+D	K8s/descriptors/mongodb-service.yaml
+D	K8s/descriptors/mysql-deployment.yaml
+D	K8s/descriptors/mysql-service.yaml
+D	K8s/descriptors/payment-deployment.yaml
+D	K8s/descriptors/payment-service.yaml
+D	K8s/descriptors/podsecuritypolicy.yaml
+D	K8s/descriptors/rabbitmq-deployment.yaml
+D	K8s/descriptors/rabbitmq-service.yaml
+D	K8s/descriptors/ratings-deployment.yaml
+D	K8s/descriptors/ratings-service.yaml
+D	K8s/descriptors/redis-deployment.yaml
+D	K8s/descriptors/redis-service.yaml
+D	K8s/descriptors/serviceaccount.yaml
+D	K8s/descriptors/shipping-deployment.yaml
+D	K8s/descriptors/shipping-service.yaml
+D	K8s/descriptors/user-deployment.yaml
+D	K8s/descriptors/user-service.yaml
+D	K8s/descriptors/web-deployment.yaml
+D	K8s/descriptors/web-service.yaml
+bb2d25ab bump version
+M	K8s/helm/Chart.yaml
+ea8b2ed5 add psp option
+M	K8s/helm/templates/cart-deployment.yaml
+M	K8s/helm/templates/catalogue-deployment.yaml
+A	K8s/helm/templates/clusterrole.yaml
+A	K8s/helm/templates/clusterrolebinding.yaml
+M	K8s/helm/templates/dispatch-deployment.yaml
+M	K8s/helm/templates/mongodb-deployment.yaml
+M	K8s/helm/templates/mysql-deployment.yaml
+M	K8s/helm/templates/payment-deployment.yaml
+A	K8s/helm/templates/podsecuritypolicy.yaml
+M	K8s/helm/templates/rabbitmq-deployment.yaml
+M	K8s/helm/templates/ratings-deployment.yaml
+M	K8s/helm/templates/redis-deployment.yaml
+A	K8s/helm/templates/serviceaccount.yaml
+M	K8s/helm/templates/shipping-deployment.yaml
+M	K8s/helm/templates/user-deployment.yaml
+M	K8s/helm/templates/web-deployment.yaml
+M	K8s/helm/values.yaml
+66703804 Install robot-shop with a minimal pod security policy and associated RBAC resources
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+A	K8s/descriptors/clusterrole.yaml
+A	K8s/descriptors/clusterrolebinding.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/payment-deployment.yaml
+A	K8s/descriptors/podsecuritypolicy.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/ratings-deployment.yaml
+M	K8s/descriptors/redis-deployment.yaml
+A	K8s/descriptors/serviceaccount.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/web-deployment.yaml
+0b80f563 minor tweaks to web
+M	.env
+2455bc11 update paths
+M	web/Dockerfile
+M	web/default.conf.template
+M	web/entrypoint.sh
+A	web/static/images/placeholder.jpg
+M	web/static/index.html
+M	web/static/js/controller.js
+M	web/static/product.html
+28bd4947 add optional slowness
+M	catalogue/server.js
+b98e3ef7 add eum metadata
+M	web/static/js/controller.js
+fd22e29c add example
+M	K8s/helm/README.md
+68bde3ac tweak memory for mysql
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/helm/templates/mysql-deployment.yaml
+21a06cce docker compose for load
+M	README.md
+R100	docker-compose.load.yaml	docker-compose-load.yaml
+7c1aded7 Merge pull request #21 from instana/cedricziel-patch-1
+5fb487cd Add build context to enable building for load-gen
+M	docker-compose.load.yaml
+3520c27f Create load service docker-compose file
+A	docker-compose.load.yaml
+d29e677b fix typo
+M	K8s/helm/README.md
+94f10d89 add note about helm chart
+M	README.md
+9004b547 bump version
+M	.env
+6c83c107 Merge branch 'python-undo-manual'
+386c4ec7 remove compiled python
+D	payment/__pycache__/rabbitmq.cpython-36.pyc
+781aaa02 helm chart
+A	K8s/helm/Chart.yaml
+A	K8s/helm/README.md
+A	K8s/helm/templates/cart-deployment.yaml
+A	K8s/helm/templates/cart-service.yaml
+A	K8s/helm/templates/catalogue-deployment.yaml
+A	K8s/helm/templates/catalogue-service.yaml
+A	K8s/helm/templates/dispatch-deployment.yaml
+A	K8s/helm/templates/dispatch-service.yaml
+A	K8s/helm/templates/mongodb-deployment.yaml
+A	K8s/helm/templates/mongodb-service.yaml
+A	K8s/helm/templates/mysql-deployment.yaml
+A	K8s/helm/templates/mysql-service.yaml
+A	K8s/helm/templates/payment-deployment.yaml
+A	K8s/helm/templates/payment-service.yaml
+A	K8s/helm/templates/rabbitmq-deployment.yaml
+A	K8s/helm/templates/rabbitmq-service.yaml
+A	K8s/helm/templates/ratings-deployment.yaml
+A	K8s/helm/templates/ratings-service.yaml
+A	K8s/helm/templates/redis-deployment.yaml
+A	K8s/helm/templates/redis-service.yaml
+A	K8s/helm/templates/shipping-deployment.yaml
+A	K8s/helm/templates/shipping-service.yaml
+A	K8s/helm/templates/user-deployment.yaml
+A	K8s/helm/templates/user-service.yaml
+A	K8s/helm/templates/web-deployment.yaml
+A	K8s/helm/templates/web-service.yaml
+A	K8s/helm/values.yaml
+487b4c5f Python AutoTrace: Remove manual install
+M	payment/Dockerfile
+A	payment/__pycache__/rabbitmq.cpython-36.pyc
+M	payment/requirements.txt
+9aa376bd Merge pull request #19 from dusanugarkovic/rabbitmq-reconnect-fix
+5972124b fixed reconnection to rabbitmq in payment app
+M	payment/rabbitmq.py
+3ea4306e work around python sensor issue
+M	payment/Dockerfile
+M	payment/payment.ini
+M	payment/requirements.txt
+5ffe10db remove checks
+M	K8s/descriptors/payment-deployment.yaml
+49f12c25 tidy up build
+M	dispatch/Dockerfile
+M	dispatch/src/Gopkg.toml
+ee080ad2 remove pretty print
+M	cart/server.js
+e7bdf7ee add checks
+M	K8s/descriptors/payment-deployment.yaml
+7bbee036 rename istio file
+R080	K8s/Istio/destination.yaml	K8s/Istio/canary.yaml
+178f88b7 Istio canary test
+A	K8s/Istio/destination.yaml
+A	K8s/Istio/payment-deployment-fix.yaml
+M	K8s/descriptors/payment-deployment.yaml
+c6c5fb33 bump version
+M	.env
+5939f27e Prometheus usage
+M	README.md
+92b27cd0 added prometheus metrics to some services
+M	cart/package.json
+M	cart/server.js
+M	payment/payment.py
+M	payment/requirements.txt
+4f5e3883 bump version
+M	.env
+35ab1f6f update runtimes
+M	cart/Dockerfile
+M	catalogue/Dockerfile
+M	dispatch/Dockerfile
+M	mongo/catalogue.js
+M	payment/Dockerfile
+M	payment/requirements.txt
+M	ratings/Dockerfile
+M	user/Dockerfile
+b5f98f62 improved notes
+M	K8s/README.md
+M	README.md
+459d6cdf tidy up
+M	K8s/descriptors/mysql-service.yaml
+M	K8s/descriptors/rabbitmq-service.yaml
+2cfdb6e7 Istio tweaks
+M	K8s/Istio/gateway.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+R100	K8s/descriptors/resource-quota.yaml	K8s/resource-quota.yaml
+43a7d19b istio
+A	K8s/Istio/gateway.yaml
+M	K8s/descriptors/rabbitmq-service.yaml
+M	web/default.conf.template
+515c9130 openshift tweak
+M	payment/Dockerfile
+c05f5429 ARM
+M	README.md
+9b7632f6 fully auto python instrumentation
+M	payment/Dockerfile
+M	payment/payment.ini
+M	payment/requirements.txt
+82405c83 bump version
+M	.env
+5a3c9f96 uwsgi support
+M	payment/Dockerfile
+M	payment/payment.ini
+b66376a2 uwsgi added
+M	payment/Dockerfile
+A	payment/payment.ini
+M	payment/requirements.txt
+16121f63 bump version
+M	.env
+b46bd390 remove swarm deploy
+M	docker-compose.yaml
+4f53be99 autoscaling load generation
+M	load-gen/README.md
+M	load-gen/entrypoint.sh
+M	load-gen/load-gen.sh
+be5d74db tidy up link
+M	K8s/README.md
+0a555bda move script
+R100	K8s/autoscaling/autoscale.sh	K8s/autoscale.sh
+M	load-gen/README.md
+2800cfe2 fix path
+M	load-gen/README.md
+234d4356 fix typo
+M	README.md
+e5c10b59 autoscaling
+A	K8s/autoscaling/autoscale.sh
+D	K8s/autoscaling/cart-autoscaler.yaml
+D	K8s/autoscaling/catalogue-autoscaler.yaml
+D	K8s/autoscaling/dispatch-autoscaler.yaml
+D	K8s/autoscaling/payment-autoscaler.yaml
+D	K8s/autoscaling/ratings-autoscaler.yaml
+D	K8s/autoscaling/shipping-autoscaler.yaml
+D	K8s/autoscaling/user-autoscaler.yaml
+D	K8s/autoscaling/web-autoscaler.yaml
+R091	K8s/autoscaling/load-deployment.yaml	K8s/load-deployment.yaml
+M	README.md
+M	load-gen/README.md
+51f0c93e Merge pull request #15 from wiggzz/master
+8e1889b9 Add auto-scaling to relevant services (non-databases) and run the load tester to simulate load
+A	K8s/autoscaling/cart-autoscaler.yaml
+A	K8s/autoscaling/catalogue-autoscaler.yaml
+A	K8s/autoscaling/dispatch-autoscaler.yaml
+A	K8s/autoscaling/load-deployment.yaml
+A	K8s/autoscaling/payment-autoscaler.yaml
+A	K8s/autoscaling/ratings-autoscaler.yaml
+A	K8s/autoscaling/shipping-autoscaler.yaml
+A	K8s/autoscaling/user-autoscaler.yaml
+A	K8s/autoscaling/web-autoscaler.yaml
+A	K8s/descriptors/resource-quota.yaml
+M	load-gen/README.md
+44f572eb Add LoadBalancer to front end to expose it
+M	K8s/descriptors/web-service.yaml
+9485d7fc new helm chart
+M	K8s/README.md
+ab7b7cee page transitions
+M	web/static/eum-tmpl.html
+M	web/static/js/controller.js
+5d167a9f new helm chart
+M	README.md
+a6776e48 bump version
+M	.env
+767a8ba0 new instana library
+M	cart/package.json
+M	cart/server.js
+M	catalogue/package.json
+M	catalogue/server.js
+M	user/package.json
+M	user/server.js
+3776c79a improved network handling
+M	payment/rabbitmq.py
+a6897c27 move readme
+R100	K8s/instana/README.md	K8s/README.md
+c24b296f bump version
+M	.env
+2003a55f eum updated for 151
+M	docker-compose.yaml
+M	web/entrypoint.sh
+M	web/static/eum-tmpl.html
+7cc9a4bb Merge branch 'k8s-descriptors'
+552ff6ff tidy up K8s descriptors
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/cart-service.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/catalogue-service.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/dispatch-service.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mongodb-service.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/payment-service.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/rabbitmq-service.yaml
+M	K8s/descriptors/ratings-deployment.yaml
+M	K8s/descriptors/ratings-service.yaml
+M	K8s/descriptors/redis-deployment.yaml
+M	K8s/descriptors/redis-service.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/shipping-service.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/user-service.yaml
+M	K8s/descriptors/web-deployment.yaml
+M	K8s/descriptors/web-service.yaml
+e1cb205b Merge pull request #12 from dlbock/update-helm-install
+648f8c9e Merge pull request #13 from luebken/k8s-improvements
+c82a34a1 yaml space
+M	K8s/descriptors/user-deployment.yaml
+740b12e2 typo
+M	K8s/descriptors/cart-deployment.yaml
+4a20dcfc removed readme
+D	K8s/readme.md
+2442b046 reverted api version
+M	K8s/descriptors/cart-deployment.yaml
+db1b8b77 uncommented resource limits and requests
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/ratings-deployment.yaml
+M	K8s/descriptors/redis-deployment.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/web-deployment.yaml
+A	K8s/readme.md
+dcef4057 Update helm installation instructions slightly as the repo name has changed
+M	README.md
+47be4f25 Merge pull request #11 from luebken/k8s-improvements
+188dea5c removed unecessary yaml entries
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/cart-service.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/catalogue-service.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/dispatch-service.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mongodb-service.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/mysql-service.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/payment-service.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/rabbitmq-service.yaml
+M	K8s/descriptors/ratings-deployment.yaml
+M	K8s/descriptors/ratings-service.yaml
+M	K8s/descriptors/redis-deployment.yaml
+M	K8s/descriptors/redis-service.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/shipping-service.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/user-service.yaml
+M	K8s/descriptors/web-deployment.yaml
+M	K8s/descriptors/web-service.yaml
+6555f8de interpret backslashes
+M	load-gen/load-gen.sh
+4bcb5dca deployment tweaks
+A	OpenShift/README.md
+D	OpenShift/agent-deploy.sh
+M	OpenShift/deploy.sh
+D	OpenShift/instana-agent-os.yaml
+A	OpenShift/setup.sh
+e397725d safe check for env var
+M	load-gen/robot-shop.py
+e380b3c5 bump version and rebuild all images
+M	.env
+bec09f3d bump version
+M	.env
+8931b412 tidy up imports
+M	dispatch/Dockerfile
+M	dispatch/src/Gopkg.toml
+M	dispatch/src/main.go
+64c73077 tidy up exception handling
+M	payment/payment.py
+d434a011 tidy up
+M	payment/Dockerfile
+c4c8516c revised versions
+M	dispatch/src/Gopkg.toml
+1e86369f bump version
+M	.env
+b0261de4 new error request
+M	load-gen/entrypoint.sh
+M	load-gen/load-gen.sh
+M	load-gen/robot-shop.py
+47a85606 added logs to traces
+M	payment/payment.py
+61473b16 improved correlation via rabbitmq
+M	.env
+M	dispatch/Dockerfile
+M	dispatch/src/main.go
+M	payment/payment.py
+7a76c9db logging tidy up
+M	.env
+M	payment/payment.py
+M	ratings/composer.json
+M	ratings/html/api.php
+a5375311 changed php logging framework
+M	.env
+M	ratings/Dockerfile
+A	ratings/composer.json
+M	ratings/html/API.class.php
+M	ratings/html/api.php
+D	ratings/html/log4php.xml
+D	ratings/html/log4php/Logger.php
+D	ratings/html/log4php/LoggerAppender.php
+D	ratings/html/log4php/LoggerAppenderPool.php
+D	ratings/html/log4php/LoggerAutoloader.php
+D	ratings/html/log4php/LoggerConfigurable.php
+D	ratings/html/log4php/LoggerConfigurator.php
+D	ratings/html/log4php/LoggerException.php
+D	ratings/html/log4php/LoggerFilter.php
+D	ratings/html/log4php/LoggerHierarchy.php
+D	ratings/html/log4php/LoggerLayout.php
+D	ratings/html/log4php/LoggerLevel.php
+D	ratings/html/log4php/LoggerLocationInfo.php
+D	ratings/html/log4php/LoggerLoggingEvent.php
+D	ratings/html/log4php/LoggerMDC.php
+D	ratings/html/log4php/LoggerNDC.php
+D	ratings/html/log4php/LoggerReflectionUtils.php
+D	ratings/html/log4php/LoggerRoot.php
+D	ratings/html/log4php/LoggerThrowableInformation.php
+D	ratings/html/log4php/appenders/LoggerAppenderConsole.php
+D	ratings/html/log4php/appenders/LoggerAppenderDailyFile.php
+D	ratings/html/log4php/appenders/LoggerAppenderEcho.php
+D	ratings/html/log4php/appenders/LoggerAppenderFile.php
+D	ratings/html/log4php/appenders/LoggerAppenderFirePHP.php
+D	ratings/html/log4php/appenders/LoggerAppenderMail.php
+D	ratings/html/log4php/appenders/LoggerAppenderMailEvent.php
+D	ratings/html/log4php/appenders/LoggerAppenderMongoDB.php
+D	ratings/html/log4php/appenders/LoggerAppenderNull.php
+D	ratings/html/log4php/appenders/LoggerAppenderPDO.php
+D	ratings/html/log4php/appenders/LoggerAppenderPhp.php
+D	ratings/html/log4php/appenders/LoggerAppenderRollingFile.php
+D	ratings/html/log4php/appenders/LoggerAppenderSocket.php
+D	ratings/html/log4php/appenders/LoggerAppenderSyslog.php
+D	ratings/html/log4php/configurators/LoggerConfigurationAdapter.php
+D	ratings/html/log4php/configurators/LoggerConfigurationAdapterINI.php
+D	ratings/html/log4php/configurators/LoggerConfigurationAdapterPHP.php
+D	ratings/html/log4php/configurators/LoggerConfigurationAdapterXML.php
+D	ratings/html/log4php/configurators/LoggerConfiguratorDefault.php
+D	ratings/html/log4php/filters/LoggerFilterDenyAll.php
+D	ratings/html/log4php/filters/LoggerFilterLevelMatch.php
+D	ratings/html/log4php/filters/LoggerFilterLevelRange.php
+D	ratings/html/log4php/filters/LoggerFilterStringMatch.php
+D	ratings/html/log4php/helpers/LoggerFormattingInfo.php
+D	ratings/html/log4php/helpers/LoggerOptionConverter.php
+D	ratings/html/log4php/helpers/LoggerPatternParser.php
+D	ratings/html/log4php/helpers/LoggerUtils.php
+D	ratings/html/log4php/layouts/LoggerLayoutHtml.php
+D	ratings/html/log4php/layouts/LoggerLayoutPattern.php
+D	ratings/html/log4php/layouts/LoggerLayoutSerialized.php
+D	ratings/html/log4php/layouts/LoggerLayoutSimple.php
+D	ratings/html/log4php/layouts/LoggerLayoutTTCC.php
+D	ratings/html/log4php/layouts/LoggerLayoutXml.php
+D	ratings/html/log4php/pattern/LoggerPatternConverter.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterClass.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterCookie.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterDate.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterEnvironment.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterFile.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterLevel.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterLine.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterLiteral.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterLocation.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterLogger.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterMDC.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterMessage.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterMethod.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterNDC.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterNewLine.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterProcess.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterRelative.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterRequest.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterServer.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterSession.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterSessionID.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterSuperglobal.php
+D	ratings/html/log4php/pattern/LoggerPatternConverterThrowable.php
+D	ratings/html/log4php/renderers/LoggerRenderer.php
+D	ratings/html/log4php/renderers/LoggerRendererDefault.php
+D	ratings/html/log4php/renderers/LoggerRendererException.php
+D	ratings/html/log4php/renderers/LoggerRendererMap.php
+D	ratings/html/log4php/xml/log4php.dtd
+c7547e61 more logging
+M	cart/server.js
+M	catalogue/server.js
+M	ratings/html/API.class.php
+M	ratings/html/api.php
+A	ratings/html/log4php.xml
+A	ratings/html/log4php/Logger.php
+A	ratings/html/log4php/LoggerAppender.php
+A	ratings/html/log4php/LoggerAppenderPool.php
+A	ratings/html/log4php/LoggerAutoloader.php
+A	ratings/html/log4php/LoggerConfigurable.php
+A	ratings/html/log4php/LoggerConfigurator.php
+A	ratings/html/log4php/LoggerException.php
+A	ratings/html/log4php/LoggerFilter.php
+A	ratings/html/log4php/LoggerHierarchy.php
+A	ratings/html/log4php/LoggerLayout.php
+A	ratings/html/log4php/LoggerLevel.php
+A	ratings/html/log4php/LoggerLocationInfo.php
+A	ratings/html/log4php/LoggerLoggingEvent.php
+A	ratings/html/log4php/LoggerMDC.php
+A	ratings/html/log4php/LoggerNDC.php
+A	ratings/html/log4php/LoggerReflectionUtils.php
+A	ratings/html/log4php/LoggerRoot.php
+A	ratings/html/log4php/LoggerThrowableInformation.php
+A	ratings/html/log4php/appenders/LoggerAppenderConsole.php
+A	ratings/html/log4php/appenders/LoggerAppenderDailyFile.php
+A	ratings/html/log4php/appenders/LoggerAppenderEcho.php
+A	ratings/html/log4php/appenders/LoggerAppenderFile.php
+A	ratings/html/log4php/appenders/LoggerAppenderFirePHP.php
+A	ratings/html/log4php/appenders/LoggerAppenderMail.php
+A	ratings/html/log4php/appenders/LoggerAppenderMailEvent.php
+A	ratings/html/log4php/appenders/LoggerAppenderMongoDB.php
+A	ratings/html/log4php/appenders/LoggerAppenderNull.php
+A	ratings/html/log4php/appenders/LoggerAppenderPDO.php
+A	ratings/html/log4php/appenders/LoggerAppenderPhp.php
+A	ratings/html/log4php/appenders/LoggerAppenderRollingFile.php
+A	ratings/html/log4php/appenders/LoggerAppenderSocket.php
+A	ratings/html/log4php/appenders/LoggerAppenderSyslog.php
+A	ratings/html/log4php/configurators/LoggerConfigurationAdapter.php
+A	ratings/html/log4php/configurators/LoggerConfigurationAdapterINI.php
+A	ratings/html/log4php/configurators/LoggerConfigurationAdapterPHP.php
+A	ratings/html/log4php/configurators/LoggerConfigurationAdapterXML.php
+A	ratings/html/log4php/configurators/LoggerConfiguratorDefault.php
+A	ratings/html/log4php/filters/LoggerFilterDenyAll.php
+A	ratings/html/log4php/filters/LoggerFilterLevelMatch.php
+A	ratings/html/log4php/filters/LoggerFilterLevelRange.php
+A	ratings/html/log4php/filters/LoggerFilterStringMatch.php
+A	ratings/html/log4php/helpers/LoggerFormattingInfo.php
+A	ratings/html/log4php/helpers/LoggerOptionConverter.php
+A	ratings/html/log4php/helpers/LoggerPatternParser.php
+A	ratings/html/log4php/helpers/LoggerUtils.php
+A	ratings/html/log4php/layouts/LoggerLayoutHtml.php
+A	ratings/html/log4php/layouts/LoggerLayoutPattern.php
+A	ratings/html/log4php/layouts/LoggerLayoutSerialized.php
+A	ratings/html/log4php/layouts/LoggerLayoutSimple.php
+A	ratings/html/log4php/layouts/LoggerLayoutTTCC.php
+A	ratings/html/log4php/layouts/LoggerLayoutXml.php
+A	ratings/html/log4php/pattern/LoggerPatternConverter.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterClass.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterCookie.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterDate.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterEnvironment.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterFile.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterLevel.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterLine.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterLiteral.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterLocation.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterLogger.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterMDC.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterMessage.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterMethod.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterNDC.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterNewLine.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterProcess.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterRelative.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterRequest.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterServer.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterSession.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterSessionID.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterSuperglobal.php
+A	ratings/html/log4php/pattern/LoggerPatternConverterThrowable.php
+A	ratings/html/log4php/renderers/LoggerRenderer.php
+A	ratings/html/log4php/renderers/LoggerRendererDefault.php
+A	ratings/html/log4php/renderers/LoggerRendererException.php
+A	ratings/html/log4php/renderers/LoggerRendererMap.php
+A	ratings/html/log4php/xml/log4php.dtd
+M	user/server.js
+fffa081d opentracing logs
+M	payment/payment.py
+6bf96e9b improved error handling
+M	cart/server.js
+8e2cb334 new version of dep
+M	dispatch/Dockerfile
+e874b666 improved logging and error handling
+M	shipping/src/main/java/org/steveww/spark/Main.java
+d08e90c5 improved logging and error handling
+M	cart/server.js
+M	payment/payment.py
+M	user/server.js
+fb09bf54 nodejs logging
+M	.env
+M	cart/package.json
+M	cart/server.js
+M	catalogue/package.json
+M	catalogue/server.js
+M	user/package.json
+M	user/server.js
+9524d3a3 start to add logging
+M	cart/package.json
+M	cart/server.js
+29d24e23 add name
+M	load-gen/load-gen.sh
+076ee7c2 pull first
+M	load-gen/load-gen.sh
+86bd7704 configure payment gateway
+M	.env
+M	docker-compose.yaml
+M	payment/payment.py
+M	web/static/payment.html
+e66160f9 bump version
+M	.env
+7e4b55b1 improve script config
+M	load-gen/load-gen.sh
+1a500933 new version of spark due to security
+M	shipping/pom.xml
+34663f4e bumped version
+M	.env
+0f8ce17d Merge pull request #10 from instana/python-opentracing-2.0
+e82e8c42 Update to Python OT 2.0 call style
+M	payment/payment.py
+ca6a0c6e improved layout
+M	web/static/css/style.css
+32ad66ac typo
+M	load-gen/load-gen.sh
+d435d2b4 added background option
+M	load-gen/load-gen.sh
+bfec48af set env var for agent
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/user-deployment.yaml
+c474b8e4 extra capabilities
+M	K8s/descriptors/mysql-deployment.yaml
+M	docker-compose.yaml
+3e92ab4c K8s RBAC with helm
+M	README.md
+4ef9f2a7 limit java memory
+M	shipping/Dockerfile
+034596ff fixed container name
+M	K8s/descriptors/ratings-deployment.yaml
+5c2e57ba fixed port number
+M	K8s/descriptors/ratings-service.yaml
+025ee375 added PHP to the list
+M	web/static/splash.html
+abfff0d1 improved docs
+M	README.md
+bb2cbd59 Merge branch 'php'
+d1863f3f merge php
+M	.env
+c5d52596 new PHP service
+A	K8s/descriptors/ratings-deployment.yaml
+A	K8s/descriptors/ratings-service.yaml
+c8ae638d rename image
+M	K8s/descriptors/mysql-deployment.yaml
+b82d793c new PHP ratings service
+M	.env
+M	docker-compose.yaml
+M	load-gen/robot-shop.py
+R100	shipping/database/Dockerfile	mysql/Dockerfile
+R100	shipping/database/config.sh	mysql/config.sh
+R100	shipping/database/convert.sh	mysql/convert.sh
+R100	shipping/database/scripts/10-dump.sql.gz	mysql/scripts/10-dump.sql.gz
+A	mysql/scripts/20-ratings.sql
+R100	shipping/database/scripts/99-finished.sh	mysql/scripts/99-finished.sh
+A	ratings/Dockerfile
+A	ratings/html/.htaccess
+A	ratings/html/API.class.php
+A	ratings/html/api.php
+A	ratings/html/info.php
+A	ratings/status.conf
+R100	shipping/service/Dockerfile	shipping/Dockerfile
+R100	shipping/service/pom.xml	shipping/pom.xml
+R100	shipping/service/src/main/java/org/steveww/spark/Location.java	shipping/src/main/java/org/steveww/spark/Location.java
+R100	shipping/service/src/main/java/org/steveww/spark/Main.java	shipping/src/main/java/org/steveww/spark/Main.java
+R100	shipping/service/src/main/java/org/steveww/spark/Ship.java	shipping/src/main/java/org/steveww/spark/Ship.java
+M	web/Dockerfile
+M	web/default.conf.template
+M	web/static/css/style.css
+M	web/static/js/controller.js
+M	web/static/product.html
+61b7e020 docker-compose pull
+M	README.md
+78e79fff tidy up ports
+M	docker-compose.yaml
+e6d69c05 improve notes
+M	load-gen/load-gen.sh
+943c4603 bumped version
+M	.env
+71ef86d2 Merge branch 'master' of https://github.com/instana/robot-shop
+b0432683 option to discard logs
+M	load-gen/entrypoint.sh
+M	load-gen/load-gen.sh
+2962e4ec Add dep stuff to gitignore + bump golang sensor for dispatch service
+M	.gitignore
+M	dispatch/src/Gopkg.toml
+e54e0621 Merge pull request #8 from instana/dispatch-refactor
+e9777164 pinned to 3.6 and updated to OT 2.0
+M	payment/Dockerfile
+M	payment/payment.py
+40fdd301 Merge branch 'master' of github.com:instana/robot-shop into dispatch-refactor
+5d705bc9 Introduce dep + pin dependency versions
+M	dispatch/Dockerfile
+A	dispatch/src/Gopkg.toml
+e8aa2496 pinned to 3.6 due to 3.7 library issues
+M	load-gen/Dockerfile
+d754fa3c updated K8s notes
+M	README.md
+f0e3b772 bump version
+M	.env
+43a3d794 added errors
+M	dispatch/src/main.go
+cb898f04 use prepared statements
+M	.env
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+ac05aa62 move delay to separate span
+M	payment/payment.py
+fe2e165e optional delay
+M	.env
+M	payment/payment.py
+c4a093a4 Merge pull request #7 from instana/loadgen-docker
+214db13d Adding a note to run the loadgen script directly as a container
+M	load-gen/README.md
+a554a4a7 Merge pull request #6 from instana/dcos-update
+f0357bfe reduced cpu requirements; added deploy script
+A	DCOS/deploy.sh
+A	DCOS/destroy.sh
+R093	DCOS/cart.json	DCOS/manifest/cart.json
+R093	DCOS/catalogue.json	DCOS/manifest/catalogue.json
+R091	DCOS/dispatch.json	DCOS/manifest/dispatch.json
+R092	DCOS/mongodb.json	DCOS/manifest/mongodb.json
+R092	DCOS/mysql.json	DCOS/manifest/mysql.json
+R093	DCOS/payment.json	DCOS/manifest/payment.json
+R093	DCOS/rabbitmq.json	DCOS/manifest/rabbitmq.json
+R092	DCOS/redis.json	DCOS/manifest/redis.json
+R094	DCOS/shipping.json	DCOS/manifest/shipping.json
+R093	DCOS/user.json	DCOS/manifest/user.json
+R094	DCOS/web.json	DCOS/manifest/web.json
+012a828d tweaked memory settings
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+85476099 increased memory limit for RabbitMQ
+M	K8s/descriptors/rabbitmq-deployment.yaml
+5a1776e0 bump version after a few fixes
+M	.env
+7b794fb5 downgrade python
+M	payment/Dockerfile
+14da470a fixed MySQL shutdown
+M	shipping/database/Dockerfile
+M	shipping/database/scripts/99-finished.sh
+d3323504 new agent install
+A	K8s/instana/README.md
+D	K8s/instana/instana-agent.yaml
+D	K8s/instana/label.sh
+7f3c7eb1 added resources
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/redis-deployment.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/web-deployment.yaml
+7eafcadc naming convention and variable load
+M	load-gen/Dockerfile
+A	load-gen/entrypoint.sh
+M	load-gen/load-gen.sh
+D	load-gen/run.sh
+e56116bf Merge pull request #4 from kcrawley/dcos_implementation
+d0cb3e5e switch tag to latest
+M	DCOS/cart.json
+M	DCOS/catalogue.json
+M	DCOS/dispatch.json
+M	DCOS/mongodb.json
+M	DCOS/mysql.json
+M	DCOS/payment.json
+M	DCOS/shipping.json
+M	DCOS/user.json
+M	DCOS/web.json
+81742b4a added DCOS manifests and readme blurb
+A	DCOS/cart.json
+A	DCOS/catalogue.json
+A	DCOS/dispatch.json
+A	DCOS/mongodb.json
+A	DCOS/mysql.json
+A	DCOS/payment.json
+A	DCOS/rabbitmq.json
+A	DCOS/redis.json
+A	DCOS/shipping.json
+A	DCOS/user.json
+A	DCOS/web.json
+M	README.md
+126f531e added fallback defaults for env vars
+M	dispatch/src/main.go
+M	payment/payment.py
+M	payment/rabbitmq.py
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+34880c62 Merge pull request #3 from kcrawley/dcos_implementation
+da5c9144 Merge branch 'master' into dcos_implementation
+14d7e753 bump version
+M	.env
+0a72d0ba utilize ENV for most endpoint hostnames
+M	cart/server.js
+M	dispatch/Dockerfile
+M	dispatch/src/main.go
+M	payment/rabbitmq.py
+M	shipping/service/Dockerfile
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+M	user/server.js
+M	web/Dockerfile
+R085	web/default.conf	web/default.conf.template
+M	web/entrypoint.sh
+070ccd21 fixed typo
+M	.env
+M	web/entrypoint.sh
+96f752a2 fixed permissions
+M	web/entrypoint.sh
+16b4a20d use .env file
+M	load-gen/load-gen.sh
+a7c78689 updated link
+M	README.md
+f9eb446c improved minikube notes
+M	README.md
+88e0119a improved readme
+M	README.md
+c0ba0fcb OpenShift deployment
+A	OpenShift/agent-deploy.sh
+A	OpenShift/deploy.sh
+A	OpenShift/instana-agent-os.yaml
+535dd40e tidy up environment
+M	.env
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/cart-service.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/catalogue-service.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/dispatch-service.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mongodb-service.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/mysql-service.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/payment-service.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/rabbitmq-service.yaml
+M	K8s/descriptors/redis-deployment.yaml
+M	K8s/descriptors/redis-service.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/shipping-service.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/user-service.yaml
+M	K8s/descriptors/web-deployment.yaml
+M	K8s/descriptors/web-service.yaml
+M	docker-compose.yaml
+M	payment/Dockerfile
+M	payment/docker-compose.yaml
+a6ccf3e7 fixed case
+M	shipping/service/Dockerfile
+3c103957 new image version
+M	K8s/descriptors/cart-deployment.yaml
+M	K8s/descriptors/cart-service.yaml
+M	K8s/descriptors/catalogue-deployment.yaml
+M	K8s/descriptors/catalogue-service.yaml
+M	K8s/descriptors/dispatch-deployment.yaml
+M	K8s/descriptors/dispatch-service.yaml
+M	K8s/descriptors/mongodb-deployment.yaml
+M	K8s/descriptors/mongodb-service.yaml
+M	K8s/descriptors/mysql-deployment.yaml
+M	K8s/descriptors/mysql-service.yaml
+M	K8s/descriptors/payment-deployment.yaml
+M	K8s/descriptors/payment-service.yaml
+M	K8s/descriptors/rabbitmq-deployment.yaml
+M	K8s/descriptors/rabbitmq-service.yaml
+M	K8s/descriptors/redis-deployment.yaml
+M	K8s/descriptors/redis-service.yaml
+M	K8s/descriptors/shipping-deployment.yaml
+M	K8s/descriptors/shipping-service.yaml
+M	K8s/descriptors/user-deployment.yaml
+M	K8s/descriptors/user-service.yaml
+M	K8s/descriptors/web-deployment.yaml
+M	K8s/descriptors/web-service.yaml
+7a52e329 reorganisation
+R100	K8s/cart-deployment.yaml	K8s/descriptors/cart-deployment.yaml
+R100	K8s/cart-service.yaml	K8s/descriptors/cart-service.yaml
+R100	K8s/catalogue-deployment.yaml	K8s/descriptors/catalogue-deployment.yaml
+R100	K8s/catalogue-service.yaml	K8s/descriptors/catalogue-service.yaml
+R100	K8s/dispatch-deployment.yaml	K8s/descriptors/dispatch-deployment.yaml
+R100	K8s/dispatch-service.yaml	K8s/descriptors/dispatch-service.yaml
+R100	K8s/mongodb-deployment.yaml	K8s/descriptors/mongodb-deployment.yaml
+R100	K8s/mongodb-service.yaml	K8s/descriptors/mongodb-service.yaml
+R100	K8s/mysql-deployment.yaml	K8s/descriptors/mysql-deployment.yaml
+R100	K8s/mysql-service.yaml	K8s/descriptors/mysql-service.yaml
+R100	K8s/payment-deployment.yaml	K8s/descriptors/payment-deployment.yaml
+R100	K8s/payment-service.yaml	K8s/descriptors/payment-service.yaml
+R100	K8s/rabbitmq-deployment.yaml	K8s/descriptors/rabbitmq-deployment.yaml
+R100	K8s/rabbitmq-service.yaml	K8s/descriptors/rabbitmq-service.yaml
+R100	K8s/redis-deployment.yaml	K8s/descriptors/redis-deployment.yaml
+R100	K8s/redis-service.yaml	K8s/descriptors/redis-service.yaml
+R100	K8s/shipping-deployment.yaml	K8s/descriptors/shipping-deployment.yaml
+R100	K8s/shipping-service.yaml	K8s/descriptors/shipping-service.yaml
+R100	K8s/user-deployment.yaml	K8s/descriptors/user-deployment.yaml
+R100	K8s/user-service.yaml	K8s/descriptors/user-service.yaml
+R100	K8s/web-deployment.yaml	K8s/descriptors/web-deployment.yaml
+R100	K8s/web-service.yaml	K8s/descriptors/web-service.yaml
+R100	instana/instana-agent.yaml	K8s/instana/instana-agent.yaml
+R100	instana/label.sh	K8s/instana/label.sh
+292900dc added docker swarm
+A	Swarm/create-swarm.sh
+A	Swarm/deploy.sh
+A	Swarm/instana-agent.sh
+M	docker-compose.yaml
+7cfc66d5 new release
+M	.env
+ac21df7d Merge branch 'master' of https://github.com/instana/robot-shop
+668e5389 Support for on prem eum
+M	README.md
+M	web/entrypoint.sh
+M	web/static/eum-tmpl.html
+9109b2c9 Merge pull request #1 from instana/add-link-to-blog
+cf5b5bab Add link to blog in README
+M	README.md
+b0ebe353 changed to NodePort
+M	K8s/web-service.yaml
+eb05ce60 changed docker registry
+M	README.md
+228354df changed docker registry
+M	.env
+M	K8s/cart-deployment.yaml
+M	K8s/cart-service.yaml
+M	K8s/catalogue-deployment.yaml
+M	K8s/catalogue-service.yaml
+M	K8s/dispatch-deployment.yaml
+M	K8s/dispatch-service.yaml
+M	K8s/mongodb-deployment.yaml
+M	K8s/mongodb-service.yaml
+M	K8s/mysql-deployment.yaml
+M	K8s/mysql-service.yaml
+M	K8s/payment-deployment.yaml
+M	K8s/payment-service.yaml
+M	K8s/rabbitmq-deployment.yaml
+M	K8s/rabbitmq-service.yaml
+M	K8s/redis-deployment.yaml
+M	K8s/redis-service.yaml
+M	K8s/shipping-deployment.yaml
+M	K8s/shipping-service.yaml
+M	K8s/user-deployment.yaml
+M	K8s/user-service.yaml
+M	K8s/web-deployment.yaml
+M	K8s/web-service.yaml
+dc9b8379 moved repo
+M	web/static/splash.html
+8fad5ab6 fixed port number
+M	README.md
+0a9b0935 add check for IP address
+M	load-gen/run.sh
+bbcce740 end user monitoring
+M	K8s/web-deployment.yaml
+f5c9ee59 added favicon
+M	web/static/index.html
+A	web/static/media/instana_icon_square.png
+72d339e8 new rev
+M	.env
+0ae34bcf improved flow
+M	load-gen/robot-shop.py
+M	payment/payment.py
+M	web/static/js/controller.js
+547b0637 ignore private files
+M	.gitignore
+78732ffc ignore more files
+D	instana/instana-agent-private.yaml
+5759983b end user monitoring
+M	README.md
+M	docker-compose.yaml
+M	web/Dockerfile
+M	web/default.conf
+A	web/entrypoint.sh
+A	web/static/empty.html
+A	web/static/eum-tmpl.html
+M	web/static/index.html
+M	web/static/js/controller.js
+449e43d0 load generation
+M	README.md
+M	load-gen/load-gen.sh
+M	load-gen/robot-shop.py
+94edb20b extra call for load gen
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+c477f5d5 K8s node label util
+A	instana/label.sh
+69ebede8 order history
+M	payment/payment.py
+M	user/server.js
+M	web/static/js/controller.js
+M	web/static/login.html
+78ca6681 data tweaks
+M	mongo/catalogue.js
+2ee925ae added nginx
+M	web/static/splash.html
+ad8a5909 Google Compute
+M	README.md
+d8689357 bug fix
+M	load-gen/build.sh
+1ce49640 added instructions
+A	load-gen/README.md
+979b5c83 improved error checking
+M	load-gen/run.sh
+ca342780 load gen started
+A	load-gen/Dockerfile
+A	load-gen/build.sh
+A	load-gen/load-gen.sh
+A	load-gen/requirements.txt
+A	load-gen/robot-shop.py
+A	load-gen/run.sh
+75e4405f point release
+M	.env
+71b9be4e minor fixes
+M	web/static/css/style.css
+M	web/static/splash.html
+8ff6f72c tidy up
+M	web/static/cart.html
+M	web/static/login.html
+M	web/static/payment.html
+M	web/static/product.html
+7dfa988a complete instructions
+M	README.md
+A	instana/instana-agent.yaml
+85cec279 build config
+A	.env
+M	docker-compose.yaml
+9448baf2 tidy up json generation
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+A	shipping/service/src/main/java/org/steveww/spark/Ship.java
+87a23b15 Haversine calculation
+M	shipping/service/src/main/java/org/steveww/spark/Location.java
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+bfe31d11 make more of a splash
+M	web/static/css/style.css
+A	web/static/media/graph.png
+M	web/static/splash.html
+3f5034a1 tracing tweaks
+M	cart/server.js
+M	catalogue/server.js
+M	dispatch/src/main.go
+M	payment/payment.py
+M	payment/rabbitmq.py
+M	user/server.js
+e778bd7f added search feature
+M	web/static/index.html
+M	web/static/js/controller.js
+A	web/static/search.html
+33dae3b6 spelling
+M	web/static/splash.html
+a8a5085d Kubernetes deployment
+A	K8s/cart-deployment.yaml
+A	K8s/cart-service.yaml
+A	K8s/catalogue-deployment.yaml
+A	K8s/catalogue-service.yaml
+A	K8s/dispatch-deployment.yaml
+A	K8s/dispatch-service.yaml
+A	K8s/mongodb-deployment.yaml
+A	K8s/mongodb-service.yaml
+A	K8s/mysql-deployment.yaml
+A	K8s/mysql-service.yaml
+A	K8s/payment-deployment.yaml
+A	K8s/payment-service.yaml
+A	K8s/rabbitmq-deployment.yaml
+A	K8s/rabbitmq-service.yaml
+A	K8s/redis-deployment.yaml
+A	K8s/redis-service.yaml
+A	K8s/shipping-deployment.yaml
+A	K8s/shipping-service.yaml
+A	K8s/user-deployment.yaml
+A	K8s/user-service.yaml
+A	K8s/web-deployment.yaml
+A	K8s/web-service.yaml
+417ffb46 tracing fixes
+M	cart/package.json
+M	catalogue/server.js
+M	dispatch/Dockerfile
+M	dispatch/src/main.go
+M	docker-compose.yaml
+M	payment/payment.py
+M	user/package.json
+M	user/server.js
+c333b822 new products and tweaks
+M	mongo/catalogue.js
+M	web/static/cart.html
+M	web/static/css/style.css
+M	web/static/js/controller.js
+M	web/static/payment.html
+M	web/static/product.html
+M	web/static/splash.html
+bc75e8d9 added sort
+M	catalogue/server.js
+152c4ab6 added graphics
+A	web/static/images/C3P0.jpg
+A	web/static/images/EVE-1.jpg
+A	web/static/images/HAL-1.jpg
+A	web/static/images/HHGTTG.jpg
+A	web/static/images/K9.jpg
+A	web/static/images/PB-1.jpg
+A	web/static/images/R2D2.jpg
+A	web/static/images/RD-10.jpg
+A	web/static/images/ROB-1.jpg
+A	web/static/images/STAN-1.jpg
+A	web/static/images/STNG.jpg
+a351025c added user to order
+M	dispatch/src/main.go
+M	payment/payment.py
+M	web/static/js/controller.js
+822250a9 dispatch added
+A	dispatch/Dockerfile
+A	dispatch/docker-compose.yaml
+A	dispatch/src/main.go
+M	docker-compose.yaml
+M	payment/docker-compose.yaml
+M	payment/rabbitmq.py
+M	shipping/database/scripts/10-dump.sql.gz
+M	web/static/cart.html
+M	web/static/js/controller.js
+76122b89 payment finished
+M	cart/server.js
+M	docker-compose.yaml
+M	payment/Dockerfile
+A	payment/docker-compose.yaml
+M	payment/payment.py
+A	payment/rabbitmq.py
+M	payment/requirements.txt
+M	web/static/css/style.css
+M	web/static/js/controller.js
+M	web/static/payment.html
+689a88cf refactor
+M	cart/server.js
+0dc55b87 payment started
+M	docker-compose.yaml
+A	payment/Dockerfile
+A	payment/payment.py
+A	payment/requirements.txt
+M	web/default.conf
+M	web/static/cart.html
+M	web/static/js/controller.js
+M	web/static/payment.html
+5539d06b shipping complete
+M	cart/server.js
+M	mongo/catalogue.js
+M	shipping/service/pom.xml
+M	shipping/service/src/main/java/org/steveww/spark/Location.java
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+M	web/static/cart.html
+M	web/static/index.html
+M	web/static/js/controller.js
+A	web/static/payment.html
+M	web/static/product.html
+M	web/static/shipping.html
+fff11168 changed database abstraction
+M	shipping/service/pom.xml
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+49c4e19c more shipping
+M	docker-compose.yaml
+A	shipping/service/src/main/java/org/steveww/spark/Location.java
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+M	web/static/cart.html
+M	web/static/js/controller.js
+M	web/static/shipping.html
+fa4dd009 added autocomplete
+M	web/static/index.html
+53495798 improved query
+M	shipping/service/src/main/java/org/steveww/spark/Main.java
+6e772408 added start up dependency
+M	docker-compose.yaml
+d24011c5 adding autocomplete
+A	web/static/css/auto-complete.css
+A	web/static/js/auto-complete.js
+9914c0f6 reduced countries
+D	shipping/database/scripts/00-init-schema.sql
+D	shipping/database/scripts/10-data.sql.gz
+A	shipping/database/scripts/10-dump.sql.gz
+d2949756 started shipping module
+M	docker-compose.yaml
+R100	instana/instana-agent-private.yml	instana/instana-agent-private.yaml
+D	mongo/mongo-dep.yaml
+D	mongo/mongo-svc.yaml
+A	shipping/database/Dockerfile
+A	shipping/database/config.sh
+A	shipping/database/convert.sh
+A	shipping/database/scripts/00-init-schema.sql
+A	shipping/database/scripts/10-data.sql.gz
+A	shipping/database/scripts/99-finished.sh
+R100	shipping/Dockerfile	shipping/service/Dockerfile
+R086	shipping/pom.xml	shipping/service/pom.xml
+A	shipping/service/src/main/java/org/steveww/spark/Main.java
+D	shipping/shipping-dep.yaml
+D	shipping/shipping-svc.yaml
+D	shipping/shipping.jar
+D	shipping/src/main/java/org/steveww/spark/Main.java
+M	web/default.conf
+M	web/static/cart.html
+M	web/static/css/style.css
+M	web/static/index.html
+M	web/static/js/controller.js
+A	web/static/shipping.html
+7bf15b54 improve message
+M	web/static/css/style.css
+M	web/static/js/controller.js
+afc831cc Merge branch 'master' of https://github.com/steveww/robot-shop
+7b94c243 added README
+A	README.md
+d273bb66 Create LICENSE
+A	LICENSE
+ae1a16f9 initial load
+A	.gitignore
+A	cart/Dockerfile
+A	cart/package.json
+A	cart/server.js
+A	catalogue/Dockerfile
+A	catalogue/package.json
+A	catalogue/server.js
+A	docker-compose.yaml
+A	instana/instana-agent-private.yml
+A	mongo/Dockerfile
+A	mongo/catalogue.js
+A	mongo/mongo-dep.yaml
+A	mongo/mongo-svc.yaml
+A	mongo/users.js
+A	shipping/Dockerfile
+A	shipping/pom.xml
+A	shipping/shipping-dep.yaml
+A	shipping/shipping-svc.yaml
+A	shipping/shipping.jar
+A	shipping/src/main/java/org/steveww/spark/Main.java
+A	user/Dockerfile
+A	user/package.json
+A	user/server.js
+A	web/Dockerfile
+A	web/default.conf
+A	web/static/cart.html
+A	web/static/css/style.css
+A	web/static/index.html
+A	web/static/js/controller.js
+A	web/static/login.html
+A	web/static/media/stan.png
+A	web/static/product.html
+A	web/static/splash.html

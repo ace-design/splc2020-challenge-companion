@@ -1,0 +1,1091 @@
+770f0b33 Merge https://github.com/thangchung/ShoppingCartDemo into thangchung/ShoppingCartDemo
+3ef8826f Initial commit
+A	README.md
+12e227d1 Update README.md
+M	README.md
+78b50ecc bug fixing
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+M	src/Web/src/components/Header/Header.js
+A	src/Web/src/containers/Home/Admin.js
+M	src/Web/src/routes.js
+705e083d fixed the wrong route
+M	src/Web/src/components/Header/Header.js
+M	src/Web/src/routes.js
+36c37820 update architecture overview
+M	docs/SystemOverview.png
+cd834593 change FE a bit.
+M	src/Web/src/components/Home/ShoppingCart.js
+4a039481 update README :(
+M	README.md
+9d8b7927 update README file
+M	README.md
+43891e0d integrated with checkout flow (cont.)
+M	ShoppingCartDemo.sln
+A	builds/start_all_services.ps1
+A	builds/start_api_gateway_service.ps1
+A	builds/start_audit_service.ps1
+A	builds/start_catalog_service.ps1
+A	builds/start_checkout_service.ps1
+A	builds/start_customer_service.ps1
+A	builds/start_order_service.ps1
+A	builds/start_payment_service.ps1
+A	builds/start_security_service.ps1
+A	builds/start_web.ps1
+A	src/NT.Core/Events/AddAuditEvent.cs
+M	src/NT.WebApi/PaymentGateway/PaymentApiController.cs
+M	src/Services/NT.AuditService.Api/AuditApiController.cs
+M	src/Services/NT.AuditService.Api/NT.AuditService.Api.csproj
+M	src/Services/NT.AuditService.Api/Startup.cs
+A	src/Services/NT.AuditService.Api/rawrabbit.json
+M	src/Services/NT.CatalogService.Migrator/CatalogContextSeeder.cs
+M	src/Services/NT.CheckoutProcess.Api/Startup.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/NT.CheckoutProcess.Infrastructure.csproj
+M	src/Services/NT.OrderService.Api/OrderApiController.cs
+M	src/Services/NT.OrderService.Migrator/OrderContextSeeder.cs
+M	src/Web/src/containers/Payment/Payment.js
+6984b5c0 checkout flow (cont.)
+M	README.md
+A	docs/DotGraph.png
+A	src/NT.Infrastructure/DateTimeExtensions.cs
+M	src/NT.WebApi/Startup.cs
+M	src/Services/NT.AuditService.Api/AuditApiController.cs
+M	src/Services/NT.CatalogService.Api/ProductApiController.cs
+M	src/Services/NT.CatalogService.Migrator/CatalogContextSeeder.cs
+M	src/Services/NT.CheckoutProcess.Api/Startup.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+M	src/Services/NT.IdentityServer.Migrator/DataSeeder/IdentityServerSeeder.cs
+M	src/Services/NT.OrderService.Api/OrderApiController.cs
+M	src/Services/NT.OrderService.Api/Startup.cs
+M	src/Services/NT.OrderService.Api/appsettings.json
+M	src/Services/NT.OrderService.Migrator/OrderContextSeeder.cs
+M	src/Web/public/css/style.css
+M	src/Web/src/components/Header/Header.js
+M	src/Web/src/components/Home/ProductList.js
+M	src/Web/src/containers/Home/Checkout.js
+M	src/Web/src/containers/Login/Login.js
+M	src/Web/src/index.css
+M	src/Web/src/redux/modules/checkout.js
+M	src/Web/src/redux/modules/payment.js
+M	src/Web/src/routes.js
+M	src/Web/src/utils/userManager.js
+381a72f2 Integrated the checkout flow (cont.)
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/NT.WebApi/PaymentGateway/PaymentApiController.cs
+M	src/NT.WebApi/Program.cs
+M	src/NT.WebApi/ShoppingCart/CheckoutApiController.cs
+M	src/NT.WebApi/Startup.cs
+A	src/NT.WebApi/rawrabbit.json
+M	src/Services/NT.AuditService.Api/Program.cs
+M	src/Services/NT.CatalogService.Api/Program.cs
+M	src/Services/NT.CheckoutProcess.Api/NT.CheckoutProcess.Api.csproj
+M	src/Services/NT.CheckoutProcess.Api/Program.cs
+M	src/Services/NT.CheckoutProcess.Api/Startup.cs
+A	src/Services/NT.CheckoutProcess.Api/rawrabbit.json
+M	src/Services/NT.CustomerService.Api/Program.cs
+M	src/Services/NT.OrderService.Api/Program.cs
+M	src/Services/NT.PaymentService.Api/NT.PaymentService.Api.csproj
+M	src/Services/NT.PaymentService.Api/PaymentApiController.cs
+M	src/Services/NT.PaymentService.Api/Program.cs
+M	src/Services/NT.PaymentService.Api/Startup.cs
+A	src/Services/NT.PaymentService.Api/rawrabbit.json
+M	src/Web/src/components/Header/Header.js
+R069	src/Web/src/components/Home/ThreeItems.js	src/Web/src/components/Home/ProductList.js
+M	src/Web/src/containers/Home/Home.js
+A	src/Web/src/containers/Order/Order.js
+M	src/Web/src/containers/Payment/Payment.js
+M	src/Web/src/redux/modules/home.js
+A	src/Web/src/redux/modules/order.js
+M	src/Web/src/redux/modules/payment.js
+M	src/Web/src/redux/modules/reducers.js
+M	src/Web/src/routes.js
+afbf6ae5 Checkout flow (cont.)
+M	docs/ServiceDiscovery.png
+M	src/NT.Infrastructure.MessageBus.RabbitMq/RabbitMqSubscriber.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/NT.WebApi/PaymentGateway/PaymentApiController.cs
+M	src/NT.WebApi/Startup.cs
+M	src/Services/NT.CheckoutProcess.Api/Startup.cs
+M	src/Services/NT.OrderService.Api/Startup.cs
+M	src/Services/NT.PaymentService.Api/PaymentApiController.cs
+M	src/Services/NT.PaymentService.Api/Startup.cs
+M	src/Web/src/components/Home/ShoppingCart.js
+M	src/Web/src/containers/Audit/Audit.js
+M	src/Web/src/containers/Home/Checkout.js
+M	src/Web/src/containers/Payment/Payment.js
+M	src/Web/src/redux/modules/audit.js
+M	src/Web/src/redux/modules/checkout.js
+M	src/Web/src/redux/modules/payment.js
+4cb84819 checkout flow (integration)
+M	src/NT.WebApi/ShoppingCart/CartViewModel.cs
+M	src/NT.WebApi/ShoppingCart/CheckoutApiController.cs
+M	src/Services/NT.OrderService.Api/OrderApiController.cs
+M	src/Web/public/css/style.css
+M	src/Web/src/components/Header/Header.js
+A	src/Web/src/components/Home/ShoppingCart.js
+A	src/Web/src/components/Home/ThreeItems.js
+A	src/Web/src/components/Home/package.json
+M	src/Web/src/containers/Audit/Audit.js
+M	src/Web/src/containers/Home/Checkout.js
+M	src/Web/src/containers/Home/Home.js
+A	src/Web/src/redux/modules/checkout.js
+M	src/Web/src/redux/modules/payment.js
+M	src/Web/src/redux/modules/reducers.js
+e85a8ef8 bug fixing
+M	src/NT.Core/NT.Core.csproj
+A	src/NT.WebApi/AuditContext/AuditApiController.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/Services/NT.AuditService.Api/AuditApiController.cs
+M	src/Web/package.json
+M	src/Web/src/components/Header/Header.js
+M	src/Web/src/containers/App/SimpleLayout.js
+A	src/Web/src/containers/Audit/Audit.js
+A	src/Web/src/containers/Home/Checkout.js
+M	src/Web/src/containers/Home/Home.js
+A	src/Web/src/redux/modules/audit.js
+M	src/Web/src/redux/modules/home.js
+M	src/Web/src/redux/modules/reducers.js
+M	src/Web/src/routes.js
+M	src/Web/yarn.lock
+b2dff3c3 refactor code for FE
+M	src/Web/src/redux/modules/home.js
+d1482f3c modified picture (system overview)
+M	docs/SystemOverview.png
+M	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+M	src/NT.WebApi/ShoppingCart/CheckoutApiController.cs
+D	src/Services/NT.OrderService.Core/TestedEvent.cs
+e4e19c92 FE for the checkout process
+D	src/NT.WebApi/OrderContext/TestHandler.cs
+A	src/NT.WebApi/ShoppingCart/CartViewModel.cs
+M	src/NT.WebApi/ShoppingCart/CheckoutApiController.cs
+M	src/Web/public/css/style.css
+D	src/Web/src/containers/Blog/BlogInfo.js
+M	src/Web/src/containers/Home/Home.js
+A	src/Web/src/containers/Payment/Payment.js
+A	src/Web/src/redux/modules/home.js
+A	src/Web/src/redux/modules/payment.js
+D	src/Web/src/redux/modules/products.js
+M	src/Web/src/redux/modules/reducers.js
+M	src/Web/src/routes.js
+5237e0af add UI
+M	src/NT.WebApi/CatalogContext/ProductApiController.cs
+M	src/Services/NT.CatalogService.Api/ProductApiController.cs
+M	src/Services/NT.CatalogService.Migrator/CatalogContextSeeder.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+A	src/Web/.gitignore
+A	src/Web/package.json
+A	src/Web/public/css/font-awesome.css
+A	src/Web/public/css/font-awesome.css.map
+A	src/Web/public/css/font-awesome.min.css
+A	src/Web/public/css/simple-line-icons.css
+A	src/Web/public/css/style.css
+A	src/Web/public/favicon.ico
+A	src/Web/public/fonts/FontAwesome.otf
+A	src/Web/public/fonts/Simple-Line-Icons.eot
+A	src/Web/public/fonts/Simple-Line-Icons.svg
+A	src/Web/public/fonts/Simple-Line-Icons.ttf
+A	src/Web/public/fonts/Simple-Line-Icons.woff
+A	src/Web/public/fonts/Simple-Line-Icons.woff2
+A	src/Web/public/fonts/fontawesome-webfont.eot
+A	src/Web/public/fonts/fontawesome-webfont.svg
+A	src/Web/public/fonts/fontawesome-webfont.ttf
+A	src/Web/public/fonts/fontawesome-webfont.woff
+A	src/Web/public/fonts/fontawesome-webfont.woff2
+A	src/Web/public/img/favicon.png
+A	src/Web/public/img/logo.png
+A	src/Web/public/index.html
+A	src/Web/src/components/Aside/Aside.js
+A	src/Web/src/components/Aside/package.json
+A	src/Web/src/components/Footer/Footer.js
+A	src/Web/src/components/Footer/package.json
+A	src/Web/src/components/Header/Header.js
+A	src/Web/src/components/Header/package.json
+A	src/Web/src/components/Sidebar/Sidebar.js
+A	src/Web/src/components/Sidebar/package.json
+A	src/Web/src/containers/App/FullLayout.js
+A	src/Web/src/containers/App/SimpleLayout.css
+A	src/Web/src/containers/App/SimpleLayout.js
+A	src/Web/src/containers/App/SimpleLayout.test.js
+A	src/Web/src/containers/App/logo.svg
+A	src/Web/src/containers/Blog/BlogInfo.js
+A	src/Web/src/containers/Home/Home.js
+A	src/Web/src/containers/Login/Callback.js
+A	src/Web/src/containers/Login/Login.js
+A	src/Web/src/containers/NotFound/NotFound.js
+A	src/Web/src/index.css
+A	src/Web/src/index.js
+A	src/Web/src/redux/configureStore.js
+A	src/Web/src/redux/middleware/loggerMiddleware.js
+A	src/Web/src/redux/modules/products.js
+A	src/Web/src/redux/modules/reducers.js
+A	src/Web/src/routes.js
+A	src/Web/src/utils/request.js
+A	src/Web/src/utils/userManager.js
+A	src/Web/yarn.lock
+9496fa0d update Saga flow 2
+M	docs/CheckoutSaga_2.png
+7525df8c one more time :(
+M	docs/CheckoutSaga_2.png
+c33129ee update flow (again)
+M	docs/CheckoutSaga_2.png
+b1991186 update saga flow
+M	README.md
+D	docs/CheckoutProcess.png
+A	docs/CheckoutSaga_1.png
+A	docs/CheckoutSaga_2.png
+559b3787 add system overview
+M	README.md
+A	docs/SystemOverview.png
+64216869 Checkout Saga (cont.)
+M	src/Services/NT.AuditService.Api/AuditApiController.cs
+M	src/Services/NT.AuditService.Core/AuditInfo.cs
+R085	src/Services/NT.AuditService.Migrator/Migrations/20170531113258_InitDatabase.Designer.cs	src/Services/NT.AuditService.Migrator/Migrations/20170601065807_InitDatabase.Designer.cs
+R088	src/Services/NT.AuditService.Migrator/Migrations/20170531113258_InitDatabase.cs	src/Services/NT.AuditService.Migrator/Migrations/20170601065807_InitDatabase.cs
+M	src/Services/NT.AuditService.Migrator/Migrations/AuditDbContextModelSnapshot.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+9b4b9030 Audit Service implements
+M	README.md
+M	ShoppingCartDemo.sln
+D	src/NT.Core/Events/CompensateOrderStatusEvent.cs
+D	src/NT.Core/Events/CompensateProductQuantityEvent.cs
+D	src/NT.Core/Events/EmailToCustomerEvent.cs
+D	src/NT.Core/Events/MakePaymentEvent.cs
+D	src/NT.Core/Events/NotifyToEmployeeEvent.cs
+D	src/NT.Core/Events/ProcessOrderStatusEvent.cs
+D	src/NT.Core/Events/ProcessProductQuantityEvent.cs
+A	src/Services/NT.AuditService.Api/AuditApiController.cs
+A	src/Services/NT.AuditService.Api/NT.AuditService.Api.csproj
+A	src/Services/NT.AuditService.Api/Program.cs
+A	src/Services/NT.AuditService.Api/Startup.cs
+A	src/Services/NT.AuditService.Api/appsettings.Development.json
+A	src/Services/NT.AuditService.Api/appsettings.json
+A	src/Services/NT.AuditService.Core/AuditInfo.cs
+A	src/Services/NT.AuditService.Core/NT.AuditService.Core.csproj
+A	src/Services/NT.AuditService.Infrastructure/AuditDbContext.cs
+A	src/Services/NT.AuditService.Infrastructure/GenericEfRepository.cs
+A	src/Services/NT.AuditService.Infrastructure/NT.AuditService.Infrastructure.csproj
+A	src/Services/NT.AuditService.Migrator/AuditContextSeeder.cs
+A	src/Services/NT.AuditService.Migrator/AuditDbContextFactory.cs
+A	src/Services/NT.AuditService.Migrator/Migrations/20170531113258_InitDatabase.Designer.cs
+A	src/Services/NT.AuditService.Migrator/Migrations/20170531113258_InitDatabase.cs
+A	src/Services/NT.AuditService.Migrator/Migrations/AuditDbContextModelSnapshot.cs
+A	src/Services/NT.AuditService.Migrator/NT.AuditService.Migrator.csproj
+A	src/Services/NT.AuditService.Migrator/Program.cs
+A	src/Services/NT.AuditService.Migrator/appsettings.json
+M	src/Services/NT.CatalogService.Api/Startup.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+8e7b802e Payment Service implement
+M	README.md
+M	ShoppingCartDemo.sln
+D	src/NT.Core/PaymentContext/CustomerPayment.cs
+D	src/NT.Core/PaymentContext/PaymentCustomerLink.cs
+A	src/NT.Core/Results/SagaPaymentResult.cs
+M	src/NT.Infrastructure.AspNetCore/RestClient.cs
+A	src/NT.WebApi/PaymentGateway/PaymentApiController.cs
+M	src/Services/NT.CheckoutProcess.Core/CheckoutInfo.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/NT.CheckoutProcess.Infrastructure.csproj
+A	src/Services/NT.PaymentService.Api/NT.PaymentService.Api.csproj
+A	src/Services/NT.PaymentService.Api/PaymentApiController.cs
+A	src/Services/NT.PaymentService.Api/Program.cs
+A	src/Services/NT.PaymentService.Api/Startup.cs
+A	src/Services/NT.PaymentService.Api/appsettings.Development.json
+A	src/Services/NT.PaymentService.Api/appsettings.json
+A	src/Services/NT.PaymentService.Core/CustomerPayment.cs
+A	src/Services/NT.PaymentService.Core/NT.PaymentService.Core.csproj
+R080	src/NT.Core/PaymentContext/PaymentMethod.cs	src/Services/NT.PaymentService.Core/PaymentMethod.cs
+A	src/Services/NT.PaymentService.Infrastructure/GenericEfRepository.cs
+A	src/Services/NT.PaymentService.Infrastructure/NT.PaymentService.Infrastructure.csproj
+A	src/Services/NT.PaymentService.Infrastructure/PaymentDbContext.cs
+A	src/Services/NT.PaymentService.Migrator/Migrations/20170531073039_InitDatabase.Designer.cs
+A	src/Services/NT.PaymentService.Migrator/Migrations/20170531073039_InitDatabase.cs
+A	src/Services/NT.PaymentService.Migrator/Migrations/PaymentDbContextModelSnapshot.cs
+A	src/Services/NT.PaymentService.Migrator/NT.PaymentService.Migrator.csproj
+A	src/Services/NT.PaymentService.Migrator/PaymentContextSeeder.cs
+A	src/Services/NT.PaymentService.Migrator/PaymentDbContextFactory.cs
+A	src/Services/NT.PaymentService.Migrator/Program.cs
+A	src/Services/NT.PaymentService.Migrator/appsettings.json
+37a45b65 CheckoutSaga (cont.)
+M	README.md
+A	src/NT.Core/Events/PaymentAcceptedEvent.cs
+A	src/NT.Core/Results/SagaDoubleResult.cs
+R073	src/NT.Core/SagaResult.cs	src/NT.Core/Results/SagaResult.cs
+M	src/Services/NT.CatalogService.Api/ProductApiController.cs
+M	src/Services/NT.CheckoutProcess.Api/CheckoutHandler.cs
+M	src/Services/NT.CheckoutProcess.Api/Startup.cs
+M	src/Services/NT.CheckoutProcess.Core/CheckoutInfo.cs
+M	src/Services/NT.CheckoutProcess.Core/SagaInfo.cs
+R075	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutWorkflow.cs	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutSaga.cs
+R086	src/Services/NT.CheckoutProcess.Migrator/Migrations/20170528142327_InitDatabase.Designer.cs	src/Services/NT.CheckoutProcess.Migrator/Migrations/20170530145037_InitDatabase.Designer.cs
+R083	src/Services/NT.CheckoutProcess.Migrator/Migrations/20170528142327_InitDatabase.cs	src/Services/NT.CheckoutProcess.Migrator/Migrations/20170530145037_InitDatabase.cs
+M	src/Services/NT.CheckoutProcess.Migrator/Migrations/CheckoutProcessDbContextModelSnapshot.cs
+M	src/Services/NT.OrderService.Api/OrderApiController.cs
+M	src/Services/NT.OrderService.Core/Order.cs
+M	src/Services/NT.OrderService.Infrastructure/OrderRepository.cs
+R097	src/Services/NT.OrderService.Migrator/Migrations/20170529040111_InitDatabase.Designer.cs	src/Services/NT.OrderService.Migrator/Migrations/20170530143104_InitDatabase.Designer.cs
+R098	src/Services/NT.OrderService.Migrator/Migrations/20170529040111_InitDatabase.cs	src/Services/NT.OrderService.Migrator/Migrations/20170530143104_InitDatabase.cs
+M	src/Services/NT.OrderService.Migrator/Migrations/OrderDbContextModelSnapshot.cs
+M	src/Services/NT.OrderService.Migrator/OrderContextSeeder.cs
+9b70b7bf Checkout workflow (cont.)
+M	docs/CheckoutProcess.png
+M	src/NT.Core/Events/ProcessOrderStatusEvent.cs
+M	src/NT.Core/Events/ProcessProductQuantityEvent.cs
+A	src/NT.Core/SagaResult.cs
+M	src/NT.Infrastructure.AspNetCore/RestClient.cs
+M	src/NT.WebApi/ShoppingCart/CheckoutApiController.cs
+A	src/Services/NT.CatalogService.Api/ProductApiController.cs
+D	src/Services/NT.CatalogService.Api/ProductQueryController.cs
+R083	src/Services/NT.CatalogService.Api/SupplierQueryController.cs	src/Services/NT.CatalogService.Api/SupplierApiController.cs
+M	src/Services/NT.CheckoutProcess.Api/CheckoutHandler.cs
+M	src/Services/NT.CheckoutProcess.Core/CheckoutInfo.cs
+D	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutHandler.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutWorkflow.cs
+A	src/Services/NT.OrderService.Api/OrderApiController.cs
+D	src/Services/NT.OrderService.Api/OrderQueryController.cs
+M	src/Services/NT.OrderService.Core/Order.cs
+R096	src/Services/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.Designer.cs	src/Services/NT.OrderService.Migrator/Migrations/20170529040111_InitDatabase.Designer.cs
+R098	src/Services/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.cs	src/Services/NT.OrderService.Migrator/Migrations/20170529040111_InitDatabase.cs
+M	src/Services/NT.OrderService.Migrator/Migrations/OrderDbContextModelSnapshot.cs
+M	src/Services/NT.OrderService.Migrator/OrderContextSeeder.cs
+be3a4773 Checkout service (not finished yet)
+M	README.md
+M	ShoppingCartDemo.sln
+M	src/NT.Core/Event.cs
+A	src/NT.Core/Events/CheckoutEvent.cs
+A	src/NT.Core/Events/CompensateOrderStatusEvent.cs
+A	src/NT.Core/Events/CompensateProductQuantityEvent.cs
+A	src/NT.Core/Events/EmailToCustomerEvent.cs
+A	src/NT.Core/Events/MakePaymentEvent.cs
+A	src/NT.Core/Events/NotifyToEmployeeEvent.cs
+A	src/NT.Core/Events/ProcessOrderStatusEvent.cs
+A	src/NT.Core/Events/ProcessProductQuantityEvent.cs
+M	src/NT.Core/NT.Core.csproj
+A	src/NT.Infrastructure/ObjectConvertExtensions.cs
+A	src/NT.WebApi/ShoppingCart/CheckoutApiController.cs
+A	src/Services/NT.CheckoutProcess.Api/CheckoutHandler.cs
+A	src/Services/NT.CheckoutProcess.Api/NT.CheckoutProcess.Api.csproj
+A	src/Services/NT.CheckoutProcess.Api/Program.cs
+A	src/Services/NT.CheckoutProcess.Api/Startup.cs
+A	src/Services/NT.CheckoutProcess.Api/appsettings.Development.json
+A	src/Services/NT.CheckoutProcess.Api/appsettings.json
+D	src/Services/NT.CheckoutProcess.Core/CheckoutData.cs
+A	src/Services/NT.CheckoutProcess.Core/CheckoutInfo.cs
+A	src/Services/NT.CheckoutProcess.Core/SagaInfo.cs
+A	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutHandler.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutProcessDbContext.cs
+A	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutWorkflow.cs
+M	src/Services/NT.CheckoutProcess.Infrastructure/NT.CheckoutProcess.Infrastructure.csproj
+D	src/Services/NT.CheckoutProcess.Infrastructure/SecondTestHandler.cs
+A	src/Services/NT.CheckoutProcess.Migrator/CheckoutProcessDbContextFactory.cs
+A	src/Services/NT.CheckoutProcess.Migrator/Migrations/20170528142327_InitDatabase.Designer.cs
+A	src/Services/NT.CheckoutProcess.Migrator/Migrations/20170528142327_InitDatabase.cs
+A	src/Services/NT.CheckoutProcess.Migrator/Migrations/CheckoutProcessDbContextModelSnapshot.cs
+R079	src/Services/NT.CheckoutProcess.Host/NT.CheckoutProcess.Host.csproj	src/Services/NT.CheckoutProcess.Migrator/NT.CheckoutProcess.Migrator.csproj
+R054	src/Services/NT.CheckoutProcess.Host/Program.cs	src/Services/NT.CheckoutProcess.Migrator/Program.cs
+R081	src/Services/NT.CheckoutProcess.Host/appsettings.json	src/Services/NT.CheckoutProcess.Migrator/appsettings.json
+M	src/Services/NT.OrderService.Api/Startup.cs
+b31e27f9 add Checkout process (not finished)
+M	README.md
+M	ShoppingCartDemo.sln
+A	docs/CheckoutProcess.png
+M	src/NT.Core/NT.Core.csproj
+M	src/NT.Core/ValueObject.cs
+M	src/NT.Infrastructure/NT.Infrastructure.csproj
+M	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+M	src/NT.WebApi/OrderContext/OrderApiController.cs
+A	src/Services/NT.CheckoutProcess.Core/CheckoutData.cs
+A	src/Services/NT.CheckoutProcess.Core/NT.CheckoutProcess.Core.csproj
+A	src/Services/NT.CheckoutProcess.Host/NT.CheckoutProcess.Host.csproj
+A	src/Services/NT.CheckoutProcess.Host/Program.cs
+A	src/Services/NT.CheckoutProcess.Host/appsettings.json
+A	src/Services/NT.CheckoutProcess.Infrastructure/CheckoutProcessDbContext.cs
+A	src/Services/NT.CheckoutProcess.Infrastructure/GenericEfRepository.cs
+A	src/Services/NT.CheckoutProcess.Infrastructure/NT.CheckoutProcess.Infrastructure.csproj
+A	src/Services/NT.CheckoutProcess.Infrastructure/SecondTestHandler.cs
+15ce825e refactor code
+M	ShoppingCartDemo.sln
+R091	src/NT.Infrastructure/BaseGatewayController.cs	src/NT.Infrastructure.AspNetCore/BaseGatewayController.cs
+R067	src/NT.CustomerService.Infrastructure/NT.CustomerService.Infrastructure.csproj	src/NT.Infrastructure.AspNetCore/NT.Infrastructure.AspNetCore.csproj
+R099	src/NT.Infrastructure/RestClient.cs	src/NT.Infrastructure.AspNetCore/RestClient.cs
+R094	src/NT.Infrastructure/AppDbContext.cs	src/NT.Infrastructure.EntityFrameworkCore/AppDbContext.cs
+R096	src/NT.Infrastructure/Extensions/DbContextFactoryOptionsExtensions.cs	src/NT.Infrastructure.EntityFrameworkCore/DbContextFactoryOptionsExtensions.cs
+R097	src/NT.Infrastructure/EfRepository.cs	src/NT.Infrastructure.EntityFrameworkCore/EfRepository.cs
+R095	src/NT.Infrastructure/Extensions/ModelBuilderExtensions.cs	src/NT.Infrastructure.EntityFrameworkCore/ModelBuilderExtensions.cs
+R085	src/NT.OrderService.Infrastructure/NT.OrderService.Infrastructure.csproj	src/NT.Infrastructure.EntityFrameworkCore/NT.Infrastructure.EntityFrameworkCore.csproj
+M	src/NT.Migrator/AppDbContextFactory.cs
+M	src/NT.Migrator/NT.Migrator.csproj
+M	src/NT.Migrator/Program.cs
+M	src/NT.WebApi/CatalogContext/ProductApiController.cs
+M	src/NT.WebApi/CatalogContext/SupplierApiController.cs
+M	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/NT.WebApi/OrderContext/OrderApiController.cs
+M	src/NT.WebApi/Startup.cs
+R085	src/NT.CatalogService.Api/NT.CatalogService.Api.csproj	src/Services/NT.CatalogService.Api/NT.CatalogService.Api.csproj
+R100	src/NT.CatalogService.Api/ProductQueryController.cs	src/Services/NT.CatalogService.Api/ProductQueryController.cs
+R100	src/NT.CatalogService.Api/Program.cs	src/Services/NT.CatalogService.Api/Program.cs
+R100	src/NT.CatalogService.Api/Startup.cs	src/Services/NT.CatalogService.Api/Startup.cs
+R100	src/NT.CatalogService.Api/SupplierQueryController.cs	src/Services/NT.CatalogService.Api/SupplierQueryController.cs
+R100	src/NT.CatalogService.Api/appsettings.Development.json	src/Services/NT.CatalogService.Api/appsettings.Development.json
+R100	src/NT.CatalogService.Api/appsettings.json	src/Services/NT.CatalogService.Api/appsettings.json
+R072	src/NT.CatalogService.Core/NT.CatalogService.Core.csproj	src/Services/NT.CatalogService.Core/NT.CatalogService.Core.csproj
+R100	src/NT.CatalogService.Core/Product.cs	src/Services/NT.CatalogService.Core/Product.cs
+R100	src/NT.CatalogService.Core/Status.cs	src/Services/NT.CatalogService.Core/Status.cs
+R100	src/NT.CatalogService.Core/Supplier.cs	src/Services/NT.CatalogService.Core/Supplier.cs
+R094	src/NT.CatalogService.Infrastructure/CatalogDbContext.cs	src/Services/NT.CatalogService.Infrastructure/CatalogDbContext.cs
+R087	src/NT.CatalogService.Infrastructure/GenericEfRepository.cs	src/Services/NT.CatalogService.Infrastructure/GenericEfRepository.cs
+R063	src/NT.CatalogService.Infrastructure/NT.CatalogService.Infrastructure.csproj	src/Services/NT.CatalogService.Infrastructure/NT.CatalogService.Infrastructure.csproj
+R100	src/NT.CatalogService.Migrator/CatalogContextSeeder.cs	src/Services/NT.CatalogService.Migrator/CatalogContextSeeder.cs
+R091	src/NT.CatalogService.Migrator/CatalogDbContextFactory.cs	src/Services/NT.CatalogService.Migrator/CatalogDbContextFactory.cs
+R100	src/NT.CatalogService.Migrator/Migrations/20170525093927_InitDatabase.Designer.cs	src/Services/NT.CatalogService.Migrator/Migrations/20170525093927_InitDatabase.Designer.cs
+R100	src/NT.CatalogService.Migrator/Migrations/20170525093927_InitDatabase.cs	src/Services/NT.CatalogService.Migrator/Migrations/20170525093927_InitDatabase.cs
+R100	src/NT.CatalogService.Migrator/Migrations/CatalogDbContextModelSnapshot.cs	src/Services/NT.CatalogService.Migrator/Migrations/CatalogDbContextModelSnapshot.cs
+R091	src/NT.CatalogService.Migrator/NT.CatalogService.Migrator.csproj	src/Services/NT.CatalogService.Migrator/NT.CatalogService.Migrator.csproj
+R100	src/NT.CatalogService.Migrator/Program.cs	src/Services/NT.CatalogService.Migrator/Program.cs
+R100	src/NT.CatalogService.Migrator/appsettings.json	src/Services/NT.CatalogService.Migrator/appsettings.json
+R100	src/NT.CustomerService.Api/CustomerQueryController.cs	src/Services/NT.CustomerService.Api/CustomerQueryController.cs
+R086	src/NT.CustomerService.Api/NT.CustomerService.Api.csproj	src/Services/NT.CustomerService.Api/NT.CustomerService.Api.csproj
+R100	src/NT.CustomerService.Api/Program.cs	src/Services/NT.CustomerService.Api/Program.cs
+R100	src/NT.CustomerService.Api/Startup.cs	src/Services/NT.CustomerService.Api/Startup.cs
+R100	src/NT.CustomerService.Api/appsettings.Development.json	src/Services/NT.CustomerService.Api/appsettings.Development.json
+R100	src/NT.CustomerService.Api/appsettings.json	src/Services/NT.CustomerService.Api/appsettings.json
+R100	src/NT.CustomerService.Core/Customer.cs	src/Services/NT.CustomerService.Core/Customer.cs
+R100	src/NT.CustomerService.Core/CustomerWithAddressInfoSpec.cs	src/Services/NT.CustomerService.Core/CustomerWithAddressInfoSpec.cs
+R100	src/NT.CustomerService.Core/CustomerWithContactInfoSpec.cs	src/Services/NT.CustomerService.Core/CustomerWithContactInfoSpec.cs
+R100	src/NT.CustomerService.Core/ICustomerRepository.cs	src/Services/NT.CustomerService.Core/ICustomerRepository.cs
+R072	src/NT.CustomerService.Core/NT.CustomerService.Core.csproj	src/Services/NT.CustomerService.Core/NT.CustomerService.Core.csproj
+R094	src/NT.CustomerService.Infrastructure/CustomerDbContext.cs	src/Services/NT.CustomerService.Infrastructure/CustomerDbContext.cs
+R100	src/NT.CustomerService.Infrastructure/CustomerRepository.cs	src/Services/NT.CustomerService.Infrastructure/CustomerRepository.cs
+R087	src/NT.CustomerService.Infrastructure/GenericEfRepository.cs	src/Services/NT.CustomerService.Infrastructure/GenericEfRepository.cs
+A	src/Services/NT.CustomerService.Infrastructure/NT.CustomerService.Infrastructure.csproj
+R100	src/NT.CustomerService.Migrator/CustomerContextSeeder.cs	src/Services/NT.CustomerService.Migrator/CustomerContextSeeder.cs
+R092	src/NT.CustomerService.Migrator/CustomerDbContextFactory.cs	src/Services/NT.CustomerService.Migrator/CustomerDbContextFactory.cs
+R100	src/NT.CustomerService.Migrator/Migrations/20170523101016_InitDatabase.Designer.cs	src/Services/NT.CustomerService.Migrator/Migrations/20170523101016_InitDatabase.Designer.cs
+R100	src/NT.CustomerService.Migrator/Migrations/20170523101016_InitDatabase.cs	src/Services/NT.CustomerService.Migrator/Migrations/20170523101016_InitDatabase.cs
+R100	src/NT.CustomerService.Migrator/Migrations/CustomerDbContextModelSnapshot.cs	src/Services/NT.CustomerService.Migrator/Migrations/CustomerDbContextModelSnapshot.cs
+R093	src/NT.CustomerService.Migrator/NT.CustomerService.Migrator.csproj	src/Services/NT.CustomerService.Migrator/NT.CustomerService.Migrator.csproj
+R100	src/NT.CustomerService.Migrator/Program.cs	src/Services/NT.CustomerService.Migrator/Program.cs
+R100	src/NT.CustomerService.Migrator/appsettings.json	src/Services/NT.CustomerService.Migrator/appsettings.json
+R100	src/NT.IdentityServer.Infrastructure/AppUser.cs	src/Services/NT.IdentityServer.Infrastructure/AppUser.cs
+R100	src/NT.IdentityServer.Infrastructure/IUserRepository.cs	src/Services/NT.IdentityServer.Infrastructure/IUserRepository.cs
+R100	src/NT.IdentityServer.Infrastructure/IdentityServerDbContext.cs	src/Services/NT.IdentityServer.Infrastructure/IdentityServerDbContext.cs
+R087	src/NT.IdentityServer.Infrastructure/NT.IdentityServer.Infrastructure.csproj	src/Services/NT.IdentityServer.Infrastructure/NT.IdentityServer.Infrastructure.csproj
+R100	src/NT.IdentityServer.Infrastructure/UserRepository.cs	src/Services/NT.IdentityServer.Infrastructure/UserRepository.cs
+R100	src/NT.IdentityServer.Migrator/ConfigurationDbContextFactory.cs	src/Services/NT.IdentityServer.Migrator/ConfigurationDbContextFactory.cs
+R100	src/NT.IdentityServer.Migrator/DataSeeder/IdentityServerSeeder.cs	src/Services/NT.IdentityServer.Migrator/DataSeeder/IdentityServerSeeder.cs
+R100	src/NT.IdentityServer.Migrator/DataSeeder/UserSeeder.cs	src/Services/NT.IdentityServer.Migrator/DataSeeder/UserSeeder.cs
+R100	src/NT.IdentityServer.Migrator/IdentityServerDbContextFactory.cs	src/Services/NT.IdentityServer.Migrator/IdentityServerDbContextFactory.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/20170526045715_InitialIdentityServerConfigurationDbMigration.Designer.cs	src/Services/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/20170526045715_InitialIdentityServerConfigurationDbMigration.Designer.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/20170526045715_InitialIdentityServerConfigurationDbMigration.cs	src/Services/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/20170526045715_InitialIdentityServerConfigurationDbMigration.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/ConfigurationDbContextModelSnapshot.cs	src/Services/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/ConfigurationDbContextModelSnapshot.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/IdentityDb/20170526071200_InitDatabase.Designer.cs	src/Services/NT.IdentityServer.Migrator/Migrations/IdentityDb/20170526071200_InitDatabase.Designer.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/IdentityDb/20170526071200_InitDatabase.cs	src/Services/NT.IdentityServer.Migrator/Migrations/IdentityDb/20170526071200_InitDatabase.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/IdentityDb/IdentityServerDbContextModelSnapshot.cs	src/Services/NT.IdentityServer.Migrator/Migrations/IdentityDb/IdentityServerDbContextModelSnapshot.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/20170526045539_InitialIdentityServerPersistedGrantDbMigration.Designer.cs	src/Services/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/20170526045539_InitialIdentityServerPersistedGrantDbMigration.Designer.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/20170526045539_InitialIdentityServerPersistedGrantDbMigration.cs	src/Services/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/20170526045539_InitialIdentityServerPersistedGrantDbMigration.cs
+R100	src/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/PersistedGrantDbContextModelSnapshot.cs	src/Services/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/PersistedGrantDbContextModelSnapshot.cs
+R100	src/NT.IdentityServer.Migrator/NT.IdentityServer.Migrator.csproj	src/Services/NT.IdentityServer.Migrator/NT.IdentityServer.Migrator.csproj
+R100	src/NT.IdentityServer.Migrator/PersistedGrantDbContextFactory.cs	src/Services/NT.IdentityServer.Migrator/PersistedGrantDbContextFactory.cs
+R100	src/NT.IdentityServer.Migrator/Program.cs	src/Services/NT.IdentityServer.Migrator/Program.cs
+R100	src/NT.IdentityServer.Migrator/appsettings.json	src/Services/NT.IdentityServer.Migrator/appsettings.json
+R100	src/NT.IdentityServer/.bowerrc	src/Services/NT.IdentityServer/.bowerrc
+R100	src/NT.IdentityServer/Config.cs	src/Services/NT.IdentityServer/Config.cs
+R100	src/NT.IdentityServer/Controllers/AccountController.cs	src/Services/NT.IdentityServer/Controllers/AccountController.cs
+R100	src/NT.IdentityServer/Controllers/HomeController.cs	src/Services/NT.IdentityServer/Controllers/HomeController.cs
+R100	src/NT.IdentityServer/Controllers/ManageController.cs	src/Services/NT.IdentityServer/Controllers/ManageController.cs
+R100	src/NT.IdentityServer/Controllers/UserController.cs	src/Services/NT.IdentityServer/Controllers/UserController.cs
+R100	src/NT.IdentityServer/Models/AccountViewModels/ExternalLoginConfirmationViewModel.cs	src/Services/NT.IdentityServer/Models/AccountViewModels/ExternalLoginConfirmationViewModel.cs
+R100	src/NT.IdentityServer/Models/AccountViewModels/ForgotPasswordViewModel.cs	src/Services/NT.IdentityServer/Models/AccountViewModels/ForgotPasswordViewModel.cs
+R100	src/NT.IdentityServer/Models/AccountViewModels/RegisterViewModel.cs	src/Services/NT.IdentityServer/Models/AccountViewModels/RegisterViewModel.cs
+R100	src/NT.IdentityServer/Models/AccountViewModels/ResetPasswordViewModel.cs	src/Services/NT.IdentityServer/Models/AccountViewModels/ResetPasswordViewModel.cs
+R100	src/NT.IdentityServer/Models/AccountViewModels/SendCodeViewModel.cs	src/Services/NT.IdentityServer/Models/AccountViewModels/SendCodeViewModel.cs
+R100	src/NT.IdentityServer/Models/AccountViewModels/VerifyCodeViewModel.cs	src/Services/NT.IdentityServer/Models/AccountViewModels/VerifyCodeViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/AddPhoneNumberViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/AddPhoneNumberViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/ChangePasswordViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/ChangePasswordViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/ConfigureTwoFactorViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/ConfigureTwoFactorViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/FactorViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/FactorViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/IndexViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/IndexViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/ManageLoginsViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/ManageLoginsViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/RemoveLoginViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/RemoveLoginViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/SetPasswordViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/SetPasswordViewModel.cs
+R100	src/NT.IdentityServer/Models/ManageViewModels/VerifyPhoneNumberViewModel.cs	src/Services/NT.IdentityServer/Models/ManageViewModels/VerifyPhoneNumberViewModel.cs
+R100	src/NT.IdentityServer/NT.IdentityServer.csproj	src/Services/NT.IdentityServer/NT.IdentityServer.csproj
+R100	src/NT.IdentityServer/Program.cs	src/Services/NT.IdentityServer/Program.cs
+R100	src/NT.IdentityServer/Quickstart/Account/AccountOptions.cs	src/Services/NT.IdentityServer/Quickstart/Account/AccountOptions.cs
+R100	src/NT.IdentityServer/Quickstart/Account/AccountService.cs	src/Services/NT.IdentityServer/Quickstart/Account/AccountService.cs
+R100	src/NT.IdentityServer/Quickstart/Account/ExternalProvider.cs	src/Services/NT.IdentityServer/Quickstart/Account/ExternalProvider.cs
+R100	src/NT.IdentityServer/Quickstart/Account/LoggedOutViewModel.cs	src/Services/NT.IdentityServer/Quickstart/Account/LoggedOutViewModel.cs
+R100	src/NT.IdentityServer/Quickstart/Account/LoginInputModel.cs	src/Services/NT.IdentityServer/Quickstart/Account/LoginInputModel.cs
+R100	src/NT.IdentityServer/Quickstart/Account/LoginViewModel.cs	src/Services/NT.IdentityServer/Quickstart/Account/LoginViewModel.cs
+R100	src/NT.IdentityServer/Quickstart/Account/LogoutInputModel.cs	src/Services/NT.IdentityServer/Quickstart/Account/LogoutInputModel.cs
+R100	src/NT.IdentityServer/Quickstart/Account/LogoutViewModel.cs	src/Services/NT.IdentityServer/Quickstart/Account/LogoutViewModel.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ConsentController.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ConsentController.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ConsentInputModel.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ConsentInputModel.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ConsentOptions.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ConsentOptions.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ConsentService.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ConsentService.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ConsentViewModel.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ConsentViewModel.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ProcessConsentResult.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ProcessConsentResult.cs
+R100	src/NT.IdentityServer/Quickstart/Consent/ScopeViewModel.cs	src/Services/NT.IdentityServer/Quickstart/Consent/ScopeViewModel.cs
+R100	src/NT.IdentityServer/Quickstart/Home/ErrorViewModel.cs	src/Services/NT.IdentityServer/Quickstart/Home/ErrorViewModel.cs
+R100	src/NT.IdentityServer/Quickstart/SecurityHeadersAttribute.cs	src/Services/NT.IdentityServer/Quickstart/SecurityHeadersAttribute.cs
+R100	src/NT.IdentityServer/Services/IEmailSender.cs	src/Services/NT.IdentityServer/Services/IEmailSender.cs
+R100	src/NT.IdentityServer/Services/ISmsSender.cs	src/Services/NT.IdentityServer/Services/ISmsSender.cs
+R100	src/NT.IdentityServer/Services/IdentityWithAdditionalClaimsProfileService.cs	src/Services/NT.IdentityServer/Services/IdentityWithAdditionalClaimsProfileService.cs
+R100	src/NT.IdentityServer/Services/MessageServices.cs	src/Services/NT.IdentityServer/Services/MessageServices.cs
+R100	src/NT.IdentityServer/Startup.cs	src/Services/NT.IdentityServer/Startup.cs
+R100	src/NT.IdentityServer/Views/Account/ConfirmEmail.cshtml	src/Services/NT.IdentityServer/Views/Account/ConfirmEmail.cshtml
+R100	src/NT.IdentityServer/Views/Account/ExternalLoginConfirmation.cshtml	src/Services/NT.IdentityServer/Views/Account/ExternalLoginConfirmation.cshtml
+R100	src/NT.IdentityServer/Views/Account/ExternalLoginFailure.cshtml	src/Services/NT.IdentityServer/Views/Account/ExternalLoginFailure.cshtml
+R100	src/NT.IdentityServer/Views/Account/ForgotPassword.cshtml	src/Services/NT.IdentityServer/Views/Account/ForgotPassword.cshtml
+R100	src/NT.IdentityServer/Views/Account/ForgotPasswordConfirmation.cshtml	src/Services/NT.IdentityServer/Views/Account/ForgotPasswordConfirmation.cshtml
+R100	src/NT.IdentityServer/Views/Account/Lockout.cshtml	src/Services/NT.IdentityServer/Views/Account/Lockout.cshtml
+R100	src/NT.IdentityServer/Views/Account/LoggedOut.cshtml	src/Services/NT.IdentityServer/Views/Account/LoggedOut.cshtml
+R100	src/NT.IdentityServer/Views/Account/Login.cshtml	src/Services/NT.IdentityServer/Views/Account/Login.cshtml
+R100	src/NT.IdentityServer/Views/Account/Logout.cshtml	src/Services/NT.IdentityServer/Views/Account/Logout.cshtml
+R100	src/NT.IdentityServer/Views/Account/Register.cshtml	src/Services/NT.IdentityServer/Views/Account/Register.cshtml
+R100	src/NT.IdentityServer/Views/Account/ResetPassword.cshtml	src/Services/NT.IdentityServer/Views/Account/ResetPassword.cshtml
+R100	src/NT.IdentityServer/Views/Account/ResetPasswordConfirmation.cshtml	src/Services/NT.IdentityServer/Views/Account/ResetPasswordConfirmation.cshtml
+R100	src/NT.IdentityServer/Views/Account/SendCode.cshtml	src/Services/NT.IdentityServer/Views/Account/SendCode.cshtml
+R100	src/NT.IdentityServer/Views/Account/VerifyCode.cshtml	src/Services/NT.IdentityServer/Views/Account/VerifyCode.cshtml
+R100	src/NT.IdentityServer/Views/Consent/Index.cshtml	src/Services/NT.IdentityServer/Views/Consent/Index.cshtml
+R100	src/NT.IdentityServer/Views/Consent/_ScopeListItem.cshtml	src/Services/NT.IdentityServer/Views/Consent/_ScopeListItem.cshtml
+R100	src/NT.IdentityServer/Views/Home/About.cshtml	src/Services/NT.IdentityServer/Views/Home/About.cshtml
+R100	src/NT.IdentityServer/Views/Home/Contact.cshtml	src/Services/NT.IdentityServer/Views/Home/Contact.cshtml
+R100	src/NT.IdentityServer/Views/Home/Index.cshtml	src/Services/NT.IdentityServer/Views/Home/Index.cshtml
+R100	src/NT.IdentityServer/Views/Manage/AddPhoneNumber.cshtml	src/Services/NT.IdentityServer/Views/Manage/AddPhoneNumber.cshtml
+R100	src/NT.IdentityServer/Views/Manage/ChangePassword.cshtml	src/Services/NT.IdentityServer/Views/Manage/ChangePassword.cshtml
+R100	src/NT.IdentityServer/Views/Manage/Index.cshtml	src/Services/NT.IdentityServer/Views/Manage/Index.cshtml
+R100	src/NT.IdentityServer/Views/Manage/ManageLogins.cshtml	src/Services/NT.IdentityServer/Views/Manage/ManageLogins.cshtml
+R100	src/NT.IdentityServer/Views/Manage/SetPassword.cshtml	src/Services/NT.IdentityServer/Views/Manage/SetPassword.cshtml
+R100	src/NT.IdentityServer/Views/Manage/VerifyPhoneNumber.cshtml	src/Services/NT.IdentityServer/Views/Manage/VerifyPhoneNumber.cshtml
+R100	src/NT.IdentityServer/Views/Shared/Error.cshtml	src/Services/NT.IdentityServer/Views/Shared/Error.cshtml
+R100	src/NT.IdentityServer/Views/Shared/_Layout.cshtml	src/Services/NT.IdentityServer/Views/Shared/_Layout.cshtml
+R100	src/NT.IdentityServer/Views/Shared/_LoginPartial.cshtml	src/Services/NT.IdentityServer/Views/Shared/_LoginPartial.cshtml
+R100	src/NT.IdentityServer/Views/Shared/_ValidationScriptsPartial.cshtml	src/Services/NT.IdentityServer/Views/Shared/_ValidationScriptsPartial.cshtml
+R100	src/NT.IdentityServer/Views/Shared/_ValidationSummary.cshtml	src/Services/NT.IdentityServer/Views/Shared/_ValidationSummary.cshtml
+R100	src/NT.IdentityServer/Views/_ViewImports.cshtml	src/Services/NT.IdentityServer/Views/_ViewImports.cshtml
+R100	src/NT.IdentityServer/Views/_ViewStart.cshtml	src/Services/NT.IdentityServer/Views/_ViewStart.cshtml
+R100	src/NT.IdentityServer/appsettings.json	src/Services/NT.IdentityServer/appsettings.json
+R100	src/NT.IdentityServer/bower.json	src/Services/NT.IdentityServer/bower.json
+R100	src/NT.IdentityServer/bundleconfig.json	src/Services/NT.IdentityServer/bundleconfig.json
+R100	src/NT.IdentityServer/wwwroot/_references.js	src/Services/NT.IdentityServer/wwwroot/_references.js
+R100	src/NT.IdentityServer/wwwroot/css/site.css	src/Services/NT.IdentityServer/wwwroot/css/site.css
+R100	src/NT.IdentityServer/wwwroot/css/site.min.css	src/Services/NT.IdentityServer/wwwroot/css/site.min.css
+R100	src/NT.IdentityServer/wwwroot/favicon.ico	src/Services/NT.IdentityServer/wwwroot/favicon.ico
+R100	src/NT.IdentityServer/wwwroot/icon.jpg	src/Services/NT.IdentityServer/wwwroot/icon.jpg
+R100	src/NT.IdentityServer/wwwroot/icon.png	src/Services/NT.IdentityServer/wwwroot/icon.png
+R100	src/NT.IdentityServer/wwwroot/images/banner1.svg	src/Services/NT.IdentityServer/wwwroot/images/banner1.svg
+R100	src/NT.IdentityServer/wwwroot/images/banner2.svg	src/Services/NT.IdentityServer/wwwroot/images/banner2.svg
+R100	src/NT.IdentityServer/wwwroot/images/banner3.svg	src/Services/NT.IdentityServer/wwwroot/images/banner3.svg
+R100	src/NT.IdentityServer/wwwroot/images/banner4.svg	src/Services/NT.IdentityServer/wwwroot/images/banner4.svg
+R100	src/NT.IdentityServer/wwwroot/js/signout-redirect.js	src/Services/NT.IdentityServer/wwwroot/js/signout-redirect.js
+R100	src/NT.IdentityServer/wwwroot/js/site.js	src/Services/NT.IdentityServer/wwwroot/js/site.js
+R100	src/NT.IdentityServer/wwwroot/js/site.min.js	src/Services/NT.IdentityServer/wwwroot/js/site.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/.bower.json	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/.bower.json
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/LICENSE	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/LICENSE
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.css	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.css
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.css.map	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.css.map
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.min.css	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.min.css
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.css	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.css
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/bootstrap.js	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/bootstrap.js
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/npm.js	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/npm.js
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.eot	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.eot
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.svg	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.svg
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.woff	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.woff
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/js/bootstrap.js	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/js/bootstrap.js
+R100	src/NT.IdentityServer/wwwroot/lib/bootstrap/js/bootstrap.min.js	src/Services/NT.IdentityServer/wwwroot/lib/bootstrap/js/bootstrap.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/.bower.json	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/.bower.json
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation/.bower.json	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation/.bower.json
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation/LICENSE.md	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation/LICENSE.md
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/additional-methods.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/additional-methods.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/additional-methods.min.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/additional-methods.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/jquery.validate.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/jquery.validate.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/.bower.json	src/Services/NT.IdentityServer/wwwroot/lib/jquery/.bower.json
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/LICENSE.txt	src/Services/NT.IdentityServer/wwwroot/lib/jquery/LICENSE.txt
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.min.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.min.map	src/Services/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.min.map
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/jquery.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery/jquery.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/jquery.min.js	src/Services/NT.IdentityServer/wwwroot/lib/jquery/jquery.min.js
+R100	src/NT.IdentityServer/wwwroot/lib/jquery/jquery.min.map	src/Services/NT.IdentityServer/wwwroot/lib/jquery/jquery.min.map
+R078	src/NT.OrderService.Api/NT.OrderService.Api.csproj	src/Services/NT.OrderService.Api/NT.OrderService.Api.csproj
+R100	src/NT.OrderService.Api/OrderQueryController.cs	src/Services/NT.OrderService.Api/OrderQueryController.cs
+R100	src/NT.OrderService.Api/Program.cs	src/Services/NT.OrderService.Api/Program.cs
+R100	src/NT.OrderService.Api/Startup.cs	src/Services/NT.OrderService.Api/Startup.cs
+R100	src/NT.OrderService.Api/appsettings.Development.json	src/Services/NT.OrderService.Api/appsettings.Development.json
+R100	src/NT.OrderService.Api/appsettings.json	src/Services/NT.OrderService.Api/appsettings.json
+R100	src/NT.OrderService.Core/IOrderRepository.cs	src/Services/NT.OrderService.Core/IOrderRepository.cs
+R072	src/NT.OrderService.Core/NT.OrderService.Core.csproj	src/Services/NT.OrderService.Core/NT.OrderService.Core.csproj
+R100	src/NT.OrderService.Core/Order.cs	src/Services/NT.OrderService.Core/Order.cs
+R100	src/NT.OrderService.Core/OrderDetail.cs	src/Services/NT.OrderService.Core/OrderDetail.cs
+R100	src/NT.OrderService.Core/OrderWithOrderDetailSpec.cs	src/Services/NT.OrderService.Core/OrderWithOrderDetailSpec.cs
+R100	src/NT.OrderService.Core/OrderWithShipInfoSpec.cs	src/Services/NT.OrderService.Core/OrderWithShipInfoSpec.cs
+R100	src/NT.OrderService.Core/ShipInfo.cs	src/Services/NT.OrderService.Core/ShipInfo.cs
+R100	src/NT.OrderService.Core/TestedEvent.cs	src/Services/NT.OrderService.Core/TestedEvent.cs
+R086	src/NT.OrderService.Infrastructure/GenericEfRepository.cs	src/Services/NT.OrderService.Infrastructure/GenericEfRepository.cs
+A	src/Services/NT.OrderService.Infrastructure/NT.OrderService.Infrastructure.csproj
+R094	src/NT.OrderService.Infrastructure/OrderDbContext.cs	src/Services/NT.OrderService.Infrastructure/OrderDbContext.cs
+R100	src/NT.OrderService.Infrastructure/OrderRepository.cs	src/Services/NT.OrderService.Infrastructure/OrderRepository.cs
+R100	src/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.Designer.cs	src/Services/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.Designer.cs
+R100	src/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.cs	src/Services/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.cs
+R100	src/NT.OrderService.Migrator/Migrations/OrderDbContextModelSnapshot.cs	src/Services/NT.OrderService.Migrator/Migrations/OrderDbContextModelSnapshot.cs
+R091	src/NT.OrderService.Migrator/NT.OrderService.Migrator.csproj	src/Services/NT.OrderService.Migrator/NT.OrderService.Migrator.csproj
+R100	src/NT.OrderService.Migrator/OrderContextSeeder.cs	src/Services/NT.OrderService.Migrator/OrderContextSeeder.cs
+R091	src/NT.OrderService.Migrator/OrderDbContextFactory.cs	src/Services/NT.OrderService.Migrator/OrderDbContextFactory.cs
+R100	src/NT.OrderService.Migrator/Program.cs	src/Services/NT.OrderService.Migrator/Program.cs
+R100	src/NT.OrderService.Migrator/appsettings.json	src/Services/NT.OrderService.Migrator/appsettings.json
+57f0e0b1 add Message Bus (RabbitMq by default)
+M	README.md
+M	ShoppingCartDemo.sln
+A	src/NT.Core/Command.cs
+A	src/NT.Core/Event.cs
+A	src/NT.Core/IMessage.cs
+A	src/NT.Infrastructure.MessageBus.RabbitMq/NT.Infrastructure.MessageBus.RabbitMq.csproj
+A	src/NT.Infrastructure.MessageBus.RabbitMq/RabbitMqPublisher.cs
+A	src/NT.Infrastructure.MessageBus.RabbitMq/RabbitMqSubscriber.cs
+A	src/NT.Infrastructure.MessageBus/Event/EventConsumer.cs
+A	src/NT.Infrastructure.MessageBus/Event/IEventBus.cs
+A	src/NT.Infrastructure.MessageBus/Event/IEventBusHandler.cs
+A	src/NT.Infrastructure.MessageBus/Event/IEventConsumer.cs
+A	src/NT.Infrastructure.MessageBus/Event/IEventSubscriber.cs
+A	src/NT.Infrastructure.MessageBus/IMessageHandler.cs
+A	src/NT.Infrastructure.MessageBus/MessageReceivedEventArgs.cs
+A	src/NT.Infrastructure.MessageBus/NT.Infrastructure.MessageBus.csproj
+M	src/NT.OrderService.Api/NT.OrderService.Api.csproj
+M	src/NT.OrderService.Api/OrderQueryController.cs
+M	src/NT.OrderService.Api/Startup.cs
+M	src/NT.OrderService.Api/appsettings.json
+A	src/NT.OrderService.Core/TestedEvent.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+A	src/NT.WebApi/OrderContext/TestHandler.cs
+M	src/NT.WebApi/Startup.cs
+M	src/NT.WebApi/appsettings.json
+fe954a70 refactor code (security service)
+M	README.md
+M	ShoppingCartDemo.sln
+M	src/NT.CatalogService.Api/Startup.cs
+M	src/NT.CatalogService.Api/appsettings.json
+D	src/NT.Core/UserContext/NotificationInfoLink.cs
+D	src/NT.Core/UserContext/PaymentInfoLink.cs
+D	src/NT.Core/UserContext/ShippingAddress.cs
+D	src/NT.Core/UserContext/User.cs
+M	src/NT.CustomerService.Api/Startup.cs
+M	src/NT.CustomerService.Api/appsettings.json
+A	src/NT.IdentityServer.Infrastructure/AppUser.cs
+A	src/NT.IdentityServer.Infrastructure/IUserRepository.cs
+R088	src/NT.IdentityServer/Quickstart/IdentityServerDbContext.cs	src/NT.IdentityServer.Infrastructure/IdentityServerDbContext.cs
+A	src/NT.IdentityServer.Infrastructure/NT.IdentityServer.Infrastructure.csproj
+A	src/NT.IdentityServer.Infrastructure/UserRepository.cs
+R097	src/NT.MigrationConsole/ConfigurationDbContextFactory.cs	src/NT.IdentityServer.Migrator/ConfigurationDbContextFactory.cs
+R098	src/NT.MigrationConsole/SeedData/IdentityServerSeeder.cs	src/NT.IdentityServer.Migrator/DataSeeder/IdentityServerSeeder.cs
+R071	src/NT.MigrationConsole/SeedData/UserSeeder.cs	src/NT.IdentityServer.Migrator/DataSeeder/UserSeeder.cs
+A	src/NT.IdentityServer.Migrator/IdentityServerDbContextFactory.cs
+R099	src/NT.MigrationConsole/Migrations/ConfigurationDb/20170522101508_InitialIdentityServerConfigurationDbMigration.Designer.cs	src/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/20170526045715_InitialIdentityServerConfigurationDbMigration.Designer.cs
+R099	src/NT.MigrationConsole/Migrations/ConfigurationDb/20170522101508_InitialIdentityServerConfigurationDbMigration.cs	src/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/20170526045715_InitialIdentityServerConfigurationDbMigration.cs
+R099	src/NT.MigrationConsole/Migrations/ConfigurationDb/ConfigurationDbContextModelSnapshot.cs	src/NT.IdentityServer.Migrator/Migrations/ConfigurationDb/ConfigurationDbContextModelSnapshot.cs
+A	src/NT.IdentityServer.Migrator/Migrations/IdentityDb/20170526071200_InitDatabase.Designer.cs
+A	src/NT.IdentityServer.Migrator/Migrations/IdentityDb/20170526071200_InitDatabase.cs
+A	src/NT.IdentityServer.Migrator/Migrations/IdentityDb/IdentityServerDbContextModelSnapshot.cs
+R092	src/NT.MigrationConsole/Migrations/PersistedGrantDb/20170522101429_InitialIdentityServerPersistedGrantDbMigration.Designer.cs	src/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/20170526045539_InitialIdentityServerPersistedGrantDbMigration.Designer.cs
+R095	src/NT.MigrationConsole/Migrations/PersistedGrantDb/20170522101429_InitialIdentityServerPersistedGrantDbMigration.cs	src/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/20170526045539_InitialIdentityServerPersistedGrantDbMigration.cs
+R096	src/NT.MigrationConsole/Migrations/PersistedGrantDb/PersistedGrantDbContextModelSnapshot.cs	src/NT.IdentityServer.Migrator/Migrations/PersistedGrantDb/PersistedGrantDbContextModelSnapshot.cs
+R087	src/NT.MigrationConsole/NT.MigrationConsole.csproj	src/NT.IdentityServer.Migrator/NT.IdentityServer.Migrator.csproj
+R097	src/NT.MigrationConsole/PersistedGrantDbContextFactory.cs	src/NT.IdentityServer.Migrator/PersistedGrantDbContextFactory.cs
+R082	src/NT.MigrationConsole/Program.cs	src/NT.IdentityServer.Migrator/Program.cs
+A	src/NT.IdentityServer.Migrator/appsettings.json
+M	src/NT.IdentityServer/Controllers/AccountController.cs
+M	src/NT.IdentityServer/Controllers/HomeController.cs
+M	src/NT.IdentityServer/Controllers/ManageController.cs
+A	src/NT.IdentityServer/Controllers/UserController.cs
+M	src/NT.IdentityServer/NT.IdentityServer.csproj
+D	src/NT.IdentityServer/Quickstart/AppUser.cs
+M	src/NT.IdentityServer/Services/IdentityWithAdditionalClaimsProfileService.cs
+M	src/NT.IdentityServer/Startup.cs
+M	src/NT.IdentityServer/Views/Account/Login.cshtml
+M	src/NT.IdentityServer/Views/Shared/_LoginPartial.cshtml
+M	src/NT.IdentityServer/appsettings.json
+M	src/NT.Infrastructure/AppDbContext.cs
+D	src/NT.MigrationConsole/Migrations/SampleDb/20170522145108_InitDatabase.Designer.cs
+D	src/NT.MigrationConsole/Migrations/SampleDb/20170522145108_InitDatabase.cs
+D	src/NT.MigrationConsole/Migrations/SampleDb/AppDbContextModelSnapshot.cs
+R097	src/NT.MigrationConsole/AppDbContextFactory.cs	src/NT.Migrator/AppDbContextFactory.cs
+A	src/NT.Migrator/NT.Migrator.csproj
+A	src/NT.Migrator/Program.cs
+R100	src/NT.MigrationConsole/appsettings.json	src/NT.Migrator/appsettings.json
+M	src/NT.OrderService.Api/Startup.cs
+M	src/NT.OrderService.Api/appsettings.json
+M	src/NT.OrderService.Migrator/OrderContextSeeder.cs
+M	src/NT.WebApi/OrderContext/OrderApiController.cs
+A	src/NT.WebApi/OrderContext/UserViewModel.cs
+M	src/NT.WebApi/appsettings.json
+167b294d Catalog Service implements
+M	ShoppingCartDemo.sln
+M	ShoppingCartDemoCodeMap.dgml
+A	src/NT.CatalogService.Api/NT.CatalogService.Api.csproj
+A	src/NT.CatalogService.Api/ProductQueryController.cs
+A	src/NT.CatalogService.Api/Program.cs
+A	src/NT.CatalogService.Api/Startup.cs
+A	src/NT.CatalogService.Api/SupplierQueryController.cs
+A	src/NT.CatalogService.Api/appsettings.Development.json
+A	src/NT.CatalogService.Api/appsettings.json
+A	src/NT.CatalogService.Core/NT.CatalogService.Core.csproj
+R068	src/NT.Core/CatalogContext/Product.cs	src/NT.CatalogService.Core/Product.cs
+R065	src/NT.Core/CatalogContext/Status.cs	src/NT.CatalogService.Core/Status.cs
+R063	src/NT.Core/CatalogContext/Supplier.cs	src/NT.CatalogService.Core/Supplier.cs
+A	src/NT.CatalogService.Infrastructure/CatalogDbContext.cs
+A	src/NT.CatalogService.Infrastructure/GenericEfRepository.cs
+A	src/NT.CatalogService.Infrastructure/NT.CatalogService.Infrastructure.csproj
+A	src/NT.CatalogService.Migrator/CatalogContextSeeder.cs
+A	src/NT.CatalogService.Migrator/CatalogDbContextFactory.cs
+A	src/NT.CatalogService.Migrator/Migrations/20170525093927_InitDatabase.Designer.cs
+A	src/NT.CatalogService.Migrator/Migrations/20170525093927_InitDatabase.cs
+A	src/NT.CatalogService.Migrator/Migrations/CatalogDbContextModelSnapshot.cs
+A	src/NT.CatalogService.Migrator/NT.CatalogService.Migrator.csproj
+A	src/NT.CatalogService.Migrator/Program.cs
+A	src/NT.CatalogService.Migrator/appsettings.json
+M	src/NT.MigrationConsole/Migrations/SampleDb/20170522145108_InitDatabase.Designer.cs
+M	src/NT.MigrationConsole/Migrations/SampleDb/AppDbContextModelSnapshot.cs
+M	src/NT.OrderService.Migrator/OrderContextSeeder.cs
+A	src/NT.WebApi/CatalogContext/ProductApiController.cs
+A	src/NT.WebApi/CatalogContext/SupplierApiController.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/NT.WebApi/OrderContext/OrderApiController.cs
+M	src/NT.WebApi/OrderContext/OrderViewModel.cs
+7d4fbe85 Order Service (cont.)
+M	src/NT.CustomerService.Api/CustomerQueryController.cs
+M	src/NT.IdentityServer/Program.cs
+A	src/NT.Infrastructure/BaseGatewayController.cs
+M	src/NT.Infrastructure/NT.Infrastructure.csproj
+M	src/NT.Infrastructure/RestClient.cs
+M	src/NT.OrderService.Api/OrderQueryController.cs
+M	src/NT.OrderService.Api/Startup.cs
+A	src/NT.OrderService.Core/IOrderRepository.cs
+M	src/NT.OrderService.Core/Order.cs
+A	src/NT.OrderService.Infrastructure/OrderRepository.cs
+R098	src/NT.OrderService.Migrator/Migrations/20170524161417_InitDatabase.Designer.cs	src/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.Designer.cs
+R100	src/NT.OrderService.Migrator/Migrations/20170524161417_InitDatabase.cs	src/NT.OrderService.Migrator/Migrations/20170525034533_InitDatabase.cs
+M	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+M	src/NT.WebApi/OrderContext/OrderApiController.cs
+A	src/NT.WebApi/OrderContext/OrderViewModel.cs
+M	src/NT.WebApi/Program.cs
+0e64621d add security service
+M	README.md
+A	docs/ServiceDiscovery.png
+M	src/NT.IdentityServer/NT.IdentityServer.csproj
+M	src/NT.IdentityServer/Startup.cs
+47e9a54b add OrderService
+M	README.md
+M	ShoppingCartDemo.sln
+M	src/NT.Core/IRepository.cs
+D	src/NT.Core/OrderContext/CustomerLink.cs
+D	src/NT.Core/OrderContext/Order.cs
+D	src/NT.Core/OrderContext/OrderDetails.cs
+D	src/NT.Core/OrderContext/ProductLink.cs
+D	src/NT.Core/OrderContext/UserLink.cs
+M	src/NT.CustomerService.Api/Startup.cs
+M	src/NT.CustomerService.Infrastructure/CustomerDbContext.cs
+M	src/NT.CustomerService.Migrator/CustomerDbContextFactory.cs
+M	src/NT.Infrastructure/EfRepository.cs
+A	src/NT.Infrastructure/Extensions/DbContextFactoryOptionsExtensions.cs
+A	src/NT.Infrastructure/Extensions/ModelBuilderExtensions.cs
+M	src/NT.Infrastructure/NT.Infrastructure.csproj
+A	src/NT.OrderService.Api/NT.OrderService.Api.csproj
+A	src/NT.OrderService.Api/OrderQueryController.cs
+A	src/NT.OrderService.Api/Program.cs
+A	src/NT.OrderService.Api/Startup.cs
+A	src/NT.OrderService.Api/appsettings.Development.json
+A	src/NT.OrderService.Api/appsettings.json
+A	src/NT.OrderService.Core/NT.OrderService.Core.csproj
+A	src/NT.OrderService.Core/Order.cs
+A	src/NT.OrderService.Core/OrderDetail.cs
+A	src/NT.OrderService.Core/OrderWithOrderDetailSpec.cs
+A	src/NT.OrderService.Core/OrderWithShipInfoSpec.cs
+R069	src/NT.Core/OrderContext/ShipInfo.cs	src/NT.OrderService.Core/ShipInfo.cs
+A	src/NT.OrderService.Infrastructure/GenericEfRepository.cs
+A	src/NT.OrderService.Infrastructure/NT.OrderService.Infrastructure.csproj
+A	src/NT.OrderService.Infrastructure/OrderDbContext.cs
+A	src/NT.OrderService.Migrator/Migrations/20170524161417_InitDatabase.Designer.cs
+A	src/NT.OrderService.Migrator/Migrations/20170524161417_InitDatabase.cs
+A	src/NT.OrderService.Migrator/Migrations/OrderDbContextModelSnapshot.cs
+A	src/NT.OrderService.Migrator/NT.OrderService.Migrator.csproj
+A	src/NT.OrderService.Migrator/OrderContextSeeder.cs
+A	src/NT.OrderService.Migrator/OrderDbContextFactory.cs
+A	src/NT.OrderService.Migrator/Program.cs
+A	src/NT.OrderService.Migrator/appsettings.json
+M	src/NT.WebApi/NT.WebApi.csproj
+A	src/NT.WebApi/OrderContext/OrderApiController.cs
+2d4cc954 separated the customer service out
+M	README.md
+M	ShoppingCartDemo.sln
+R091	src/NT.CustomerService/CustomerQueryController.cs	src/NT.CustomerService.Api/CustomerQueryController.cs
+R081	src/NT.CustomerService/NT.CustomerService.csproj	src/NT.CustomerService.Api/NT.CustomerService.Api.csproj
+R093	src/NT.CustomerService/Program.cs	src/NT.CustomerService.Api/Program.cs
+R090	src/NT.CustomerService/Startup.cs	src/NT.CustomerService.Api/Startup.cs
+R100	src/NT.CustomerService/appsettings.Development.json	src/NT.CustomerService.Api/appsettings.Development.json
+A	src/NT.CustomerService.Api/appsettings.json
+R066	src/NT.Core/CustomerContext/Customer.cs	src/NT.CustomerService.Core/Customer.cs
+R088	src/NT.Core/CustomerContext/CustomerWithAddressInfoSpec.cs	src/NT.CustomerService.Core/CustomerWithAddressInfoSpec.cs
+R088	src/NT.Core/CustomerContext/CustomerWithContactInfoSpec.cs	src/NT.CustomerService.Core/CustomerWithContactInfoSpec.cs
+A	src/NT.CustomerService.Core/ICustomerRepository.cs
+A	src/NT.CustomerService.Core/NT.CustomerService.Core.csproj
+A	src/NT.CustomerService.Infrastructure/CustomerDbContext.cs
+R069	src/NT.Infrastructure/CustomerContext/CustomerRepository.cs	src/NT.CustomerService.Infrastructure/CustomerRepository.cs
+A	src/NT.CustomerService.Infrastructure/GenericEfRepository.cs
+A	src/NT.CustomerService.Infrastructure/NT.CustomerService.Infrastructure.csproj
+A	src/NT.CustomerService.Migrator/CustomerContextSeeder.cs
+A	src/NT.CustomerService.Migrator/CustomerDbContextFactory.cs
+A	src/NT.CustomerService.Migrator/Migrations/20170523101016_InitDatabase.Designer.cs
+A	src/NT.CustomerService.Migrator/Migrations/20170523101016_InitDatabase.cs
+A	src/NT.CustomerService.Migrator/Migrations/CustomerDbContextModelSnapshot.cs
+A	src/NT.CustomerService.Migrator/NT.CustomerService.Migrator.csproj
+A	src/NT.CustomerService.Migrator/Program.cs
+A	src/NT.CustomerService.Migrator/appsettings.json
+D	src/NT.CustomerService/appsettings.json
+M	src/NT.Infrastructure/EfRepository.cs
+M	src/NT.Infrastructure/NT.Infrastructure.csproj
+M	src/NT.Infrastructure/RestClient.cs
+M	src/NT.MigrationConsole/Program.cs
+D	src/NT.MigrationConsole/SeedData/CustomerContextSeeder.cs
+M	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/NT.WebApi/appsettings.json
+a79a69a0 add service discovery
+M	README.md
+M	ShoppingCartDemo.sln
+M	src/NT.Core/NT.Core.csproj
+A	src/NT.CustomerService/CustomerQueryController.cs
+A	src/NT.CustomerService/NT.CustomerService.csproj
+A	src/NT.CustomerService/Program.cs
+A	src/NT.CustomerService/Startup.cs
+A	src/NT.CustomerService/appsettings.Development.json
+A	src/NT.CustomerService/appsettings.json
+A	src/NT.Infrastructure/LogFactory.cs
+M	src/NT.Infrastructure/NT.Infrastructure.csproj
+A	src/NT.Infrastructure/RestClient.cs
+M	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+M	src/NT.WebApi/NT.WebApi.csproj
+M	src/NT.WebApi/Startup.cs
+M	src/NT.WebApi/appsettings.json
+1cf18c8d Init project
+M	README.md
+A	ShoppingCartDemo.sln
+A	ShoppingCartDemoCodeMap.dgml
+A	src/NT.Core/CatalogContext/Product.cs
+A	src/NT.Core/CatalogContext/Status.cs
+A	src/NT.Core/CatalogContext/Supplier.cs
+A	src/NT.Core/CustomerContext/Customer.cs
+A	src/NT.Core/CustomerContext/CustomerWithAddressInfoSpec.cs
+A	src/NT.Core/CustomerContext/CustomerWithContactInfoSpec.cs
+A	src/NT.Core/EntityBase.cs
+A	src/NT.Core/IRepository.cs
+A	src/NT.Core/ISpecification.cs
+A	src/NT.Core/IgnoreMemberAttribute.cs
+A	src/NT.Core/NT.Core.csproj
+A	src/NT.Core/NotificationContext/Notification.cs
+A	src/NT.Core/NotificationContext/NotificationInfo.cs
+A	src/NT.Core/NotificationContext/OrderLink.cs
+A	src/NT.Core/OrderContext/CustomerLink.cs
+A	src/NT.Core/OrderContext/Order.cs
+A	src/NT.Core/OrderContext/OrderDetails.cs
+A	src/NT.Core/OrderContext/ProductLink.cs
+A	src/NT.Core/OrderContext/ShipInfo.cs
+A	src/NT.Core/OrderContext/UserLink.cs
+A	src/NT.Core/PaymentContext/CustomerPayment.cs
+A	src/NT.Core/PaymentContext/PaymentCustomerLink.cs
+A	src/NT.Core/PaymentContext/PaymentMethod.cs
+A	src/NT.Core/SharedKernel/AddressInfo.cs
+A	src/NT.Core/SharedKernel/ContactInfo.cs
+A	src/NT.Core/UserContext/NotificationInfoLink.cs
+A	src/NT.Core/UserContext/PaymentInfoLink.cs
+A	src/NT.Core/UserContext/ShippingAddress.cs
+A	src/NT.Core/UserContext/User.cs
+A	src/NT.Core/ValueObject.cs
+A	src/NT.IdentityServer/.bowerrc
+A	src/NT.IdentityServer/Config.cs
+A	src/NT.IdentityServer/Controllers/AccountController.cs
+A	src/NT.IdentityServer/Controllers/HomeController.cs
+A	src/NT.IdentityServer/Controllers/ManageController.cs
+A	src/NT.IdentityServer/Models/AccountViewModels/ExternalLoginConfirmationViewModel.cs
+A	src/NT.IdentityServer/Models/AccountViewModels/ForgotPasswordViewModel.cs
+A	src/NT.IdentityServer/Models/AccountViewModels/RegisterViewModel.cs
+A	src/NT.IdentityServer/Models/AccountViewModels/ResetPasswordViewModel.cs
+A	src/NT.IdentityServer/Models/AccountViewModels/SendCodeViewModel.cs
+A	src/NT.IdentityServer/Models/AccountViewModels/VerifyCodeViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/AddPhoneNumberViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/ChangePasswordViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/ConfigureTwoFactorViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/FactorViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/IndexViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/ManageLoginsViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/RemoveLoginViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/SetPasswordViewModel.cs
+A	src/NT.IdentityServer/Models/ManageViewModels/VerifyPhoneNumberViewModel.cs
+A	src/NT.IdentityServer/NT.IdentityServer.csproj
+A	src/NT.IdentityServer/Program.cs
+A	src/NT.IdentityServer/Quickstart/Account/AccountOptions.cs
+A	src/NT.IdentityServer/Quickstart/Account/AccountService.cs
+A	src/NT.IdentityServer/Quickstart/Account/ExternalProvider.cs
+A	src/NT.IdentityServer/Quickstart/Account/LoggedOutViewModel.cs
+A	src/NT.IdentityServer/Quickstart/Account/LoginInputModel.cs
+A	src/NT.IdentityServer/Quickstart/Account/LoginViewModel.cs
+A	src/NT.IdentityServer/Quickstart/Account/LogoutInputModel.cs
+A	src/NT.IdentityServer/Quickstart/Account/LogoutViewModel.cs
+A	src/NT.IdentityServer/Quickstart/AppUser.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ConsentController.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ConsentInputModel.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ConsentOptions.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ConsentService.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ConsentViewModel.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ProcessConsentResult.cs
+A	src/NT.IdentityServer/Quickstart/Consent/ScopeViewModel.cs
+A	src/NT.IdentityServer/Quickstart/Home/ErrorViewModel.cs
+A	src/NT.IdentityServer/Quickstart/IdentityServerDbContext.cs
+A	src/NT.IdentityServer/Quickstart/SecurityHeadersAttribute.cs
+A	src/NT.IdentityServer/Services/IEmailSender.cs
+A	src/NT.IdentityServer/Services/ISmsSender.cs
+A	src/NT.IdentityServer/Services/IdentityWithAdditionalClaimsProfileService.cs
+A	src/NT.IdentityServer/Services/MessageServices.cs
+A	src/NT.IdentityServer/Startup.cs
+A	src/NT.IdentityServer/Views/Account/ConfirmEmail.cshtml
+A	src/NT.IdentityServer/Views/Account/ExternalLoginConfirmation.cshtml
+A	src/NT.IdentityServer/Views/Account/ExternalLoginFailure.cshtml
+A	src/NT.IdentityServer/Views/Account/ForgotPassword.cshtml
+A	src/NT.IdentityServer/Views/Account/ForgotPasswordConfirmation.cshtml
+A	src/NT.IdentityServer/Views/Account/Lockout.cshtml
+A	src/NT.IdentityServer/Views/Account/LoggedOut.cshtml
+A	src/NT.IdentityServer/Views/Account/Login.cshtml
+A	src/NT.IdentityServer/Views/Account/Logout.cshtml
+A	src/NT.IdentityServer/Views/Account/Register.cshtml
+A	src/NT.IdentityServer/Views/Account/ResetPassword.cshtml
+A	src/NT.IdentityServer/Views/Account/ResetPasswordConfirmation.cshtml
+A	src/NT.IdentityServer/Views/Account/SendCode.cshtml
+A	src/NT.IdentityServer/Views/Account/VerifyCode.cshtml
+A	src/NT.IdentityServer/Views/Consent/Index.cshtml
+A	src/NT.IdentityServer/Views/Consent/_ScopeListItem.cshtml
+A	src/NT.IdentityServer/Views/Home/About.cshtml
+A	src/NT.IdentityServer/Views/Home/Contact.cshtml
+A	src/NT.IdentityServer/Views/Home/Index.cshtml
+A	src/NT.IdentityServer/Views/Manage/AddPhoneNumber.cshtml
+A	src/NT.IdentityServer/Views/Manage/ChangePassword.cshtml
+A	src/NT.IdentityServer/Views/Manage/Index.cshtml
+A	src/NT.IdentityServer/Views/Manage/ManageLogins.cshtml
+A	src/NT.IdentityServer/Views/Manage/SetPassword.cshtml
+A	src/NT.IdentityServer/Views/Manage/VerifyPhoneNumber.cshtml
+A	src/NT.IdentityServer/Views/Shared/Error.cshtml
+A	src/NT.IdentityServer/Views/Shared/_Layout.cshtml
+A	src/NT.IdentityServer/Views/Shared/_LoginPartial.cshtml
+A	src/NT.IdentityServer/Views/Shared/_ValidationScriptsPartial.cshtml
+A	src/NT.IdentityServer/Views/Shared/_ValidationSummary.cshtml
+A	src/NT.IdentityServer/Views/_ViewImports.cshtml
+A	src/NT.IdentityServer/Views/_ViewStart.cshtml
+A	src/NT.IdentityServer/appsettings.json
+A	src/NT.IdentityServer/bower.json
+A	src/NT.IdentityServer/bundleconfig.json
+A	src/NT.IdentityServer/wwwroot/_references.js
+A	src/NT.IdentityServer/wwwroot/css/site.css
+A	src/NT.IdentityServer/wwwroot/css/site.min.css
+A	src/NT.IdentityServer/wwwroot/favicon.ico
+A	src/NT.IdentityServer/wwwroot/icon.jpg
+A	src/NT.IdentityServer/wwwroot/icon.png
+A	src/NT.IdentityServer/wwwroot/images/banner1.svg
+A	src/NT.IdentityServer/wwwroot/images/banner2.svg
+A	src/NT.IdentityServer/wwwroot/images/banner3.svg
+A	src/NT.IdentityServer/wwwroot/images/banner4.svg
+A	src/NT.IdentityServer/wwwroot/js/signout-redirect.js
+A	src/NT.IdentityServer/wwwroot/js/site.js
+A	src/NT.IdentityServer/wwwroot/js/site.min.js
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/.bower.json
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/LICENSE
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.css
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.css.map
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/css/bootstrap.min.css
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.css
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/bootstrap.js
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/dist/js/npm.js
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.eot
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.svg
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.ttf
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.woff
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/fonts/glyphicons-halflings-regular.woff2
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/js/bootstrap.js
+A	src/NT.IdentityServer/wwwroot/lib/bootstrap/js/bootstrap.min.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/.bower.json
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation/.bower.json
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation/LICENSE.md
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/additional-methods.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/additional-methods.min.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/jquery.validate.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery/.bower.json
+A	src/NT.IdentityServer/wwwroot/lib/jquery/LICENSE.txt
+A	src/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.min.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery/dist/jquery.min.map
+A	src/NT.IdentityServer/wwwroot/lib/jquery/jquery.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery/jquery.min.js
+A	src/NT.IdentityServer/wwwroot/lib/jquery/jquery.min.map
+A	src/NT.Infrastructure/AppDbContext.cs
+A	src/NT.Infrastructure/CustomerContext/CustomerRepository.cs
+A	src/NT.Infrastructure/EfRepository.cs
+A	src/NT.Infrastructure/NT.Infrastructure.csproj
+A	src/NT.MigrationConsole/AppDbContextFactory.cs
+A	src/NT.MigrationConsole/ConfigurationDbContextFactory.cs
+A	src/NT.MigrationConsole/Migrations/ConfigurationDb/20170522101508_InitialIdentityServerConfigurationDbMigration.Designer.cs
+A	src/NT.MigrationConsole/Migrations/ConfigurationDb/20170522101508_InitialIdentityServerConfigurationDbMigration.cs
+A	src/NT.MigrationConsole/Migrations/ConfigurationDb/ConfigurationDbContextModelSnapshot.cs
+A	src/NT.MigrationConsole/Migrations/PersistedGrantDb/20170522101429_InitialIdentityServerPersistedGrantDbMigration.Designer.cs
+A	src/NT.MigrationConsole/Migrations/PersistedGrantDb/20170522101429_InitialIdentityServerPersistedGrantDbMigration.cs
+A	src/NT.MigrationConsole/Migrations/PersistedGrantDb/PersistedGrantDbContextModelSnapshot.cs
+A	src/NT.MigrationConsole/Migrations/SampleDb/20170522145108_InitDatabase.Designer.cs
+A	src/NT.MigrationConsole/Migrations/SampleDb/20170522145108_InitDatabase.cs
+A	src/NT.MigrationConsole/Migrations/SampleDb/AppDbContextModelSnapshot.cs
+A	src/NT.MigrationConsole/NT.MigrationConsole.csproj
+A	src/NT.MigrationConsole/PersistedGrantDbContextFactory.cs
+A	src/NT.MigrationConsole/Program.cs
+A	src/NT.MigrationConsole/SeedData/CustomerContextSeeder.cs
+A	src/NT.MigrationConsole/SeedData/IdentityServerSeeder.cs
+A	src/NT.MigrationConsole/SeedData/UserSeeder.cs
+A	src/NT.MigrationConsole/appsettings.json
+A	src/NT.WebApi/CustomerContext/CustomerApiController.cs
+A	src/NT.WebApi/NT.WebApi.csproj
+A	src/NT.WebApi/Program.cs
+A	src/NT.WebApi/Startup.cs
+A	src/NT.WebApi/appsettings.Development.json
+A	src/NT.WebApi/appsettings.json
+30c27e05 Initial commit
+A	.gitignore
+A	LICENSE
+A	README.md

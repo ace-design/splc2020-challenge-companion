@@ -1,0 +1,1881 @@
+c472bd35 added branch for GoogleCloudPlatform/microservices-demo
+M	README.md
+35acef19 Merge https://github.com/GoogleCloudPlatform/microservices-demo into GoogleCloudPlatform/microservices-demo
+3ef8826f Initial commit
+A	README.md
+53f25280 Fix double shebang in loadgen.sh (#284)
+M	src/loadgenerator/loadgen.sh
+326e058e Release v0.1.3
+M	release/kubernetes-manifests.yaml
+04b20847 [WIP] Fixes emailservice CrashLoop when Workload Identity is enabled (#280)
+M	kubernetes-manifests/emailservice.yaml
+M	src/emailservice/email_server.py
+M	src/recommendationservice/recommendation_server.py
+8cfb88bf Standardizes loadgen behavior for Istio mTLS=STRICT (#279)
+M	.gitignore
+M	README.md
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/loadgenerator.yaml
+M	release/kubernetes-manifests.yaml
+M	src/loadgenerator/Dockerfile
+M	src/loadgenerator/loadgen.sh
+61dd0499 Fix skaffold install link
+M	README.md
+ad4b29be Fix README typo (#258)
+M	README.md
+a95997be Remove deps files from node paymentservice (#252)
+D	src/paymentservice/Gopkg.lock
+D	src/paymentservice/Gopkg.toml
+24ca9eec use python 3.7, as python:3-slim is now using python 3.8. (#254)
+M	src/emailservice/Dockerfile
+2177813c cartservice: Create genproto.sh (#249)
+R100	src/cartservice/generate_protos.bat	src/cartservice/genproto.bat
+A	src/cartservice/genproto.sh
+4681320f got rid of errors in Stackdriver Logging (#245)
+M	src/emailservice/logger.py
+M	src/loadgenerator/loadgen.sh
+M	src/recommendationservice/logger.py
+3f577b60 Release v0.1.2
+6b75fd5b Release v0.1.2
+M	release/kubernetes-manifests.yaml
+c052e697 Adds cartservice timeout to all manifests (#241)
+M	kubernetes-manifests/cartservice.yaml
+M	release/kubernetes-manifests.yaml
+1e143c57 Release v0.1.2
+M	release/kubernetes-manifests.yaml
+156dfcec [cartservice] Increases health check timeout (#240)
+M	release/kubernetes-manifests.yaml
+M	src/cartservice/HealthImpl.cs
+M	src/cartservice/cartservice.csproj
+M	src/cartservice/cartstore/RedisCartStore.cs
+13b73067 Typo in the months drop down (#237)
+M	src/frontend/templates/cart.html
+bb41c7fe Updates stackdriver agents for node.js services (#236)
+M	src/currencyservice/package-lock.json
+M	src/currencyservice/package.json
+M	src/paymentservice/package-lock.json
+M	src/paymentservice/package.json
+754d22a0 Updates go services to google-cloud-go 0.40.0 (#234)
+M	release/kubernetes-manifests.yaml
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/Gopkg.toml
+M	src/checkoutservice/main.go
+M	src/frontend/Gopkg.lock
+M	src/frontend/Gopkg.toml
+M	src/productcatalogservice/Gopkg.lock
+M	src/productcatalogservice/Gopkg.toml
+M	src/productcatalogservice/server.go
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/Gopkg.toml
+M	src/shippingservice/main.go
+f575b76f Fix https://github.com/GoogleCloudPlatform/microservices-demo/issues/222 (#224)
+M	src/loadgenerator/Dockerfile
+1c057fcb aligning function name and log message to the official product name (#229)
+M	src/adservice/src/main/java/hipstershop/AdService.java
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+dc98b16a Add a demo of Hipster Shop + Istio across 3 clouds (#219)
+M	README.md
+ce03eb3c removed left-pad module (#218)
+M	src/currencyservice/client.js
+M	src/currencyservice/package.json
+27df445f Release v0.1.1
+M	release/istio-manifests.yaml
+M	release/kubernetes-manifests.yaml
+55f50615 Use env in service manifests for PORT (#212)
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	src/currencyservice/server.js
+M	src/paymentservice/server.js
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+876d4f96 Add Stackdriver Profiler Java agent to adservice (#210)
+M	src/adservice/Dockerfile
+M	src/adservice/build.gradle
+86fb1662 Add Stackdriver Profiler Python agent (#176)
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	src/emailservice/Dockerfile
+M	src/emailservice/email_server.py
+M	src/emailservice/requirements.in
+M	src/emailservice/requirements.txt
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/recommendation_server.py
+M	src/recommendationservice/requirements.in
+M	src/recommendationservice/requirements.txt
+f2769955 Follow OWASP best practices on CC presentation on checkout form (#207)
+M	src/frontend/templates/cart.html
+f2f382f6 README: Point to Skaffold's website rather than repo (#208)
+M	README.md
+57b316c0 Update docker images for go to 1.12 (#203)
+M	src/checkoutservice/Dockerfile
+M	src/frontend/Dockerfile
+M	src/productcatalogservice/Dockerfile
+M	src/shippingservice/Dockerfile
+3f9dc859 Cleanup instructions added (#202)
+M	README.md
+a84331ed make hack/make-release-artifacts.sh work on Linux (#201)
+M	hack/make-release-artifacts.sh
+0cccf586 Update development-principles.md (#195)
+M	docs/development-principles.md
+9d95e4ce Add min disk space for docker-for-desktop
+M	README.md
+11e28282  Update ServiceEntries for Istio 1.1 (#183)
+M	istio-manifests/whitelist-egress-googleapis.yaml
+M	release/istio-manifests.yaml
+a0a9852a hack: comment out autogenerated warning (#182)
+M	hack/make-release-artifacts.sh
+M	release/istio-manifests.yaml
+M	release/kubernetes-manifests.yaml
+b44d855e update the architecture diagram (#179)
+M	docs/img/architecture-diagram.png
+342318a9 hack: remove redundant license headers in release (#171)
+A	hack/license_header.txt
+M	hack/make-release-artifacts.sh
+A	kubernetes-manifests/README.md
+M	release/istio-manifests.yaml
+M	release/kubernetes-manifests.yaml
+d23fe9cf Fix the half-broken url for skaffold installation (#178)
+M	README.md
+b72f32d6 istio-manifests: remove external currency api (#175)
+D	istio-manifests/whitelist-egress-currencyprovider.yaml
+f7580958 Switch currencyservice to static JSON file (#173)
+A	src/currencyservice/data/currency_conversion.json
+M	src/currencyservice/server.js
+d5db0247 kubernetes: use apps/v1 for Deployment (#166)
+M	kubernetes-manifests/adservice.yaml
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/loadgenerator.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/redis.yaml
+M	kubernetes-manifests/shippingservice.yaml
+d08d419a adservice: use Stackdriver special field to set sampling decision in log entries (#168)
+M	src/adservice/src/main/resources/log4j2.xml
+458bf50b credit card expired (#167)
+M	src/loadgenerator/locustfile.py
+b9792c94 Add missing extension to pre-built images instructions in readme (#160)
+M	README.md
+5f41e12b README formatting (#158)
+M	README.md
+bae651f7 Release v0.1.0
+ef64fdae Show option to use prebuilt images (#156)
+M	README.md
+f3e29f74 hack: fix release scripts (#157)
+M	hack/make-docker-images.sh
+M	hack/make-release-artifacts.sh
+M	hack/make-release.sh
+cedf3ce8 Release v0.1.0
+A	release/istio-manifests.yaml
+A	release/kubernetes-manifests.yaml
+3b4c04fe loadgenerator: check curl install (#153)
+M	kubernetes-manifests/loadgenerator.yaml
+1605c21f readme: hide option 3
+M	README.md
+1c1c8b42 Fix small typo in installation section of README (#148)
+M	README.md
+7eb028d7 Fix typo in skaffold.yaml comment (#147)
+M	skaffold.yaml
+e99d0808 Fixing ./gradlew: Permission denied problem on Dockerfile (#146)
+M	src/adservice/Dockerfile
+741c669c adservice: restore old grpc views until new grpc version is released. (#144)
+M	src/adservice/src/main/java/hipstershop/AdService.java
+09f5ce89 Update README.md
+M	README.md
+bb31c3f1 Update README.md
+M	README.md
+0dcd8cd9 hack: compile istio manifests as well (#137)
+M	hack/make-release-artifacts.sh
+31df60f0 Updates deps, OC instrumentation, formatting. (#131)
+M	src/adservice/build.gradle
+M	src/adservice/src/main/java/hipstershop/AdService.java
+M	src/adservice/src/main/java/hipstershop/AdServiceClient.java
+02b2018b recommendationservice: compile deps from requirements.in (#135)
+A	src/recommendationservice/requirements.in
+M	src/recommendationservice/requirements.txt
+1d045de6 productcatalog: introduce configurable latency (#134)
+M	src/productcatalogservice/README.md
+M	src/productcatalogservice/server.go
+3da0ae3b hack: polish scripts (#133)
+M	hack/make-docker-images.sh
+M	hack/make-release-artifacts.sh
+M	hack/make-release.sh
+D	release/.googleheader
+1d452f44 Adds make-release script, static k8s manifests (#132)
+M	README.md
+A	hack/README.md
+A	hack/make-docker-images.sh
+A	hack/make-release-artifacts.sh
+A	hack/make-release.sh
+A	release/.googleheader
+ea424cb9 add skaffold version note
+M	README.md
+3812cf74 fix typo in Stackdriver init method name. (#130)
+M	src/frontend/main.go
+2ef073f6 adservice: Add "time" field to JSON log entries. (#129)
+M	src/adservice/src/main/resources/log4j2.xml
+54f0a8d0 add jaeger support for productcatalog and shipping. (#126)
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	src/frontend/main.go
+M	src/productcatalogservice/Gopkg.lock
+M	src/productcatalogservice/server.go
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/main.go
+10dfd04a README: use GKE add-on for Istio instructions (#121)
+M	README.md
+8deb49e5 Update README.md
+M	README.md
+dcdd657d Fix broken doc link (#122)
+M	skaffold.yaml
+791a2822 Update skaffold to v0.20.0 (to support newer skaffold config) (#123)
+M	cloudbuild.yaml
+aaf2f871 Simplify package management for python services (#120)
+M	src/emailservice/Dockerfile
+A	src/emailservice/requirements.in
+M	src/emailservice/requirements.txt
+M	src/loadgenerator/Dockerfile
+A	src/loadgenerator/requirements.in
+M	src/loadgenerator/requirements.txt
+823e9931 update skaffold manifest to clear warnings (#117)
+M	.travis.yml
+M	skaffold.yaml
+2b074f7f Add jaeger export to checkoutservice. (#116)
+M	kubernetes-manifests/checkoutservice.yaml
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/main.go
+33ca3b63 Unify jaeger enabling method for adservice. (#115)
+M	kubernetes-manifests/adservice.yaml
+M	src/adservice/src/main/java/hipstershop/AdService.java
+85c7131d Add jaeger support for frontend. (#113)
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/Gopkg.lock
+M	src/frontend/main.go
+27e1b03c Add conference videos
+M	README.md
+d9440921 Add Jaeger support for Adservice. (#111)
+M	kubernetes-manifests/adservice.yaml
+M	src/adservice/build.gradle
+M	src/adservice/src/main/java/hipstershop/AdService.java
+94ed247c Update README.md
+M	README.md
+90e43a87 move img/ to docs/img (#110)
+M	README.md
+R100	img/architecture-diagram.png	docs/img/architecture-diagram.png
+R100	img/hipster-shop-frontend-1.png	docs/img/hipster-shop-frontend-1.png
+R100	img/hipster-shop-frontend-2.png	docs/img/hipster-shop-frontend-2.png
+d966bc7c Minor update to README.md (#104)
+M	README.md
+c91dca76 Toggle bug in ProductCatalogService for demos (#85)
+M	src/productcatalogservice/README.md
+M	src/productcatalogservice/server.go
+5272a4d8 Re-enable opencensus python (#103)
+M	src/emailservice/Dockerfile
+M	src/emailservice/email_client.py
+M	src/emailservice/email_server.py
+M	src/emailservice/requirements.txt
+M	src/recommendationservice/recommendation_server.py
+M	src/recommendationservice/requirements.txt
+cb241e19 Clarify description of cloudbuild.yaml (#102)
+M	cloudbuild.yaml
+8dabe7ff remove gcr repo name from images (#98)
+M	README.md
+M	cloudbuild.yaml
+M	kubernetes-manifests/adservice.yaml
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/loadgenerator.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	skaffold.yaml
+d69f1a4f increase reporting interval. (#96)
+M	src/adservice/src/main/java/hipstershop/AdService.java
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+424692be upgrade skaffold to 0.18 (#97)
+M	.travis.yml
+8b5d64b6 README: add disk space + IP troubleshooting (#95)
+M	README.md
+547cbc12 support skaffold 0.17
+M	skaffold.yaml
+b221f61f adservice: upgrade opencensus-java to 0.17.0. (#93)
+M	src/adservice/build.gradle
+M	src/adservice/src/main/resources/log4j2.xml
+9b055cab update requests package (#92)
+M	src/emailservice/requirements.txt
+M	src/recommendationservice/requirements.txt
+52a9d346 Adservice: Add libc6-compat runtime dependency (#90)
+M	src/adservice/Dockerfile
+a79a4438 Ignore .vs (#86)
+M	.gitignore
+D	src/cartservice/.vs/cartservice/DesignTimeBuild/.dtbcache
+D	src/cartservice/.vs/cartservice/v15/.suo
+D	src/cartservice/.vs/cartservice/v15/Server/sqlite3/db.lock
+D	src/cartservice/.vs/cartservice/v15/Server/sqlite3/storage.ide
+D	src/cartservice/.vs/cartservice/v15/Server/sqlite3/storage.ide-shm
+D	src/cartservice/.vs/cartservice/v15/Server/sqlite3/storage.ide-wal
+781b6df8 Update README.md
+M	src/adservice/README.md
+73ebd4de use stock gcb image for skaffold (#81)
+M	cloudbuild.yaml
+a815e029 Add GCB cloudbuild.yaml config for CD to staging (#79)
+A	cloudbuild.yaml
+51da4930 Fix build for skaffold 0.16 (#77)
+M	.travis.yml
+M	skaffold.yaml
+3b6d3864 grpc: bump health-probe to v0.2.0 (#71)
+M	src/adservice/Dockerfile
+M	src/cartservice/Dockerfile
+M	src/checkoutservice/Dockerfile
+M	src/currencyservice/Dockerfile
+M	src/emailservice/Dockerfile
+M	src/paymentservice/Dockerfile
+M	src/productcatalogservice/Dockerfile
+M	src/recommendationservice/Dockerfile
+M	src/shippingservice/Dockerfile
+dd0e2680 README: add istio mTLS instructions (#73)
+M	README.md
+c6b825f8 Run skaffold fix (#72)
+M	.travis.yml
+M	skaffold.yaml
+34227a64 currencyservice: Optimized Docker image with multi stage builds, and using alpine as a base image. (#70)
+M	src/currencyservice/Dockerfile
+571285d9 Optimized adservice Image Size (#67)
+M	src/adservice/Dockerfile
+7f40378e log: change log format to JSON payload for better log in Stackdriver (#66)
+M	src/currencyservice/client.js
+M	src/currencyservice/package-lock.json
+M	src/currencyservice/package.json
+M	src/currencyservice/server.js
+M	src/emailservice/email_client.py
+M	src/emailservice/email_server.py
+A	src/emailservice/logger.py
+M	src/emailservice/requirements.txt
+M	src/paymentservice/charge.js
+M	src/paymentservice/package-lock.json
+M	src/paymentservice/package.json
+M	src/paymentservice/server.js
+M	src/recommendationservice/client.py
+A	src/recommendationservice/logger.py
+M	src/recommendationservice/recommendation_server.py
+M	src/recommendationservice/requirements.txt
+2771a037 k8s: start using grpc health check for cartservice (#63)
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	src/cartservice/Dockerfile
+D	src/cartservice/probe/.dockerignore
+D	src/cartservice/probe/Gopkg.lock
+D	src/cartservice/probe/Gopkg.toml
+D	src/cartservice/probe/README.md
+D	src/cartservice/probe/genproto.sh
+D	src/cartservice/probe/genproto/demo.pb.go
+D	src/cartservice/probe/main.go
+848d4bbe adservice: enable structured logging and OpenCensus log correlation (#59)
+M	src/adservice/build.gradle
+M	src/adservice/src/main/java/hipstershop/AdService.java
+M	src/adservice/src/main/java/hipstershop/AdServiceClient.java
+A	src/adservice/src/main/resources/log4j2.xml
+dc7effd6 adservice: find relevant ads by category (#61)
+M	src/adservice/src/main/java/hipstershop/AdService.java
+M	src/cartservice/probe/genproto/demo.pb.go
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/currencyservice/proto/demo.proto
+M	src/frontend/Gopkg.lock
+M	src/frontend/Gopkg.toml
+M	src/frontend/handlers.go
+M	src/frontend/rpc.go
+M	src/paymentservice/proto/demo.proto
+M	src/productcatalogservice/products.json
+M	src/shippingservice/genproto/demo.pb.go
+86c8c06c pb: add "categories" field to Product (#60)
+M	pb/demo.proto
+M	src/adservice/src/main/proto/demo.proto
+M	src/frontend/genproto/demo.pb.go
+M	src/productcatalogservice/genproto/demo.pb.go
+34f8fb18 Add development principles (#56)
+M	CONTRIBUTING.md
+A	docs/development-principles.md
+be65dd1f cartservice: fix health Check() method signature (#57)
+M	src/cartservice/HealthImpl.cs
+M	src/cartservice/cartservice.csproj
+c61a8aea adservice: upgrade grpc-java to 1.15.0 (#54)
+M	src/adservice/build.gradle
+3be5c82c skaffold: add gcb timeout (default is too low)
+M	skaffold.yaml
+7ced638e paymentservice: Docker image size optimization (#53)
+M	src/paymentservice/Dockerfile
+1263da21 Reduced loadgenerator's image size (#52)
+M	src/loadgenerator/Dockerfile
+M	src/loadgenerator/loadgen.sh
+29242504 emailservice Image Optimization (#51)
+M	src/emailservice/Dockerfile
+M	src/emailservice/requirements.txt
+6460427b Change log format to JSON and log destination to stdout (#48)
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/Gopkg.toml
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/Gopkg.lock
+M	src/productcatalogservice/Gopkg.toml
+M	src/productcatalogservice/server.go
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/Gopkg.toml
+M	src/shippingservice/main.go
+M	src/shippingservice/quote.go
+ab601665 Reduced cartservice Docker Image size (#46)
+M	src/cartservice/Dockerfile
+M	src/cartservice/cartservice.csproj
+3863f6d1 recommendationsvc: optimize img (1.1 GB to 310 MB) (#45)
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/requirements.txt
+1f60819d Introducing super basic health check for cart service (#44)
+A	src/cartservice/HealthImpl.cs
+M	src/cartservice/Program.cs
+M	src/cartservice/cartservice.csproj
+M	src/cartservice/cartstore/LocalCartStore.cs
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/generate_protos.bat
+R087	src/cartservice/Demo.cs	src/cartservice/grpc_generated/Demo.cs
+R089	src/cartservice/DemoGrpc.cs	src/cartservice/grpc_generated/DemoGrpc.cs
+M	src/cartservice/interfaces/ICartStore.cs
+1bab006a grpc: implement health check in go services (#27)
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/Gopkg.toml
+M	src/checkoutservice/main.go
+M	src/productcatalogservice/Dockerfile
+M	src/productcatalogservice/Gopkg.lock
+M	src/productcatalogservice/Gopkg.toml
+M	src/productcatalogservice/server.go
+M	src/shippingservice/Dockerfile
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/Gopkg.toml
+M	src/shippingservice/main.go
+6c37a96f Add health checks to Node.js services (#26)
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/paymentservice.yaml
+A	pb/grpc/health/v1/health.proto
+M	src/currencyservice/Dockerfile
+M	src/currencyservice/client.js
+M	src/currencyservice/genproto.sh
+M	src/currencyservice/package.json
+M	src/currencyservice/proto/demo.proto
+A	src/currencyservice/proto/grpc/health/v1/health.proto
+M	src/currencyservice/server.js
+M	src/paymentservice/Dockerfile
+M	src/paymentservice/charge.js
+M	src/paymentservice/genproto.sh
+M	src/paymentservice/index.js
+M	src/paymentservice/package.json
+M	src/paymentservice/proto/demo.proto
+A	src/paymentservice/proto/grpc/health/v1/health.proto
+M	src/paymentservice/server.js
+360d9835 adservice: use grpc health checks (#29)
+M	kubernetes-manifests/adservice.yaml
+M	src/adservice/Dockerfile
+880ee16b grpc: add health checks to python services (#28)
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	src/emailservice/Dockerfile
+M	src/emailservice/email_server.py
+M	src/emailservice/requirements.txt
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/demo_pb2.py
+M	src/recommendationservice/demo_pb2_grpc.py
+M	src/recommendationservice/recommendation_server.py
+M	src/recommendationservice/requirements.txt
+fc6df2da Remove monitored resource autodetect (#42)
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/Gopkg.toml
+M	src/checkoutservice/main.go
+M	src/frontend/Gopkg.lock
+M	src/frontend/Gopkg.toml
+M	src/frontend/main.go
+M	src/productcatalogservice/Gopkg.lock
+M	src/productcatalogservice/Gopkg.toml
+M	src/productcatalogservice/server.go
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/Gopkg.toml
+M	src/shippingservice/main.go
+6d969441 travis: add docker build for images (#38)
+A	.travis.yml
+M	skaffold.yaml
+0f23d6bb frontend: add simple /healthz endpoint
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/main.go
+efef44c2 README: fix syntax
+M	README.md
+1ef223af README: fix syntax
+M	README.md
+ea02858f README: clarify gcr image updating
+M	README.md
+228105d2 frontend: add link to github repo from footer
+M	src/frontend/templates/footer.html
+7f5bb6c6 frontend: add vendor/ to dockerignore
+A	src/frontend/.dockerignore
+b9a978e8 k8s/adservice: bump memory limits for adservice (#33)
+M	kubernetes-manifests/adservice.yaml
+342a2d57 Resolve compilation error in frontend (#32)
+M	src/frontend/main.go
+7f2ecfea Instrument Go service with Stats and monitored resources. (#30)
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/Gopkg.toml
+M	src/checkoutservice/main.go
+M	src/frontend/Gopkg.lock
+M	src/frontend/Gopkg.toml
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/productcatalogservice/Gopkg.lock
+M	src/productcatalogservice/Gopkg.toml
+M	src/productcatalogservice/server.go
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/Gopkg.toml
+M	src/shippingservice/main.go
+04c3876e frontend: add robots.txt to disallow
+M	src/frontend/main.go
+4683ee44 README: add adservice to services list + diagram
+M	README.md
+M	img/architecture-diagram.png
+f35fdbca Initial commit for Ads Service. (#21)
+M	.gitignore
+A	kubernetes-manifests/adservice.yaml
+M	pb/demo.proto
+M	skaffold.yaml
+A	src/adservice/.gitignore
+A	src/adservice/Dockerfile
+A	src/adservice/README.md
+A	src/adservice/build.gradle
+A	src/adservice/genproto.sh
+A	src/adservice/gradle/wrapper/gradle-wrapper.jar
+A	src/adservice/gradle/wrapper/gradle-wrapper.properties
+A	src/adservice/gradlew
+A	src/adservice/gradlew.bat
+A	src/adservice/settings.gradle
+A	src/adservice/src/main/java/hipstershop/AdService.java
+A	src/adservice/src/main/java/hipstershop/AdServiceClient.java
+A	src/adservice/src/main/proto/demo.proto
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/rpc.go
+1d266bfd Merge pull request #24 from ocervell/patch-1
+074048ef skaffold.yaml: annotate gcb profile
+M	skaffold.yaml
+0d6e54f8 Increaes GCB VM disk space to avoid build failure
+M	skaffold.yaml
+3c864188 Merge pull request #25 from ahmetb/frontend-ads
+3e90b734 frontend: add integration for adservice
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+A	src/frontend/templates/ad.html
+M	src/frontend/templates/home.html
+M	src/frontend/templates/product.html
+c9cd6274 Merge pull request #23 from ahmetb/proto-fix
+a7a3bb7e Update skaffold.yaml
+M	skaffold.yaml
+390e489c pb: fix style issue in Ads message
+M	pb/demo.proto
+fad711b2 update readme with detailed gke instructions
+M	README.md
+2cbe4b6f Merge pull request #22 from rghetia/ads_proto
+24aaa3e3 Add proto for Ads Service.
+M	pb/demo.proto
+4e9d46c8 img: make the screenshot sizes equal
+M	img/hipster-shop-frontend-2.png
+00fc397e README: add screenshots, diagrams, features list
+M	README.md
+A	img/architecture-diagram.png
+A	img/hipster-shop-frontend-1.png
+A	img/hipster-shop-frontend-2.png
+98885b87 Update README.md
+M	README.md
+e5a04449 Merge pull request #15 from dgageot/d4d-stable-supports-k8s
+5bdfe5df Docker for Desktop stable supports k8s now
+M	README.md
+db40889a Change gcr projectID in images
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/loadgenerator.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	skaffold.yaml
+427f13fc go: use dep in builds, remove relative imports
+M	src/cartservice/Dockerfile
+A	src/cartservice/probe/.dockerignore
+A	src/cartservice/probe/Gopkg.lock
+A	src/cartservice/probe/Gopkg.toml
+M	src/cartservice/probe/main.go
+A	src/checkoutservice/.dockerignore
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/Gopkg.lock
+M	src/checkoutservice/Gopkg.toml
+A	src/checkoutservice/README.md
+M	src/checkoutservice/main.go
+M	src/checkoutservice/money/money.go
+M	src/checkoutservice/money/money_test.go
+M	src/frontend/Dockerfile
+M	src/frontend/Gopkg.lock
+M	src/frontend/Gopkg.toml
+A	src/frontend/README.md
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/money/money.go
+M	src/frontend/money/money_test.go
+M	src/frontend/rpc.go
+A	src/productcatalogservice/.dockerignore
+M	src/productcatalogservice/Dockerfile
+A	src/productcatalogservice/Gopkg.lock
+A	src/productcatalogservice/Gopkg.toml
+A	src/productcatalogservice/README.md
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+A	src/shippingservice/.dockerignore
+M	src/shippingservice/Dockerfile
+M	src/shippingservice/Gopkg.lock
+M	src/shippingservice/Gopkg.toml
+M	src/shippingservice/README.md
+M	src/shippingservice/main.go
+M	src/shippingservice/shippingservice_test.go
+c7dd0cbf test-cli: remove
+D	src/test-cli/genproto.sh
+D	src/test-cli/genproto/demo.pb.go
+D	src/test-cli/main.go
+4572974c use dep to lock Go dependencies (without vendor/)
+M	src/.gitignore
+A	src/checkoutservice/Gopkg.lock
+A	src/checkoutservice/Gopkg.toml
+A	src/frontend/Gopkg.lock
+A	src/frontend/Gopkg.toml
+A	src/paymentservice/Gopkg.lock
+A	src/paymentservice/Gopkg.toml
+A	src/shippingservice/Gopkg.lock
+A	src/shippingservice/Gopkg.toml
+58e1879e rm .vscode/ directory
+M	.gitignore
+D	.vscode/launch.json
+D	.vscode/settings.json
+D	.vscode/tasks.json
+c8aed3e8 recommendationservice: add import traceback
+M	src/recommendationservice/recommendation_server.py
+3493cc1c Add more license headers
+M	istio-manifests/frontend.yaml
+M	istio-manifests/whitelist-egress-currencyprovider.yaml
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/loadgenerator.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/redis.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	skaffold.yaml
+M	src/cartservice/generate_protos.bat
+M	src/cartservice/interfaces/ICartStore.cs
+M	src/cartservice/probe/main.go
+M	src/cartservice/scripts/build_image.bat
+M	src/cartservice/scripts/docker_setup.bat
+M	src/cartservice/scripts/run_redis_emulator_windows.bat
+M	src/frontend/middleware.go
+M	src/frontend/money/money.go
+M	src/loadgenerator/locustfile.py
+M	src/productcatalogservice/genproto.sh
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+M	src/recommendationservice/client.py
+M	src/recommendationservice/demo_pb2.py
+M	src/recommendationservice/demo_pb2_grpc.py
+M	src/recommendationservice/genproto.sh
+M	src/recommendationservice/recommendation_server.py
+M	src/shippingservice/genproto.sh
+M	src/shippingservice/main.go
+M	src/shippingservice/quote.go
+M	src/shippingservice/shippingservice_test.go
+M	src/shippingservice/tracker.go
+M	src/test-cli/genproto.sh
+M	src/test-cli/main.go
+M	tests/cartservice/CartServiceTests.cs
+08a62d81 add LICENSE, CONTRIBUTING.md
+A	CONTRIBUTING.md
+A	LICENSE
+M	README.md
+d0128060 Add LICENSE headers to source files
+M	istio-manifests/frontend-gateway.yaml
+M	istio-manifests/whitelist-egress-googleapis.yaml
+M	src/cartservice/CartServiceImpl.cs
+M	src/cartservice/Demo.cs
+M	src/cartservice/DemoGrpc.cs
+M	src/cartservice/Program.cs
+M	src/cartservice/cartstore/LocalCartStore.cs
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/probe/genproto.sh
+M	src/checkoutservice/genproto.sh
+M	src/checkoutservice/main.go
+M	src/checkoutservice/money/money.go
+M	src/checkoutservice/money/money_test.go
+M	src/currencyservice/genproto.sh
+M	src/emailservice/demo_pb2.py
+M	src/emailservice/demo_pb2_grpc.py
+M	src/emailservice/email_client.py
+M	src/emailservice/email_server.py
+M	src/emailservice/genproto.sh
+M	src/frontend/genproto.sh
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/money/money_test.go
+M	src/frontend/rpc.go
+M	src/loadgenerator/loadgen.sh
+M	src/paymentservice/charge.js
+M	src/paymentservice/genproto.sh
+M	src/paymentservice/server.js
+05381b36 Add emailservice
+A	src/cartservice/.vs/cartservice/DesignTimeBuild/.dtbcache
+A	src/cartservice/.vs/cartservice/v15/.suo
+A	src/cartservice/.vs/cartservice/v15/Server/sqlite3/db.lock
+A	src/cartservice/.vs/cartservice/v15/Server/sqlite3/storage.ide
+A	src/cartservice/.vs/cartservice/v15/Server/sqlite3/storage.ide-shm
+A	src/cartservice/.vs/cartservice/v15/Server/sqlite3/storage.ide-wal
+A	src/emailservice/Dockerfile
+A	src/emailservice/demo_pb2.py
+A	src/emailservice/demo_pb2_grpc.py
+A	src/emailservice/email_client.py
+A	src/emailservice/email_server.py
+A	src/emailservice/genproto.sh
+A	src/emailservice/requirements.txt
+A	src/emailservice/templates/confirmation.html
+432c5462 frontend: add BANNER_COLOR to control jumbotron bg
+M	src/frontend/handlers.go
+M	src/frontend/templates/home.html
+1bc817a0 add named port for frontend-external so that istio metrics aren't blocked
+M	kubernetes-manifests/frontend.yaml
+f149cc05 productcatalogservice: fix build
+M	src/productcatalogservice/server.go
+316db889 recomendationservice: disable tracing b/c memleak
+M	src/recommendationservice/recommendation_server.py
+2c8681d3 k8s: bump recommendationservice memory limit
+M	kubernetes-manifests/recommendationservice.yaml
+ee935d48 recommendationservice: fully freeze pip
+M	src/recommendationservice/requirements.txt
+6cedeb13 recommendationservice: use requirements.txt
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/requirements.txt
+b943dda1 go services: fix bug that starts profiling 3 times
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+ab32b5f9 skaffold: remove unused gcb profile
+M	skaffold.yaml
+d5394b40 productcatalog: read products from json, fix tests
+M	src/productcatalogservice/Dockerfile
+A	src/productcatalogservice/products.json
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+e389c404 Test
+dbc9523c Changed product catalog to use json, so that it slows down and generates nice profiles
+M	src/productcatalogservice/server.go
+3ac12b86 go services: fix bug that starts profiling 3 times
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+38cd08e1 recomendationservice: disable tracing b/c memleak
+M	src/recommendationservice/recommendation_server.py
+03f928f1 k8s: bump recommendationservice memory limit
+M	kubernetes-manifests/recommendationservice.yaml
+86db083d recommendationservice: fully freeze pip
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/requirements.txt
+2713f47b Fixed package imports in recommendations
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/requirements.txt
+16b1ebe9 recommendationservice: fix entrypoint
+M	src/recommendationservice/Dockerfile
+73ef09c6 Merge branch 'master' of sso://user/ahmetb/microservices-demo
+bfb740c0 Fixed Debugger config for node services
+M	src/currencyservice/server.js
+M	src/paymentservice/index.js
+0a938297 recommendationservice: use requirements.txt
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/requirements.txt
+0a1054c7 shippingservice: prevent crash on profiler init
+M	src/frontend/main.go
+M	src/shippingservice/main.go
+71c47b08 fix frontend build yet again
+M	src/frontend/main.go
+f69fd6b0 frontend: fix build
+M	src/frontend/main.go
+5bb1a3f4 go services: do not fail (+retry) profiler init
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+cca50463 recommendationservice: add init message
+M	src/recommendationservice/recommendation_server.py
+c602594c fix emailservice dockerfile, rm ports helper script
+D	src/frontend/port-forward-dependencies.sh
+e4664c22 refactor fix after profiler patch
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/recommendationservice/recommendation_server.py
+M	src/shippingservice/main.go
+9486bc24 Fixed recommendations instrumentation
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/client.py
+M	src/recommendationservice/recommendation_server.py
+6e1bbe46 partly fixed python
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/recommendation_server.py
+4c8fa307 latest
+A	.vscode/settings.json
+99ce1f84 Instrumented everything but Python
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+M	src/currencyservice/package-lock.json
+M	src/currencyservice/package.json
+M	src/currencyservice/server.js
+M	src/frontend/Dockerfile
+M	src/frontend/main.go
+M	src/paymentservice/index.js
+M	src/paymentservice/package-lock.json
+M	src/paymentservice/package.json
+M	src/paymentservice/server.js
+M	src/productcatalogservice/Dockerfile
+M	src/productcatalogservice/server.go
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/client.py
+M	src/recommendationservice/recommendation_server.py
+M	src/recommendationservice/requirements.txt
+M	src/shippingservice/Dockerfile
+M	src/shippingservice/main.go
+11e68b37 istio-manifests: add portnames to serviceentry
+M	istio-manifests/whitelist-egress-googleapis.yaml
+e53b2956 Revert "frontend: temporarily add a port 8090 for healthz in mTLS"
+M	src/frontend/main.go
+b4862517 Revert "frontend: use LISTEN_ADDR, refactor Listen code"
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/main.go
+ab2b1572 frontend: use LISTEN_ADDR, refactor Listen code
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/main.go
+7b35fb12 frontend: temporarily add a port 8090 for healthz in mTLS
+M	src/frontend/main.go
+021660bb loadgenerator: exit faster on SIGTERM
+M	kubernetes-manifests/loadgenerator.yaml
+M	src/loadgenerator/loadgen.sh
+457e2edb frontend/static: fix product image aspect ratios
+M	src/frontend/static/img/products/air-plant.jpg
+M	src/frontend/static/img/products/barista-kit.jpg
+M	src/frontend/static/img/products/camera-lens.jpg
+M	src/frontend/static/img/products/camp-mug.jpg
+M	src/frontend/static/img/products/city-bike.jpg
+M	src/frontend/static/img/products/record-player.jpg
+M	src/frontend/static/img/products/terrarium.jpg
+M	src/frontend/static/img/products/typewriter.jpg
+afee0d09 loadgenerator: switch to python 3.6
+M	src/loadgenerator/Dockerfile
+M	src/loadgenerator/loadgen.sh
+ba5bf6d4 loadgenerator: kill periodically to prevent lockup
+M	kubernetes-manifests/loadgenerator.yaml
+M	src/loadgenerator/loadgen.sh
+b58c8ba9 README: fix typo GFR->GCR
+M	README.md
+a3740aa7 shippingservice: add ca-certificates to image
+M	src/productcatalogservice/Dockerfile
+M	src/shippingservice/Dockerfile
+53da3583 skaffold: add gcb profile
+M	skaffold.yaml
+d08a58cc add retries for stackdriver exporters in go
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+d01f5254 refactor initTrace -> initTracing()
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+5a32ddf0 shippingservice: move initTrace() to a func
+M	src/shippingservice/main.go
+062b325c update istio manifests
+R100	istio-manifests/currencyservice-egress-external.yaml	istio-manifests/whitelist-egress-currencyprovider.yaml
+A	istio-manifests/whitelist-egress-googleapis.yaml
+555c8a4c frontend/checkoutservice: add tracing
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+M	src/frontend/Dockerfile
+M	src/frontend/main.go
+89618dbe payment & productcatalog: sample rate 1.0
+M	src/productcatalogservice/server.go
+M	src/shippingservice/main.go
+1799f36d shippingsercice: export traces to stackdriver
+M	src/shippingservice/Dockerfile
+M	src/shippingservice/main.go
+6065e871 productcatalog: export traces to stackdriver
+M	src/.gitignore
+M	src/productcatalogservice/Dockerfile
+M	src/productcatalogservice/server.go
+88b29516 Added node.js client tracing
+M	src/currencyservice/client.js
+59430d58 Added node.js tracing
+M	src/currencyservice/package-lock.json
+M	src/currencyservice/package.json
+M	src/currencyservice/server.js
+M	src/paymentservice/package-lock.json
+M	src/paymentservice/package.json
+M	src/paymentservice/server.js
+af71f8f9 frontend: refactor http.Handler decoration
+M	src/frontend/main.go
+61cf0584 fix go builds after deleting pkg internal
+M	src/cartservice/Dockerfile
+M	src/cartservice/probe/main.go
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+M	src/frontend/Dockerfile
+M	src/frontend/main.go
+D	src/internal/internal.go
+M	src/productcatalogservice/Dockerfile
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+M	src/shippingservice/Dockerfile
+M	src/shippingservice/main.go
+M	src/test-cli/main.go
+dff246a3 README: add local development instructions
+M	README.md
+4a82b21b add OpenCensus Go support for HTTP and gRPC
+M	src/cartservice/probe/main.go
+M	src/checkoutservice/main.go
+M	src/frontend/main.go
+A	src/internal/internal.go
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+M	src/shippingservice/main.go
+M	src/test-cli/main.go
+7101b6b4 Changing the order of redis and cart service starting
+M	src/cartservice/Program.cs
+5c57fc61 add users
+M	kubernetes-manifests/loadgenerator.yaml
+0be5e7b1 cartservice: rm initContainer, fix probe query ip
+M	kubernetes-manifests/cartservice.yaml
+M	src/cartservice/probe/main.go
+a8508f8f delete binary
+03182151 Add gcr.io/istio-next to image names
+M	README.md
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/loadgenerator.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/redis.yaml
+M	kubernetes-manifests/shippingservice.yaml
+M	skaffold.yaml
+375e2d35 k8s: add exec probes to cartservice
+M	kubernetes-manifests/cartservice.yaml
+0c1068ae cartservice: add an exec probe written in Go
+M	src/cartservice/Dockerfile
+A	src/cartservice/probe/README.md
+A	src/cartservice/probe/genproto.sh
+A	src/cartservice/probe/genproto/demo.pb.go
+A	src/cartservice/probe/main.go
+420a0740 add initial istio-manifests
+A	istio-manifests/currencyservice-egress-external.yaml
+A	istio-manifests/frontend-gateway.yaml
+A	istio-manifests/frontend.yaml
+684c6020 frontend: whitelist currencies two more currencies
+M	src/frontend/main.go
+0b192fa9 frontend: small fixes for form controls
+M	src/frontend/port-forward-dependencies.sh
+M	src/frontend/templates/header.html
+M	src/frontend/templates/product.html
+6c8d0642 frontend: recommendations widget is responsive
+M	src/frontend/templates/recommendations.html
+96ffafe0 frontend: error tpl invokes header/footer with vals
+M	src/frontend/templates/error.html
+2f5cbd5e frontend: add footer (session id + request id)
+M	src/frontend/handlers.go
+M	src/frontend/templates/footer.html
+6a5ba2a5 frontend: fix checkout form mb
+M	src/frontend/templates/cart.html
+39169ca4 frontend: remove footer text
+M	src/frontend/templates/footer.html
+d457f7ec Making cartservice more reliable
+M	.gitignore
+M	src/cartservice/Program.cs
+M	src/cartservice/cartstore/LocalCartStore.cs
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/scripts/docker_setup.bat
+M	tests/cartservice/CartServiceTests.cs
+11c208a9 Merge remote-tracking branch 'origin' into createCartService
+5cc01395 remove trailing lines
+M	kubernetes-manifests/cartservice.yaml
+3416aee7 k8s/cartservice: add init container to wait redis
+M	kubernetes-manifests/cartservice.yaml
+2a251779 improve README.md
+M	README.md
+78e74550 README fix
+M	README.md
+e27dcc38 Add README.md with installation instructions
+M	README.md
+M	kubernetes-manifests/frontend.yaml
+85d04fc0 frontend: proper ensureSess middleware, add req id
+M	src/frontend/main.go
+M	src/frontend/middleware.go
+2dcd7b62 frontend: remove sessionid from log
+M	src/frontend/middleware.go
+b7404e35 frontend: use logrus structured logger
+M	src/frontend/Dockerfile
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+A	src/frontend/middleware.go
+M	src/frontend/port-forward-dependencies.sh
+b57cbd2c k8s: add termination period to loadgen to some svc
+M	kubernetes-manifests/loadgenerator.yaml
+257cbdf9 loadgenerator: complete implementation
+M	kubernetes-manifests/loadgenerator.yaml
+M	src/loadgenerator/Dockerfile
+A	src/loadgenerator/loadgen.sh
+M	src/loadgenerator/locustfile.py
+08aa1cce shippingservice: add logs indicating rpc calls
+M	src/shippingservice/main.go
+8c3d36d8 loadgenerator prototype
+A	kubernetes-manifests/loadgenerator.yaml
+M	skaffold.yaml
+A	src/loadgenerator/Dockerfile
+A	src/loadgenerator/locustfile.py
+A	src/loadgenerator/requirements.txt
+dbe99160 Merge branch 'master' of sso://user/ahmetb/microservices-demo
+ab045ae6 currencyservice: change port to 7000
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	src/currencyservice/Dockerfile
+M	src/currencyservice/server.js
+M	src/frontend/Dockerfile
+989fad7f Merge remote-tracking branch 'origin' into createCartService
+17ffcb9a Merge conflict fix for redis cache exception handling
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	tests/cartservice/CartServiceTests.cs
+84ff6914 frontend: use pkg/errors, show full stacktrace
+M	kubernetes-manifests/cartservice.yaml
+M	src/cartservice/Dockerfile
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/error.html
+30740471 cartservice: add try catch to GetCartAsync
+M	src/cartservice/cartstore/RedisCartStore.cs
+977c2e5f cartservice: dockerfile optimizations
+M	src/cartservice/Dockerfile
+M	src/frontend/Dockerfile
+23a9ed04 skaffold: set tag policy gitCommit
+M	skaffold.yaml
+b4685dca k8s: add termination grace to recommendationservice
+M	kubernetes-manifests/recommendationservice.yaml
+92274f4f frontend: optimize dockerfile
+M	src/frontend/Dockerfile
+f2ee88a9 Changed redis connection opening to be synchronous call
+M	src/cartservice/scripts/docker_setup.bat
+86b45cd8 currencyservice: less logs
+M	src/currencyservice/server.js
+77fac954 k8s: add terminationGracePeriodSeconds to some
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+e3a9580c frontend: add liveness/readiness probes
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/main.go
+781cdaed k8s: add liveness/readiness probes
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/redis.yaml
+M	kubernetes-manifests/shippingservice.yaml
+4ac66b07 Refactored the cart service to add more telemetry
+M	src/cartservice/Program.cs
+M	src/cartservice/cartstore/LocalCartStore.cs
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/interfaces/ICartStore.cs
+M	src/cartservice/scripts/docker_setup.bat
+4e57b1e0 optimize dockerfile caching for go builds
+M	src/checkoutservice/Dockerfile
+M	src/productcatalogservice/Dockerfile
+M	src/shippingservice/Dockerfile
+e2c48c58 frontend/handlers: wrap err
+M	src/frontend/handlers.go
+b68f6a03 k8s: add frontend dockerfile + skaffold
+A	kubernetes-manifests/frontend.yaml
+M	skaffold.yaml
+A	src/frontend/Dockerfile
+878be040 cartservice: add net-tools to build
+M	src/cartservice/Dockerfile
+6c8162eb k8s: fix emailservice port mapping
+M	kubernetes-manifests/emailservice.yaml
+M	src/cartservice/Dockerfile
+382314bb checkoutservice: empty cart after order
+M	src/checkoutservice/main.go
+M	src/frontend/templates/footer.html
+ed942a91 checkoutservice: remove PrepareOrder rpc
+M	pb/demo.proto
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/checkoutservice/main.go
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+8d1d967d frontend: also log error
+M	src/frontend/handlers.go
+30897120 frontend: error page
+M	src/frontend/handlers.go
+M	src/frontend/templates/error.html
+91493bf0 frontend: order result screen
+M	src/frontend/handlers.go
+M	src/frontend/templates/cart.html
+A	src/frontend/templates/error.html
+M	src/frontend/templates/order.html
+19aeb032 k8s: new env vars for cartservice
+M	kubernetes-manifests/cartservice.yaml
+83333c9f k8s: cartservice listen addr
+M	kubernetes-manifests/cartservice.yaml
+M	src/checkoutservice/main.go
+M	src/frontend/port-forward-dependencies.sh
+60405859 fix cartservice listen addr
+M	kubernetes-manifests/cartservice.yaml
+M	src/frontend/rpc.go
+edf1553b Renaming cart service env vars
+M	src/cartservice/Program.cs
+M	src/cartservice/scripts/docker_setup.bat
+0d07d08b frontend: place order
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/header.html
+A	src/frontend/templates/order.html
+06321e24 frontend/templates: reenable empty cart
+M	src/frontend/port-forward-dependencies.sh
+M	src/frontend/templates/cart.html
+076819d0 currencyservice: fix nanos overflow due to rounding
+M	src/currencyservice/server.js
+6f10ac97 breaking changes to Address in proto
+M	pb/demo.proto
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+M	src/shippingservice/genproto/demo.pb.go
+M	src/shippingservice/main.go
+M	src/shippingservice/shippingservice_test.go
+M	src/test-cli/genproto/demo.pb.go
+M	src/test-cli/main.go
+e9826f5f frontend: checkout form
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+A	src/frontend/port-forward-dependencies.sh
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/recommendations.html
+75135e6c frontend/templates: fix money rendering
+M	src/frontend/handlers.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/home.html
+M	src/frontend/templates/product.html
+fc272ffb frontend: money proto migration
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/money/money.go
+33fae5d1 checkoutservice: money proto migration
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+M	src/checkoutservice/money/money.go
+M	src/checkoutservice/money/money_test.go
+b5b6d255 Move to new proto + add magic of left-pad
+M	src/currencyservice/client.js
+M	src/currencyservice/package.json
+M	src/currencyservice/server.js
+98d9c87e currencyservice: [WIP] money proto migration
+M	src/currencyservice/client.js
+M	src/currencyservice/genproto.sh
+M	src/currencyservice/proto/demo.proto
+a128ab02 checkoutservice: money proto migration
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/checkoutservice/main.go
+D	src/checkoutservice/money.go
+A	src/checkoutservice/money/money.go
+A	src/checkoutservice/money/money_test.go
+D	src/checkoutservice/money_test.go
+e966fb8c delete currencyservicetemp implementation
+D	src/currencyservicetemp/Dockerfile
+D	src/currencyservicetemp/genproto/demo.pb.go
+D	src/currencyservicetemp/main.go
+D	src/currencyservicetemp/money.go
+D	src/currencyservicetemp/money_test.go
+ddfa0bf0 paymentservice: money proto migration
+M	src/paymentservice/charge.js
+M	src/paymentservice/proto/demo.proto
+a656bb82 shippingservice: money proto migration
+M	src/shippingservice/genproto/demo.pb.go
+M	src/shippingservice/main.go
+M	src/shippingservice/shippingservice_test.go
+a3b8e282 recommendationservice: money proto migration
+M	src/recommendationservice/demo_pb2.py
+32078712 test-cli: money proto migration
+M	src/test-cli/genproto/demo.pb.go
+M	src/test-cli/main.go
+7e732dee productcatalog: regenerate protos
+M	src/productcatalogservice/genproto/demo.pb.go
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+e20ed325 pb: breaking change to Money, remove MoneyAmount
+M	pb/demo.proto
+920ab6c1 frontend/money: add money utilities
+D	src/frontend/money.go
+A	src/frontend/money/money.go
+A	src/frontend/money/money_test.go
+e86353f6 frontend: ui tweaks
+M	src/frontend/handlers.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/footer.html
+M	src/frontend/templates/header.html
+M	src/frontend/templates/product.html
+M	src/frontend/templates/recommendations.html
+546562fe Fixing AddItem and adding more tests/cartservice/CartServiceTests
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	tests/cartservice/CartServiceTests.cs
+400d51a9 frontend: integrate recommmendationservice
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/footer.html
+M	src/frontend/templates/product.html
+A	src/frontend/templates/recommendations.html
+9889e490 recommendationservice: exclude input ids
+M	src/recommendationservice/recommendation_server.py
+ca3ace3f frontend: use pkg/errors, show full stacktrace
+M	kubernetes-manifests/cartservice.yaml
+M	src/cartservice/Dockerfile
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/error.html
+f8ddac9c cartservice: add try catch to GetCartAsync
+M	src/cartservice/cartstore/RedisCartStore.cs
+386f4975 cartservice: dockerfile optimizations
+M	src/cartservice/Dockerfile
+M	src/frontend/Dockerfile
+fdc946ad skaffold: set tag policy gitCommit
+M	skaffold.yaml
+7e252c7d k8s: add termination grace to recommendationservice
+M	kubernetes-manifests/recommendationservice.yaml
+319e9478 frontend: optimize dockerfile
+M	src/frontend/Dockerfile
+c84c5b02 Changed redis connection opening to be synchronous call
+M	src/cartservice/scripts/docker_setup.bat
+4f631ce4 currencyservice: less logs
+M	src/currencyservice/server.js
+59063ff4 k8s: add terminationGracePeriodSeconds to some
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/frontend.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+1ae5e773 frontend: add liveness/readiness probes
+M	kubernetes-manifests/frontend.yaml
+M	src/frontend/main.go
+ecba2965 k8s: add liveness/readiness probes
+M	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/redis.yaml
+M	kubernetes-manifests/shippingservice.yaml
+ca6e6647 Refactored the cart service to add more telemetry
+M	src/cartservice/Program.cs
+M	src/cartservice/cartstore/LocalCartStore.cs
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/interfaces/ICartStore.cs
+M	src/cartservice/scripts/docker_setup.bat
+07bb077c optimize dockerfile caching for go builds
+M	src/checkoutservice/Dockerfile
+M	src/productcatalogservice/Dockerfile
+M	src/shippingservice/Dockerfile
+97288038 frontend/handlers: wrap err
+M	src/frontend/handlers.go
+92eb76c1 k8s: add frontend dockerfile + skaffold
+A	kubernetes-manifests/frontend.yaml
+M	skaffold.yaml
+A	src/frontend/Dockerfile
+c9f2c89b cartservice: add net-tools to build
+M	src/cartservice/Dockerfile
+39fd0193 k8s: fix emailservice port mapping
+M	kubernetes-manifests/emailservice.yaml
+M	src/cartservice/Dockerfile
+f9fa569d checkoutservice: empty cart after order
+M	src/checkoutservice/main.go
+M	src/frontend/templates/footer.html
+99cefc46 checkoutservice: remove PrepareOrder rpc
+M	pb/demo.proto
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/checkoutservice/main.go
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+7db57323 frontend: also log error
+M	src/frontend/handlers.go
+b2ca0868 frontend: error page
+M	src/frontend/handlers.go
+M	src/frontend/templates/error.html
+7f4319ae frontend: order result screen
+M	src/frontend/handlers.go
+M	src/frontend/templates/cart.html
+A	src/frontend/templates/error.html
+M	src/frontend/templates/order.html
+795fb3f8 k8s: new env vars for cartservice
+M	kubernetes-manifests/cartservice.yaml
+21909b46 k8s: cartservice listen addr
+M	kubernetes-manifests/cartservice.yaml
+M	src/checkoutservice/main.go
+M	src/frontend/port-forward-dependencies.sh
+7c83802b fix cartservice listen addr
+M	kubernetes-manifests/cartservice.yaml
+M	src/frontend/rpc.go
+4373f020 Merge remote-tracking branch 'origin' into createCartService
+f06bc11d Renaming cart service env vars
+M	src/cartservice/Program.cs
+M	src/cartservice/scripts/docker_setup.bat
+483e1136 frontend: place order
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/header.html
+A	src/frontend/templates/order.html
+3eb02c06 frontend/templates: reenable empty cart
+M	src/frontend/port-forward-dependencies.sh
+M	src/frontend/templates/cart.html
+05cb7ecf currencyservice: fix nanos overflow due to rounding
+M	src/currencyservice/server.js
+0dc4055b breaking changes to Address in proto
+M	pb/demo.proto
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+M	src/shippingservice/genproto/demo.pb.go
+M	src/shippingservice/main.go
+M	src/shippingservice/shippingservice_test.go
+M	src/test-cli/genproto/demo.pb.go
+M	src/test-cli/main.go
+2ec570c5 frontend: checkout form
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+A	src/frontend/port-forward-dependencies.sh
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/recommendations.html
+10748d6b frontend/templates: fix money rendering
+M	src/frontend/handlers.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/home.html
+M	src/frontend/templates/product.html
+6c2336b2 frontend: money proto migration
+M	src/frontend/genproto/demo.pb.go
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/money/money.go
+71c27cce checkoutservice: money proto migration
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+M	src/checkoutservice/money/money.go
+M	src/checkoutservice/money/money_test.go
+6f1a3d79 Move to new proto + add magic of left-pad
+M	src/currencyservice/client.js
+M	src/currencyservice/package.json
+M	src/currencyservice/server.js
+51d5e9a3 currencyservice: [WIP] money proto migration
+M	src/currencyservice/client.js
+M	src/currencyservice/genproto.sh
+M	src/currencyservice/proto/demo.proto
+f5dc3dd0 checkoutservice: money proto migration
+M	src/checkoutservice/genproto/demo.pb.go
+M	src/checkoutservice/main.go
+D	src/checkoutservice/money.go
+A	src/checkoutservice/money/money.go
+A	src/checkoutservice/money/money_test.go
+D	src/checkoutservice/money_test.go
+3d22afac delete currencyservicetemp implementation
+D	src/currencyservicetemp/Dockerfile
+D	src/currencyservicetemp/genproto/demo.pb.go
+D	src/currencyservicetemp/main.go
+D	src/currencyservicetemp/money.go
+D	src/currencyservicetemp/money_test.go
+129eb9be paymentservice: money proto migration
+M	src/paymentservice/charge.js
+M	src/paymentservice/proto/demo.proto
+c2b08f07 shippingservice: money proto migration
+M	src/shippingservice/genproto/demo.pb.go
+M	src/shippingservice/main.go
+M	src/shippingservice/shippingservice_test.go
+8a07a978 recommendationservice: money proto migration
+M	src/recommendationservice/demo_pb2.py
+bc87db46 test-cli: money proto migration
+M	src/test-cli/genproto/demo.pb.go
+M	src/test-cli/main.go
+c43dcd7c productcatalog: regenerate protos
+M	src/productcatalogservice/genproto/demo.pb.go
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+07419c20 pb: breaking change to Money, remove MoneyAmount
+M	pb/demo.proto
+8ca35936 frontend/money: add money utilities
+D	src/frontend/money.go
+A	src/frontend/money/money.go
+A	src/frontend/money/money_test.go
+3144c87e frontend: ui tweaks
+M	src/frontend/handlers.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/footer.html
+M	src/frontend/templates/header.html
+M	src/frontend/templates/product.html
+M	src/frontend/templates/recommendations.html
+22762b28 Fixing AddItem and adding more tests/cartservice/CartServiceTests
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	tests/cartservice/CartServiceTests.cs
+6891793b Merge remote-tracking branch 'origin' into createCartService
+2041bdcb Fixing GetCart for non-existing user
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/scripts/docker_setup.bat
+M	tests/cartservice/CartServiceTests.cs
+908df8d3 frontend: integrate recommmendationservice
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/cart.html
+M	src/frontend/templates/footer.html
+M	src/frontend/templates/product.html
+A	src/frontend/templates/recommendations.html
+9634693f recommendationservice: exclude input ids
+M	src/recommendationservice/recommendation_server.py
+289bd4db frontend: view cart, add to cart, empty cart
+M	src/checkoutservice/money.go
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+A	src/frontend/money.go
+M	src/frontend/rpc.go
+A	src/frontend/templates/cart.html
+M	src/frontend/templates/header.html
+M	src/frontend/templates/product.html
+f3fe6d42 connect cartservice
+A	kubernetes-manifests/cartservice.yaml
+M	kubernetes-manifests/checkoutservice.yaml
+M	skaffold.yaml
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/header.html
+M	src/test-cli/main.go
+36b7b9eb frontend: stop refreshing cookies
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/templates/footer.html
+M	src/frontend/templates/product.html
+e16172c1 frontend: product page
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/home.html
+A	src/frontend/templates/product.html
+8a6be040 productcatalog: longer product IDs
+M	src/productcatalogservice/server.go
+6268802a frontend: homepage template showing products
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+A	src/frontend/templates/footer.html
+A	src/frontend/templates/header.html
+M	src/frontend/templates/home.html
+4ccf4458 frontend/productservice: add product inventory
+A	src/frontend/static/img/products/air-plant.jpg
+A	src/frontend/static/img/products/barista-kit.jpg
+A	src/frontend/static/img/products/camera-lens.jpg
+A	src/frontend/static/img/products/camp-mug.jpg
+A	src/frontend/static/img/products/city-bike.jpg
+A	src/frontend/static/img/products/credits.txt
+A	src/frontend/static/img/products/film-camera.jpg
+A	src/frontend/static/img/products/record-player.jpg
+A	src/frontend/static/img/products/terrarium.jpg
+A	src/frontend/static/img/products/typewriter.jpg
+M	src/productcatalogservice/server.go
+f6ab191e Add logs
+M	src/currencyservice/server.js
+29684175 Add caching
+M	src/currencyservice/server.js
+70630923 frontend: more organization
+M	src/frontend/handlers.go
+M	src/frontend/main.go
+M	src/frontend/rpc.go
+M	src/frontend/templates/home.html
+ef92ddc3 Merge remote-tracking branch 'origin' into createCartService
+c3c76eff Fixing cache implementation
+M	.vscode/launch.json
+M	.vscode/tasks.json
+M	src/cartservice/CartServiceImpl.cs
+M	src/cartservice/Program.cs
+M	src/cartservice/cartstore/LocalCartStore.cs
+M	src/cartservice/cartstore/RedisCartStore.cs
+M	src/cartservice/scripts/docker_setup.bat
+M	tests/cartservice/CartServiceTests.cs
+3cbda5fc frontend: add home template
+A	src/frontend/handlers.go
+M	src/frontend/main.go
+A	src/frontend/rpc.go
+A	src/frontend/templates/home.html
+11ba6768 frontend: connect to productcatalog, currencysvc
+M	src/frontend/main.go
+f734e967 frontend: initial prototype
+A	src/.gitignore
+A	src/frontend/genproto.sh
+A	src/frontend/genproto/demo.pb.go
+A	src/frontend/main.go
+3262ff82 Updating docker file to not include ports. Added scripts folder and script to run docker with env vars passed via command line. Also now the build and packaging is happening in container
+M	src/cartservice/Dockerfile
+M	src/cartservice/Program.cs
+R054	src/cartservice/build_image.bat	src/cartservice/scripts/build_image.bat
+A	src/cartservice/scripts/docker_setup.bat
+R100	src/cartservice/run_redis_emulator_windows.bat	src/cartservice/scripts/run_redis_emulator_windows.bat
+A	tests/cartservice/.gitignore
+A	tests/cartservice/CartServiceTests.cs
+A	tests/cartservice/cartservice.tests.csproj
+A	tests/cartservice/cartservice.tests.csproj.user
+60efbc0f integrate currencyservice to k8s deployment
+M	kubernetes-manifests/currencyservice.yaml
+M	skaffold.yaml
+97a36a63 Fix math bug
+M	src/currencyservice/server.js
+1fa7b44c Fix bugs
+M	src/currencyservice/.dockerignore
+M	src/currencyservice/client.js
+M	src/currencyservice/server.js
+9620c9bb Actually add protos
+A	src/currencyservice/genproto.sh
+A	src/currencyservice/proto/demo.proto
+057d8ae3 Switch to genproto.sh
+M	src/currencyservice/client.js
+D	src/currencyservice/currency_service.proto
+D	src/currencyservice/proto/currency_service.proto
+M	src/currencyservice/server.js
+ab5fb7bd Fix nit
+M	src/currencyservice/server.js
+28a6fbb8 Initial commit
+A	src/currencyservice/.dockerignore
+A	src/currencyservice/.gitignore
+A	src/currencyservice/Dockerfile
+A	src/currencyservice/client.js
+A	src/currencyservice/currency_service.proto
+A	src/currencyservice/package-lock.json
+A	src/currencyservice/package.json
+A	src/currencyservice/proto/currency_service.proto
+A	src/currencyservice/server.js
+a1b141d5 git rm binary
+ea974982 rm redundant leftover comment
+M	src/test-cli/main.go
+31adf140 test-cli: add smoke test for cartservice
+M	src/test-cli/main.go
+73a662cf add prototype of redis k8s deployment
+A	kubernetes-manifests/redis.yaml
+2d5dcfb3 currencyservice: fix test, add test for fractional result
+M	src/currencyservicetemp/money_test.go
+3ae94483 k8s: add resource limits to deployments
+M	kubernetes-manifests/checkoutservice.yaml
+M	kubernetes-manifests/currencyservice.yaml
+M	kubernetes-manifests/emailservice.yaml
+M	kubernetes-manifests/paymentservice.yaml
+M	kubernetes-manifests/productcatalogservice.yaml
+M	kubernetes-manifests/recommendationservice.yaml
+M	kubernetes-manifests/shippingservice.yaml
+7d1d1d66 checkoutservice: activate cartservice link
+M	kubernetes-manifests/checkoutservice.yaml
+M	src/checkoutservice/main.go
+9deb87d6 remove unused .gitkeep
+D	src/checkoutservice/.gitkeep
+D	src/paymentservice/.gitkeep
+D	src/recommendationservice/.gitkeep
+fa46e852 currencyservicefake: temp replacement for currencysvc
+A	kubernetes-manifests/currencyservice.yaml
+M	skaffold.yaml
+A	src/currencyservicetemp/Dockerfile
+A	src/currencyservicetemp/genproto/demo.pb.go
+A	src/currencyservicetemp/main.go
+A	src/currencyservicetemp/money.go
+A	src/currencyservicetemp/money_test.go
+5b3530c0 test-cli: refactor currencyservice smoke test
+M	src/test-cli/main.go
+1c00f04e paymentservice: check in proto/
+M	src/paymentservice/.gitignore
+A	src/paymentservice/proto/demo.proto
+08144db1 checkoutservice prototype!!1
+M	src/checkoutservice/main.go
+A	src/checkoutservice/money.go
+A	src/checkoutservice/money_test.go
+4646d528 Merge branch 'master' of sso://user/ahmetb/microservices-demo into createCartService
+d37c0841 return v4 uuid for paymentservice
+M	src/paymentservice/charge.js
+M	src/paymentservice/package-lock.json
+M	src/paymentservice/package.json
+bd7da5fe Merge branch 'master' of sso://user/ahmetb/microservices-demo into createCartService
+5d44d019 Fixing docker issues. Now the server can run in linux docker container but doesn't work with real redis yet
+A	src/cartservice/Dockerfile
+M	src/cartservice/Program.cs
+A	src/cartservice/build_image.bat
+M	src/cartservice/cartservice.csproj
+cb6a105b PaymentService: use genproto.sh to cp proto to paymentservice
+M	src/paymentservice/.gitignore
+A	src/paymentservice/genproto.sh
+D	src/paymentservice/proto/demo.proto
+9f1bc5a6 Integrate paymentservice to skaffold/k8s
+M	kubernetes-manifests/checkoutservice.yaml
+A	kubernetes-manifests/paymentservice.yaml
+M	skaffold.yaml
+25dd3195 checkoutservice: change port to 5050
+M	kubernetes-manifests/checkoutservice.yaml
+M	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+98ac7e3a add kubernetes manifets and skaffold.yaml
+A	kubernetes-manifests/checkoutservice.yaml
+A	kubernetes-manifests/emailservice.yaml
+A	kubernetes-manifests/productcatalogservice.yaml
+A	kubernetes-manifests/recommendationservice.yaml
+A	kubernetes-manifests/shippingservice.yaml
+A	skaffold.yaml
+28956fb2 unify ENTRYPOINTS in dockerfiles (no /bin/sh)
+M	src/checkoutservice/Dockerfile
+M	src/productcatalogservice/Dockerfile
+M	src/recommendationservice/Dockerfile
+M	src/shippingservice/Dockerfile
+91663aa5 Merge branch 'master' of sso://user/ahmetb/microservices-demo
+47669a51 copy over proto into payment-service; add Dockerfile and .dockerignore node_modules
+A	src/paymentservice/.dockerignore
+A	src/paymentservice/Dockerfile
+M	src/paymentservice/index.js
+A	src/paymentservice/proto/demo.proto
+88ac6d8f more validation on credit card info; change smoke test for payment service to have a valid credit card
+A	src/paymentservice/charge.js
+M	src/paymentservice/package-lock.json
+M	src/paymentservice/package.json
+M	src/paymentservice/server.js
+M	src/test-cli/main.go
+4ade7ddb remove -v from go-build dockerfiles
+M	src/checkoutservice/Dockerfile
+M	src/productcatalogservice/Dockerfile
+M	src/shippingservice/Dockerfile
+f06818db checkoutservice: partial implementation
+A	src/checkoutservice/Dockerfile
+M	src/checkoutservice/main.go
+95ed2f3b Merge branch 'master' of sso://user/ahmetb/microservices-demo
+164e52fa checkoutservice: add code stubs, TODO implement
+M	.gitignore
+A	src/checkoutservice/genproto.sh
+A	src/checkoutservice/genproto/demo.pb.go
+A	src/checkoutservice/main.go
+23819700 Merge branch 'master' of sso://user/ahmetb/microservices-demo into createCartService
+b91d97f6 remove .gitignore changes for cart service - they should be in cart service folder
+D	.gitignore
+d7d9165d added gitignore file for .net proj
+A	src/cartservice/.gitignore
+c7e76920 indents
+M	src/paymentservice/server.js
+af9db7b0 recommendationsvc: compile_proto.sh -> genproto.sh
+R090	src/recommendationservice/compile_proto.sh	src/recommendationservice/genproto.sh
+0ce195bb command line arguments handling
+M	src/cartservice/CartServiceImpl.cs
+M	src/cartservice/Program.cs
+M	src/cartservice/cartservice.csproj
+8860d8bf added redis integration and command line arguments handling to cart service. Didn't test in the cloud yet
+A	.gitignore
+A	.vscode/launch.json
+A	.vscode/tasks.json
+A	src/cartservice/cartstore/LocalCartStore.cs
+A	src/cartservice/cartstore/RedisCartStore.cs
+A	src/cartservice/interfaces/ICartStore.cs
+A	src/cartservice/run_redis_emulator_windows.bat
+ab8bf7e5 ignore/delete *.pyc
+M	.gitignore
+7a6edd75 finish up PaymentService
+A	src/paymentservice/.gitignore
+A	src/paymentservice/index.js
+A	src/paymentservice/package-lock.json
+A	src/paymentservice/package.json
+A	src/paymentservice/server.js
+e5ea2154 recommendationservice: add requirements.txt
+M	src/recommendationservice/compile_proto.sh
+A	src/recommendationservice/requirements.txt
+017c8a91 Merge branch 'master' of sso://user/ahmetb/microservices-demo
+31d099b8 Merge branch 'master' of sso://user/ahmetb/microservices-demo
+1372aad8 recommendationservice: require PRODUCT_CATALOG_SERVICE_ADDR
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/recommendation_server.py
+7b06cf63 emailservice/Dockerfile: increase build cache
+M	.gitignore
+2f8b2787 rm .DS_Store files
+D	.DS_Store
+A	.gitignore
+D	src/.DS_Store
+61291a51 regenerated protos
+M	src/recommendationservice/demo_pb2.py
+M	src/recommendationservice/demo_pb2_grpc.py
+M	src/recommendationservice/recommendation_server.py
+5cdc6577 regenerated protos
+M	src/recommendationservice/demo_pb2.py
+M	src/recommendationservice/demo_pb2_grpc.py
+M	src/recommendationservice/recommendation_server.py
+933a0520 pull ids from product catalog service
+M	src/recommendationservice/recommendation_server.py
+c753f9a6 added product catalog address env var
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/recommendation_server.py
+1fc51262 Added Cloud Mail client library + Dummy mode support + Minor Fixes
+M	.DS_Store
+M	src/.DS_Store
+c9525d8e regenerate go protos after breaking change
+M	src/productcatalogservice/genproto/demo.pb.go
+M	src/shippingservice/genproto/demo.pb.go
+M	src/test-cli/genproto/demo.pb.go
+M	src/test-cli/main.go
+22f6fcca pb: breaking change to currencyservice protos
+M	pb/demo.proto
+dfb0ae21 test-cli: minor fix
+M	src/test-cli/main.go
+626342e9 test-cli: add smoke test for currencyservice
+M	src/test-cli/main.go
+52cc8fae test-cli: add smoke test for emailservice
+M	src/test-cli/main.go
+572c02f5 Merge branch 'master' of sso://user/ahmetb/microservices-demo into createCartService
+2df80b14 Initial commit of cart service using .net core 2.0. Working prototype without cache implementation (yet)
+A	src/cartservice/CartServiceImpl.cs
+A	src/cartservice/Demo.cs
+A	src/cartservice/DemoGrpc.cs
+A	src/cartservice/Program.cs
+A	src/cartservice/cartservice.csproj
+A	src/cartservice/generate_protos.bat
+f3efae62 test-cli: add smoke test for payment service
+M	src/test-cli/genproto/demo.pb.go
+M	src/test-cli/main.go
+2316e255 change Product.id to string
+M	pb/demo.proto
+M	src/productcatalogservice/genproto/demo.pb.go
+M	src/productcatalogservice/server.go
+M	src/productcatalogservice/server_test.go
+cc8ef350 test-cli: add smoke tests for recommendation service
+M	src/test-cli/main.go
+2d4f4f88 shippingservice: minify dockerfile, unify genproto
+M	src/shippingservice/Dockerfile
+A	src/shippingservice/genproto.sh
+A	src/shippingservice/genproto/demo.pb.go
+M	src/shippingservice/main.go
+M	src/shippingservice/shippingservice_test.go
+M	src/shippingservice/tracker.go
+44e66717 test-cli: add smoke test for shippingservice
+M	src/test-cli/main.go
+810a74a4 productcatalogservice: add Dockerfile
+A	src/productcatalogservice/Dockerfile
+0cb633c4 add a test-cli to run smoke tests manually
+A	src/test-cli/genproto.sh
+A	src/test-cli/genproto/demo.pb.go
+A	src/test-cli/main.go
+5da1f85b Added email service
+A	.DS_Store
+A	src/.DS_Store
+9c1d009e remove .gitgkeep
+D	src/productcatalogservice/.gitkeep
+d94ba7a7 Merge branch 'master' of sso://user/ahmetb/microservices-demo
+914f07f3 productcatalogservice: implementation
+A	src/productcatalogservice/genproto.sh
+A	src/productcatalogservice/genproto/demo.pb.go
+A	src/productcatalogservice/server.go
+A	src/productcatalogservice/server_test.go
+1b3cbff6 Add shipping service.
+D	src/shippingservice/.gitkeep
+A	src/shippingservice/Dockerfile
+A	src/shippingservice/README.md
+A	src/shippingservice/main.go
+A	src/shippingservice/quote.go
+A	src/shippingservice/shippingservice_test.go
+A	src/shippingservice/tracker.go
+9af0ca0e add productcatalogservice dir
+A	src/productcatalogservice/.gitkeep
+0cf418df recommender now returns ids instead of products
+M	pb/demo.proto
+M	src/recommendationservice/demo_pb2.py
+M	src/recommendationservice/recommendation_server.py
+fd6b66fa removed pyc files
+A	src/recommendationservice/.gitignore
+D	src/recommendationservice/demo_pb2.pyc
+D	src/recommendationservice/demo_pb2_grpc.pyc
+8375b4b1 added ports to script arguments
+M	src/recommendationservice/Dockerfile
+M	src/recommendationservice/client.py
+M	src/recommendationservice/recommendation_server.py
+62153ef8 added client
+A	src/recommendationservice/client.py
+A	src/recommendationservice/demo_pb2.pyc
+A	src/recommendationservice/demo_pb2_grpc.pyc
+M	src/recommendationservice/recommendation_server.py
+9c6f36c6 added implementation of server
+M	src/recommendationservice/recommendation_server.py
+0844d378 added protobuffs
+M	src/recommendationservice/Dockerfile
+A	src/recommendationservice/demo_pb2.py
+A	src/recommendationservice/demo_pb2_grpc.py
+D	src/recommendationservice/recommendation.py
+A	src/recommendationservice/recommendation_server.py
+11eed708 added basic Dockerfile and python script
+A	src/recommendationservice/Dockerfile
+A	src/recommendationservice/recommendation.py
+67160287 added directory for recommendation service
+A	src/recommendationservice/.gitkeep
+2f22da40 Add directory for shippingservice.
+A	src/shippingservice/.gitkeep
+c4c7799f create src/paymentservice dir
+A	src/paymentservice/.gitkeep
+bdd32eda Add src dirs
+A	src/checkoutservice/.gitkeep
+A	src/frontend/.gitkeep
+e926f339 Import proto
+A	pb/demo.proto
+2fd49670 First commit
+A	README.md

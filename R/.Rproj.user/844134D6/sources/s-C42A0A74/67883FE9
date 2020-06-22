@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592335274076.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "67883FE9",
+    "lastKnownWriteTime" : 1592836169,
+    "last_content_update" : 1592836169861,
+    "path" : "~/Desktop/spl2020/SPLC-challenge-code/R/main.R",
+    "project_path" : "main.R",
+    "properties" : {
+        "cursorPosition" : "126,9",
+        "scrollLine" : "101",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
